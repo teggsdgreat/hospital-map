@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faith-Based Health Facilities Map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+/* ---------- Leaflet core styles (inlined so the map works even where outside stylesheets are blocked) ---------- */
+.leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
+.leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;background:#e8ecea;outline-offset:1px;font-size:12px;line-height:1.5}
+.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+.leaflet-tile::selection{background:transparent}
+.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}
+.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer,.leaflet-container .leaflet-tile{max-width:none!important;max-height:none!important;width:auto;padding:0}
+.leaflet-container.leaflet-touch-zoom{touch-action:pan-x pan-y}
+.leaflet-container.leaflet-touch-drag{touch-action:none;touch-action:pinch-zoom}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{touch-action:none}
+.leaflet-tile{filter:inherit;visibility:hidden}
+.leaflet-tile-loaded{visibility:inherit}
+.leaflet-zoom-box{width:0;height:0;box-sizing:border-box;z-index:800;border:2px dotted #38f;background:rgba(255,255,255,.5)}
+.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}
+.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}
+.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto;float:left;clear:both}
+.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}
+.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}
+.leaflet-right .leaflet-control{float:right}
+.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}
+.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}
+.leaflet-fade-anim .leaflet-popup{opacity:0;transition:opacity .2s linear}
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}
+.leaflet-zoom-animated{transform-origin:0 0}
+svg.leaflet-zoom-animated{will-change:transform}
+.leaflet-zoom-anim .leaflet-zoom-animated{transition:transform .25s cubic-bezier(0,0,.25,1)}
+.leaflet-zoom-anim .leaflet-tile,.leaflet-pan-anim .leaflet-tile{transition:none}
+.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}
+.leaflet-interactive{cursor:pointer}
+.leaflet-grab{cursor:grab}
+.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}
+.leaflet-popup-pane,.leaflet-control{cursor:auto}
+.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:grabbing}
+.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-image-layer,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}
+.leaflet-marker-icon.leaflet-interactive,.leaflet-image-layer.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}
+.leaflet-container a{color:#0b6e69}
+.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.4);border-radius:6px}
+.leaflet-bar a{background:#fff;border-bottom:1px solid #ccc;width:30px;height:30px;line-height:30px;display:block;text-align:center;text-decoration:none;color:#222}
+.leaflet-bar a:hover{background:#f4f4f4}
+.leaflet-bar a:first-child{border-top-left-radius:6px;border-top-right-radius:6px}
+.leaflet-bar a:last-child{border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-bottom:none}
+.leaflet-bar a.leaflet-disabled{cursor:default;background:#f4f4f4;color:#bbb}
+.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 20px 'Lucida Console',Monaco,monospace;text-indent:1px}
+.leaflet-container .leaflet-control-attribution{background:rgba(255,255,255,.85);margin:0}
+.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}
+.leaflet-control-attribution a{text-decoration:none}
+.leaflet-attribution-flag{display:none!important}
+.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}
+.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}
+.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:10px}
+.leaflet-popup-content{margin:12px 16px 12px 14px;line-height:1.35;font-size:13px;min-height:1px}
+.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}
+.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;transform:rotate(45deg)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#222;box-shadow:0 3px 14px rgba(0,0,0,.35)}
+.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:26px;height:26px;font:18px/26px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:transparent}
+.leaflet-container a.leaflet-popup-close-button:hover{color:#222}
+.leaflet-tooltip{position:absolute;padding:4px 7px;background:#fff;border:1px solid #fff;border-radius:4px;color:#222;white-space:nowrap;-webkit-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4);font-size:12px}
+.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}
+.leaflet-tooltip-top:before,.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{position:absolute;pointer-events:none;border:6px solid transparent;background:transparent;content:""}
+.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}
+.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}
+.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}
+.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}
+.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}
+.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}
+.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}
+.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}
+/* ---------- MarkerCluster styles ---------- */
+.marker-cluster{background-clip:padding-box;border-radius:20px}
+.marker-cluster div{width:30px;height:30px;margin-left:5px;margin-top:5px;text-align:center;border-radius:15px;font:600 12px system-ui,sans-serif;color:#10302e}
+.marker-cluster span{line-height:30px}
+.marker-cluster-small{background-color:rgba(94,186,170,.45)}.marker-cluster-small div{background-color:rgba(46,150,135,.75);color:#fff}
+.marker-cluster-medium{background-color:rgba(240,190,90,.5)}.marker-cluster-medium div{background-color:rgba(222,150,30,.85);color:#fff}
+.marker-cluster-large{background-color:rgba(235,120,95,.5)}.marker-cluster-large div{background-color:rgba(205,75,50,.88);color:#fff}
+.leaflet-cluster-anim .leaflet-marker-icon,.leaflet-cluster-anim .leaflet-marker-shadow{transition:transform .3s ease-out,opacity .3s ease-in}
+.leaflet-cluster-spider-leg{transition:stroke-dashoffset .3s ease-out,stroke-opacity .3s ease-in}
+
+/* ---------- App ---------- */
+:root{--ink:#14211f;--muted:#5b6b68;--line:#dde3e1;--bg:#f5f7f6;--accent:#0b6e69;--accent-2:#0f8b84;--warn:#a15c00;--warn-bg:#fff4e0;--side:380px}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+button,input,select{font:inherit;color:inherit}
+.top{height:52px;display:flex;align-items:center;gap:10px;padding:0 14px;background:#0d4f4b;color:#fff}
+.top h1{font-size:16px;margin:0;font-weight:650;letter-spacing:.1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .badge{font-size:12px;opacity:.85;white-space:nowrap}
+.brand{display:flex;flex-direction:column;min-width:0;line-height:1.2}
+.icon-btn{background:rgba(255,255,255,.12);border:0;color:#fff;border-radius:6px;width:36px;height:34px;cursor:pointer;font-size:18px;flex:none}
+.layout{position:absolute;top:52px;left:0;right:0;bottom:0;display:flex}
+#side{width:var(--side);flex:none;background:#fff;border-right:1px solid var(--line);overflow-y:auto;display:flex;flex-direction:column}
+#mapWrap{position:relative;flex:1;min-width:0}
+#map{position:absolute;inset:0}
+details.filters{border-bottom:1px solid var(--line);padding:10px 14px}
+details.filters summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.filters summary::-webkit-details-marker{display:none}
+details.filters summary:after{content:"▾";color:var(--muted)}
+details.filters:not([open]) summary:after{content:"▸"}
+#filterSummary{font-weight:500;color:var(--accent);font-size:12px;margin-left:auto;margin-right:8px}
+#filterBox{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.tabs{display:flex;position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;border:0;background:none;padding:10px 2px 9px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent}
+.tabs button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent)}
+.panel{padding:12px 14px 24px}
+.panel h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:18px 0 8px}
+.panel h3:first-child{margin-top:4px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);margin-bottom:8px;min-width:0}
+.fld>span{font-weight:600}
+.fld select,.fld input,input[type=search],input[type=password],input[type=number]{width:100%;padding:7px 8px;border:1px solid #c9d2cf;border-radius:6px;background:#fff;color:var(--ink);min-width:0}
+.fld select:focus,input:focus{outline:2px solid var(--accent-2);outline-offset:0;border-color:transparent}
+.row{display:flex;gap:8px;align-items:flex-end;margin-bottom:8px;flex-wrap:wrap}
+.row>*{flex:1}
+.btn{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:6px;padding:8px 10px;cursor:pointer;font-weight:600;font-size:13px}
+.btn:hover{background:var(--accent-2)}
+.btn.ghost{background:#fff;color:var(--accent)}
+.btn.ghost:hover{background:#eef6f5}
+.btn.on{background:#c2410c;border-color:#c2410c;color:#fff}
+.btn.sm{padding:5px 8px;font-size:12px;flex:none}
+.link{background:none;border:0;color:var(--accent);cursor:pointer;padding:6px 0 0;font-size:12px;font-weight:600}
+.chk{display:flex;gap:8px;align-items:center;margin:6px 0;cursor:pointer}
+.hint{color:var(--muted);font-size:12.5px;margin:4px 0 10px}
+.small{font-size:11.5px}
+.results{list-style:none;margin:6px 0 0;padding:0;max-height:330px;overflow:auto}
+.results li button,.list li>button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #eef1f0;padding:8px 4px;cursor:pointer;display:block}
+.results li button:hover,.list li>button:hover{background:#f1f7f6}
+.rname{font-weight:600;display:block}
+.rsub{font-size:12px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;padding:0 6px;border-radius:9px;background:#eef1f0;color:var(--muted);margin-left:4px;vertical-align:1px}
+.tag.warn{background:var(--warn-bg);color:var(--warn)}
+.tag.good{background:#e3f4ee;color:#0b6e4f}
+.list{list-style:none;margin:0;padding:0}
+.list .km{float:right;font-weight:700;color:var(--accent);margin-left:8px;text-align:right}
+.list .road{display:block;font-size:12px;color:#7a3e00;font-weight:600;text-align:right}
+.card{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;background:#fbfcfc}
+.card b{font-weight:650}
+.big{font-size:24px;font-weight:750;color:var(--accent);line-height:1.15}
+.note{background:var(--warn-bg);color:#6b3d00;border-radius:6px;padding:7px 9px;font-size:12px;margin:8px 0}
+.seg{display:flex;border:1px solid #c9d2cf;border-radius:7px;overflow:hidden;margin:10px 0 4px}
+.seg label{flex:1;cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;text-align:center;padding:7px 2px;font-size:12px;font-weight:600;color:var(--muted)}
+.seg input:checked+span{background:var(--accent);color:#fff}
+.seg input:focus-visible+span{outline:2px solid var(--accent-2);outline-offset:-2px}
+.range{display:flex;gap:8px;align-items:center}
+.range input[type=range]{flex:1;accent-color:var(--accent)}
+.range input[type=number]{width:76px;flex:none}
+fieldset{border:0;padding:0;margin:0}
+fieldset:disabled{opacity:.5}
+.switch{display:flex;gap:10px;align-items:center;font-size:14px;cursor:pointer;padding:6px 0}
+.switch input{width:18px;height:18px;accent-color:var(--accent)}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:6px;border:1px solid rgba(0,0,0,.25)}
+.grp>button{display:flex!important;gap:4px;align-items:baseline}
+.grp .members{list-style:none;margin:0 0 6px;padding:0 0 0 20px;font-size:12.5px}
+.grp .members button{background:none;border:0;padding:3px 0;color:var(--accent);cursor:pointer;text-align:left}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}
+.stat{background:#f1f5f4;border-radius:7px;padding:7px 8px}
+.stat b{display:block;font-size:18px;color:var(--ink)}
+.stat span{font-size:11.5px;color:var(--muted)}
+.exp{display:flex;align-items:center;gap:6px;padding:7px 0;border-bottom:1px solid #eef1f0}
+.exp .lbl{flex:1;font-size:13px}
+.exp .lbl small{display:block;color:var(--muted);font-size:11.5px}
+/* markers */
+.hd-wrap{background:none;border:0}
+.hd{display:block;width:14px;height:14px;margin:1px;border-radius:50%;background:var(--c);border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.55)}
+.hd.p-approx{background:radial-gradient(circle,var(--c) 0 32%,#fff 38%);border:2.5px solid var(--c);box-shadow:0 0 0 1px rgba(0,0,0,.35)}
+.hd.p-estimate{background:#fff;border:2.5px dashed var(--c);box-shadow:none}
+.pin{display:block;width:20px;height:20px;border-radius:50%;background:#c2410c;border:3px solid #fff;box-shadow:0 0 0 2px #c2410c,0 2px 6px rgba(0,0,0,.4)}
+.ab{display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#1e293b;color:#fff;font:700 12px system-ui,sans-serif;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5)}
+.dist-label{background:#1e293b;color:#fff;border:0;font-weight:700}
+.dist-label:before{display:none}
+/* popup */
+.pop h3{margin:0 18px 6px 0;font-size:14px;line-height:1.3}
+.pop table{border-collapse:collapse;width:100%;font-size:12px}
+.pop th{text-align:left;color:var(--muted);font-weight:600;padding:2px 8px 2px 0;vertical-align:top;white-space:nowrap}
+.pop td{padding:2px 0}
+.pop-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.pop-actions button{border:1px solid var(--accent);background:#fff;color:var(--accent);border-radius:5px;padding:4px 7px;font-size:12px;font-weight:600;cursor:pointer}
+.pop-actions button:hover{background:#eef6f5}
+.pop-links{margin-top:8px;font-size:12px}
+/* legend */
+.legend{background:rgba(255,255,255,.95);border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.3);padding:8px 10px;font-size:12px;max-width:230px;max-height:45vh;overflow:auto}
+.legend b{display:block;margin-bottom:4px;font-size:12px}
+.legend .li{display:flex;align-items:center;gap:6px;margin:2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.legend .li .hd{flex:none;margin:0}
+.legend hr{border:0;border-top:1px solid var(--line);margin:6px 0}
+.legend .tog{background:none;border:0;cursor:pointer;color:var(--accent);font-weight:600;padding:0;font-size:12px}
+/* banners, toast, modal */
+#banner{position:absolute;top:10px;left:56px;right:56px;z-index:1100;background:#fff;border-left:4px solid #d97706;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.2);padding:8px 34px 8px 12px;font-size:12.5px;max-width:640px;margin:0 auto}
+#banner button{position:absolute;right:6px;top:4px;border:0;background:none;font-size:18px;cursor:pointer;color:var(--muted)}
+#modeBar{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:1100;background:#1e293b;color:#fff;border-radius:20px;padding:7px 8px 7px 16px;font-size:13px;display:flex;gap:10px;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.3);white-space:nowrap}
+#modeBar button{background:#fff;color:#1e293b;border:0;border-radius:14px;padding:3px 10px;font-weight:700;cursor:pointer}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:#1e293b;color:#fff;padding:9px 14px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;transition:all .2s;z-index:3000;max-width:90vw}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:4000;display:flex;align-items:center;justify-content:center;padding:16px}
+#modal .box{background:#fff;border-radius:10px;max-width:640px;width:100%;padding:16px;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+#modal textarea{width:100%;height:260px;font:12px/1.4 ui-monospace,monospace;border:1px solid var(--line);border-radius:6px;padding:8px}
+#dropHint{position:absolute;inset:0;background:rgba(11,110,105,.18);border:3px dashed var(--accent);z-index:2000;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#0d4f4b;pointer-events:none}
+[hidden]{display:none!important}
+@media (max-width:760px){
+  #side{position:absolute;top:0;bottom:0;left:0;z-index:1500;width:min(92vw,var(--side));box-shadow:4px 0 18px rgba(0,0,0,.25);transform:translateX(-102%);transition:transform .2s}
+  body.side-open #side{transform:none}
+  .top .badge{display:none}
+  #banner{left:10px;right:10px}
+}
+@media (min-width:761px){ body.side-closed #side{display:none} }
+</style>
+</head>
+<body>
+<header class="top">
+  <button id="menuBtn" class="icon-btn" aria-label="Show or hide the side panel" title="Show/hide panel">☰</button>
+  <div class="brand"><h1 id="appTitle">Faith-Based Health Facilities Map</h1><span class="badge" id="countBadge">Loading…</span></div>
+</header>
+
+<div class="layout">
+  <aside id="side" aria-label="Map tools">
+    <details class="filters" open>
+      <summary>Filters <span id="filterSummary"></span></summary>
+      <div id="filterBox"></div>
+      <button id="clearFilters" class="link" type="button">Clear all filters</button>
+    </details>
+
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="find" aria-selected="true">Find</button>
+      <button role="tab" data-tab="nearest" aria-selected="false">Nearest</button>
+      <button role="tab" data-tab="distance" aria-selected="false">Distance</button>
+      <button role="tab" data-tab="groups" aria-selected="false">Groups</button>
+      <button role="tab" data-tab="data" aria-selected="false">Data</button>
+    </nav>
+
+    <!-- FIND -->
+    <section class="panel" data-panel="find">
+      <input id="q" type="search" placeholder="Search hospital, town, LGA, state…" autocomplete="off" aria-label="Search hospitals">
+      <ul id="qResults" class="results"></ul>
+      <h3>Map display</h3>
+      <label class="fld"><span>Colour markers by</span><select id="colorBy"></select></label>
+      <label class="fld"><span>Background map</span>
+        <select id="basemap">
+          <option value="voyager" selected>Streets (CARTO)</option>
+          <option value="light">Light (CARTO)</option>
+          <option value="osm">Streets (OpenStreetMap)</option>
+          <option value="sat">Satellite (Esri)</option>
+          <option value="none">None</option>
+        </select></label>
+      <label class="chk"><input type="checkbox" id="groupMarkers" checked> Bundle nearby markers when zoomed out</label>
+      <div class="row" style="margin-top:8px"><button id="fitAll" class="btn ghost" type="button">Zoom to all shown hospitals</button></div>
+      <p class="hint">Click any marker for its details, directions, and the distance tools.</p>
+    </section>
+
+    <!-- NEAREST -->
+    <section class="panel" data-panel="nearest" hidden>
+      <p class="hint" style="margin-top:0">Find the closest hospitals to you, to any point on the map, or to a hospital (click <b>Nearest from here</b> in its popup). Only hospitals that pass the filters are searched.</p>
+      <div class="row">
+        <button id="btnLocate" class="btn" type="button">📍 Use my location</button>
+        <button id="btnPick" class="btn ghost" type="button">Pick a point on map</button>
+      </div>
+      <div class="row">
+        <label class="fld"><span>How many</span>
+          <select id="nearN"><option>5</option><option selected>10</option><option>20</option><option>50</option></select></label>
+        <label class="fld"><span>Or all within (km)</span><input id="nearRadius" type="number" min="0" step="1" placeholder="optional, e.g. 25"></label>
+      </div>
+      <div id="nearOut"></div>
+    </section>
+
+    <!-- DISTANCE -->
+    <section class="panel" data-panel="distance" hidden>
+      <h3>Measure between two places</h3>
+      <p class="hint">Start measuring, then click two hospitals or any two points on the map. You can also use <b>Set as A / Set as B</b> in a hospital's popup.</p>
+      <div class="row">
+        <button id="btnMeasure" class="btn" type="button">📏 Start measuring</button>
+        <button id="btnClearMeasure" class="btn ghost" type="button">Clear</button>
+      </div>
+      <div id="measOut"></div>
+
+      <h3>Export distances between hospitals</h3>
+      <p class="hint">Calculated for the hospitals currently shown (after filters).</p>
+      <label class="fld"><span>For the pairs list: only pairs closer than (km)</span><input id="pairKm" type="number" value="10" min="0.1" step="0.5"></label>
+      <div class="exp"><div class="lbl">Pairs of hospitals within that distance<small id="pairInfo">One row per pair, sorted by distance</small></div>
+        <button class="btn sm ghost" data-exp="pairs" data-how="dl" type="button">Download</button><button class="btn sm ghost" data-exp="pairs" data-how="copy" type="button">Copy</button></div>
+      <div class="exp"><div class="lbl">Nearest neighbour of every hospital<small>Each hospital's closest other hospital</small></div>
+        <button class="btn sm ghost" data-exp="nn" data-how="dl" type="button">Download</button><button class="btn sm ghost" data-exp="nn" data-how="copy" type="button">Copy</button></div>
+      <div class="exp"><div class="lbl">Full distance matrix<small id="matrixInfo">Every hospital against every other (km)</small></div>
+        <button class="btn sm ghost" data-exp="matrix" data-how="dl" type="button">Download</button><button class="btn sm ghost" data-exp="matrix" data-how="copy" type="button">Copy</button></div>
+    </section>
+
+    <!-- GROUPS -->
+    <section class="panel" data-panel="groups" hidden>
+      <label class="switch"><input type="checkbox" id="clOn"> <b>Group hospitals by proximity</b></label>
+      <fieldset id="clOpts" disabled>
+        <div class="seg" role="radiogroup" aria-label="Grouping method">
+          <label><input type="radio" name="clm" value="complete" checked><span>Max distance</span></label>
+          <label><input type="radio" name="clm" value="dbscan"><span>Neighbour chain</span></label>
+          <label><input type="radio" name="clm" value="kmeans"><span>Fixed number</span></label>
+        </div>
+        <p class="hint" id="clMethodHint"></p>
+        <div id="clKmBox"><label class="fld"><span id="clKmLabel">Distance (km)</span>
+          <div class="range"><input type="range" id="clKm" min="1" max="100" step="1" value="10" aria-label="Distance in km"><input type="number" id="clKmNum" min="0.5" max="1000" step="0.5" value="10" aria-label="Distance in km"></div></label></div>
+        <div id="clMinBox" hidden><label class="fld"><span>Minimum hospitals to form a group</span><input type="number" id="clMin" min="2" max="50" value="2"></label></div>
+        <div id="clKBox" hidden><label class="fld"><span>Number of groups</span>
+          <div class="range"><input type="range" id="clK" min="2" max="60" value="10" aria-label="Number of groups"><input type="number" id="clKNum" min="2" max="1000" value="10" aria-label="Number of groups"></div></label></div>
+        <label class="chk"><input type="checkbox" id="clHulls" checked> Draw group outlines</label>
+        <label class="chk"><input type="checkbox" id="clSingles" checked> Show hospitals that aren't in a group</label>
+        <label class="chk" id="clEstWrap"><input type="checkbox" id="clEst"> Leave out estimated locations (LGA / State centres)</label>
+      </fieldset>
+      <div id="clOut"><p class="hint">Turn grouping on to colour hospitals by group. Groups are recalculated live for whatever the filters show.</p></div>
+    </section>
+
+    <!-- DATA -->
+    <section class="panel" data-panel="data" hidden>
+      <div id="dataSummary"></div>
+      <h3>Load a different list</h3>
+      <p class="hint">CSV, Excel (.xlsx) or GeoJSON (for example a DHIS2 org-unit export). It needs latitude and longitude columns. Other columns become popup details, and columns such as Region, State, LGA become filters. You can also drag a file onto the map.</p>
+      <input type="file" id="fileIn" accept=".csv,.txt,.xlsx,.xls,.geojson,.json">
+      <h3>Road distance (optional)</h3>
+      <p class="hint">Everything uses straight-line distance by default. To add road distance and driving time, paste a free <a href="https://openrouteservice.org/dev/#/signup" target="_blank" rel="noopener">OpenRouteService API key</a>. It's stored only in this browser.</p>
+      <div class="row"><input id="orsKey" type="password" placeholder="OpenRouteService API key" autocomplete="off" aria-label="OpenRouteService API key"><button id="orsSave" class="btn sm" type="button">Save</button></div>
+      <h3>Download the list</h3>
+      <div class="exp"><div class="lbl">Hospitals currently shown<small>With any group number from the Groups tab</small></div>
+        <button class="btn sm ghost" data-exp="list" data-how="dl" type="button">Download</button><button class="btn sm ghost" data-exp="list" data-how="copy" type="button">Copy</button></div>
+      <p class="hint small" style="margin-top:14px">Distances are straight-line ("as the crow flies") over the earth's surface, calculated in your browser with Turf.js. Travel by road is longer, especially in rural areas.</p>
+    </section>
+  </aside>
+
+  <div id="mapWrap">
+    <div id="map" role="region" aria-label="Map of hospitals"></div>
+    <div id="banner" hidden><span id="bannerText"></span><button type="button" aria-label="Dismiss" id="bannerX">×</button></div>
+    <div id="modeBar" hidden><span id="modeText"></span><button type="button" id="modeCancel">Done</button></div>
+    <div id="dropHint" hidden>Drop a CSV, Excel or GeoJSON file to load it</div>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="modal" hidden><div class="box"><p style="margin:0 0 8px"><b id="modalTitle">Copy</b></p><p class="hint" id="modalHint">Select all and copy (Ctrl/Cmd + C).</p><textarea id="modalText" readonly></textarea><div class="row" style="margin:10px 0 0;justify-content:flex-end"><button class="btn" id="modalClose" type="button" style="flex:none">Close</button></div></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script>
+'use strict';
+/* =====================================================================
+   SETTINGS — edit these to customise the map
+   ===================================================================== */
+const CFG = {
+  title: 'Faith-Based Health Facilities Map',
+  dataUrl: 'hospitals.csv',                       // data file next to this page
+  // Columns used as filters, in this order (others are detected automatically if these don't exist)
+  filterFields: ['Region', 'State', 'LGA', 'Denomination', 'Location precision'],
+  defaultColorBy: 'Region',
+  // Rough box around Nigeria, used to flag suspicious coordinates
+  bounds: { latMin: 4.0, latMax: 14.0, lonMin: 2.6, lonMax: 14.7 },
+  orsKey: ''   // optional: put an OpenRouteService key here to enable road distance for every visitor
+};
+const XLSX_URL = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+const PALETTE = ['#1f77b4','#e6550d','#2ca02c','#d62728','#9467bd','#8c564b','#e377c2','#17becf','#b8a000','#393b79','#637939','#843c39','#3182bd','#7b4173','#31a354','#e6ab02','#1b9e77','#d95f02','#5254a3','#ad494a'];
+const GREY = '#8a9199';
+
+/*PURE-START*/
+const R_KM = 6371.0088, RAD = Math.PI / 180;
+function hav(la1, lo1, la2, lo2) {
+  const dLa = (la2 - la1) * RAD, dLo = (lo2 - lo1) * RAD;
+  const a = Math.sin(dLa / 2) ** 2 + Math.cos(la1 * RAD) * Math.cos(la2 * RAD) * Math.sin(dLo / 2) ** 2;
+  return 2 * R_KM * Math.asin(Math.min(1, Math.sqrt(a)));
+}
+// Complete-linkage agglomerative clustering with a distance threshold:
+// every pair inside a returned group is at most `maxKm` apart.
+function completeLinkage(pts, maxKm) {
+  const n = pts.length;
+  if (!n) return [];
+  const D = new Float32Array(n * n);
+  for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+    const d = hav(pts[i].lat, pts[i].lon, pts[j].lat, pts[j].lon);
+    D[i * n + j] = d; D[j * n + i] = d;
+  }
+  const active = new Uint8Array(n).fill(1);
+  const members = pts.map((_, i) => [i]);
+  const nn = new Int32Array(n), nd = new Float64Array(n);
+  const rowMin = i => {
+    let b = -1, bd = Infinity; const o = i * n;
+    for (let k = 0; k < n; k++) if (k !== i && active[k] && D[o + k] < bd) { bd = D[o + k]; b = k; }
+    nn[i] = b; nd[i] = bd;
+  };
+  for (let i = 0; i < n; i++) rowMin(i);
+  for (;;) {
+    let bi = -1, bd = Infinity;
+    for (let i = 0; i < n; i++) if (active[i] && nd[i] < bd) { bd = nd[i]; bi = i; }
+    if (bi < 0 || bd > maxKm) break;
+    const i = bi, j = nn[i];
+    for (let k = 0; k < n; k++) {
+      if (!active[k] || k === i || k === j) continue;
+      const v = Math.max(D[i * n + k], D[j * n + k]);
+      D[i * n + k] = v; D[k * n + i] = v;
+    }
+    active[j] = 0;
+    members[i] = members[i].concat(members[j]); members[j] = null;
+    rowMin(i);
+    for (let k = 0; k < n; k++) if (active[k] && k !== i && (nn[k] === i || nn[k] === j)) rowMin(k);
+  }
+  return members.filter(Boolean);
+}
+function maxPairKm(recs) {
+  let m = 0;
+  for (let i = 0; i < recs.length; i++) for (let j = i + 1; j < recs.length; j++) {
+    const d = hav(recs[i].lat, recs[i].lon, recs[j].lat, recs[j].lon); if (d > m) m = d;
+  }
+  return m;
+}
+function findCol(cols, cands) {
+  const low = cols.map(c => String(c).toLowerCase().trim());
+  for (const k of cands) { const i = low.indexOf(k); if (i >= 0) return cols[i]; }
+  for (const k of cands) {
+    if (k.length < 3) continue;
+    const i = low.findIndex(c => c.includes(k)); if (i >= 0) return cols[i];
+  }
+  return null;
+}
+function toNum(v) {
+  if (typeof v === 'number') return v;
+  let s = String(v ?? '').trim();
+  if (!s) return NaN;
+  if (s.includes(',') && !s.includes('.')) s = s.replace(',', '.');
+  return Number(s);
+}
+function classifyPrec(v) {
+  const s = String(v || '').toLowerCase();
+  if (!s) return 'exact';
+  if (s.includes('estimate')) return 'estimate';
+  if (s.includes('approx') || s.includes('probable') || s.includes('verify')) return 'approx';
+  return 'exact';
+}
+function csvCell(v) { const s = v == null ? '' : String(v); return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+function toCSV(rows) { return rows.map(r => r.map(csvCell).join(',')).join('\r\n'); }
+function fmtKm(km) {
+  if (km == null || !isFinite(km)) return '—';
+  if (km < 1) return Math.round(km * 1000) + ' m';
+  return (km < 10 ? km.toFixed(2) : km.toFixed(1)) + ' km';
+}
+function fmtMin(min) {
+  if (min == null || !isFinite(min)) return '—';
+  if (min < 60) return Math.round(min) + ' min';
+  const h = Math.floor(min / 60), m = Math.round(min % 60);
+  return h + ' h' + (m ? ' ' + m + ' min' : '');
+}
+/*PURE-END*/
+
+/* ===================================================================== */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const S = {
+  cols: [], latCol: null, lonCol: null, nameCol: null, precCol: null,
+  all: [], view: [], viewSet: new Set(), skipped: [], fields: [], filters: {},
+  colorBy: null, colorMap: {}, groupMarkers: true, checkBounds: true, source: '',
+  cl: { on: false, method: 'complete', km: 10, minPts: 2, k: 10, hulls: true, singles: true, excludeEst: false, result: null },
+  origin: null, nearList: [], mode: null, A: null, B: null, orsKey: ''
+};
+
+function toast(msg, ms = 3200) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove('show'), ms);
+}
+function showBanner(html) { $('#bannerText').innerHTML = html; $('#banner').hidden = false; }
+$('#bannerX').onclick = () => { $('#banner').hidden = true; };
+const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+const isMobile = () => window.matchMedia('(max-width:760px)').matches;
+const storage = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { if (v) localStorage.setItem(k, v); else localStorage.removeItem(k); } catch (e) { /* storage unavailable */ } }
+};
+
+/* ---------- Map ---------- */
+if (!window.L) {
+  document.getElementById('countBadge').textContent = 'Map library failed to load — check your internet connection';
+  throw new Error('Leaflet not loaded');
+}
+const map = L.map('map', { zoomControl: true, worldCopyJump: false }).setView([9.08, 8.68], 6);
+L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
+const BASEMAPS = {
+  voyager: { url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', opt: { maxZoom: 20, subdomains: 'abcd', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>' } },
+  // OpenStreetMap's volunteer servers refuse tiles when the browser sends no Referer
+  // (e.g. the page opened straight from a computer as file://). Use only on a hosted site.
+  osm: { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', opt: { maxZoom: 19, referrerPolicy: 'strict-origin-when-cross-origin', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors' } },
+  light: { url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', opt: { maxZoom: 20, subdomains: 'abcd', attribution: '&copy; OpenStreetMap contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>' } },
+  sat: { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', opt: { maxZoom: 19, attribution: 'Imagery &copy; Esri, Maxar, Earthstar Geographics' } }
+};
+let tileOk = 0, tileErr = 0, tileTimer = null;
+function setBasemap(key) {
+  if (S.base) map.removeLayer(S.base);
+  S.base = null;
+  const b = BASEMAPS[key];
+  if (!b) return;
+  S.base = L.tileLayer(b.url, b.opt)
+    .on('tileload', () => { tileOk++; })
+    .on('tileerror', () => {
+      tileErr++; clearTimeout(tileTimer);
+      tileTimer = setTimeout(() => {
+        if (tileOk === 0 && tileErr > 0) showBanner('The background map couldn\'t load here (this viewer blocks outside images, or you\'re offline). Markers, search, distances and groups still work. The hosted version of this page shows the full street and satellite map.');
+      }, 2500);
+    })
+    .addTo(map);
+}
+const clusterLayer = L.markerClusterGroup({
+  showCoverageOnHover: false, chunkedLoading: true, spiderfyOnMaxZoom: true,
+  maxClusterRadius: z => (z >= 12 ? 18 : 45)
+});
+const plainLayer = L.layerGroup();
+const hullLayer = L.layerGroup().addTo(map);
+const nearLayer = L.layerGroup().addTo(map);
+const measLayer = L.layerGroup().addTo(map);
+
+const iconCache = new Map();
+function dotIcon(color, prec) {
+  const k = color + '|' + prec;
+  let i = iconCache.get(k);
+  if (!i) {
+    i = L.divIcon({ className: 'hd-wrap', html: `<span class="hd p-${prec}" style="--c:${color}"></span>`, iconSize: [18, 18], iconAnchor: [9, 9], popupAnchor: [0, -8] });
+    iconCache.set(k, i);
+  }
+  return i;
+}
+const originIcon = L.divIcon({ className: 'hd-wrap', html: '<span class="pin"></span>', iconSize: [26, 26], iconAnchor: [13, 13] });
+const abIcon = t => L.divIcon({ className: 'hd-wrap', html: `<span class="ab">${t}</span>`, iconSize: [28, 28], iconAnchor: [14, 14] });
+
+/* ---------- Data loading ---------- */
+function decodeBuf(buf) {
+  try { return new TextDecoder('utf-8', { fatal: true }).decode(buf); }
+  catch (e) { return new TextDecoder('windows-1252').decode(buf); }
+}
+function parseCSV(text) {
+  const r = Papa.parse(text.replace(/^﻿/, ''), { header: true, skipEmptyLines: 'greedy', transformHeader: h => String(h).trim() });
+  return { rows: r.data, cols: (r.meta.fields || []).filter(c => c !== '') };
+}
+function parseGeoJSON(obj) {
+  const feats = obj.type === 'FeatureCollection' ? obj.features : obj.type === 'Feature' ? [obj] : Array.isArray(obj) ? obj : [];
+  const rows = [], colSet = new Set(); let nonPoint = 0;
+  for (const f of feats) {
+    const g = f && f.geometry;
+    if (!g || g.type !== 'Point' || !Array.isArray(g.coordinates)) { nonPoint++; continue; }
+    const row = {};
+    for (const [k, v] of Object.entries(f.properties || {})) {
+      row[k] = v && typeof v === 'object' ? (v.name || JSON.stringify(v)) : v;
+      colSet.add(k);
+    }
+    row.Latitude = g.coordinates[1]; row.Longitude = g.coordinates[0];
+    rows.push(row);
+  }
+  if (nonPoint) toast(`${nonPoint} features without point coordinates were skipped.`, 5000);
+  return { rows, cols: [...colSet, 'Latitude', 'Longitude'] };
+}
+function loadScript(src) {
+  return new Promise((res, rej) => {
+    const s = document.createElement('script'); s.src = src; s.onload = res;
+    s.onerror = () => rej(new Error('Could not load ' + src)); document.head.appendChild(s);
+  });
+}
+async function loadFile(file) {
+  try {
+    const name = file.name.toLowerCase();
+    const buf = await file.arrayBuffer();
+    let parsed;
+    if (/\.(xlsx|xls)$/.test(name)) {
+      if (!window.XLSX) { toast('Loading Excel reader…'); await loadScript(XLSX_URL); }
+      const wb = XLSX.read(new Uint8Array(buf), { type: 'array' });
+      const ws = wb.Sheets[wb.SheetNames[0]];
+      const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+      const header = (XLSX.utils.sheet_to_json(ws, { header: 1 })[0] || []).map(h => String(h).trim()).filter(Boolean);
+      parsed = { rows: rows.map(r => Object.fromEntries(Object.entries(r).map(([k, v]) => [String(k).trim(), v]))), cols: header };
+    } else if (/\.(geojson|json)$/.test(name)) {
+      parsed = parseGeoJSON(JSON.parse(decodeBuf(buf)));
+    } else {
+      parsed = parseCSV(decodeBuf(buf));
+    }
+    if (ingest(parsed.rows, parsed.cols, file.name)) toast(`Loaded ${S.all.length} hospitals from ${file.name}`);
+  } catch (e) {
+    console.error(e); toast('Could not read that file: ' + e.message, 6000);
+  }
+}
+
+function ingest(rows, cols, source) {
+  const latCol = findCol(cols, ['latitude', 'lat', 'y', 'y_coord']);
+  const lonCol = findCol(cols, ['longitude', 'lon', 'lng', 'long', 'x', 'x_coord']);
+  if (!latCol || !lonCol) {
+    toast('No latitude/longitude columns found. Name them "Latitude" and "Longitude".', 7000);
+    switchTab('data'); return false;
+  }
+  const nameCol = findCol(cols, ['hospital name', 'facility name', 'health facility', 'name', 'facility', 'hospital', 'organisation unit', 'orgunit']);
+  resetAll();
+  Object.assign(S, { cols, latCol, lonCol, nameCol, precCol: findCol(cols, ['location precision', 'precision', 'accuracy']), source });
+  S.all = []; S.skipped = [];
+  rows.forEach((r, ri) => {
+    const lat = toNum(r[latCol]), lon = toNum(r[lonCol]);
+    const name = String((nameCol && r[nameCol]) ?? '').trim() || `Row ${ri + 2}`;
+    if (!isFinite(lat) || !isFinite(lon) || (lat === 0 && lon === 0) || Math.abs(lat) > 90 || Math.abs(lon) > 180) {
+      S.skipped.push({ name, row: ri + 2, why: (String(r[latCol] ?? '').trim() === '' ? 'missing coordinates' : 'invalid coordinates') });
+      return;
+    }
+    S.all.push({ id: S.all.length, name, lat, lon, row: ri + 2, p: r, prec: S.precCol ? classifyPrec(r[S.precCol]) : 'exact', issues: [] });
+  });
+  // Coordinate checks
+  const B = CFG.bounds, inB = (la, lo) => la >= B.latMin && la <= B.latMax && lo >= B.lonMin && lo <= B.lonMax;
+  S.checkBounds = S.all.filter(r => inB(r.lat, r.lon)).length > S.all.length / 2;
+  const dup = new Map();
+  for (const r of S.all) {
+    if (S.checkBounds && !inB(r.lat, r.lon)) r.issues.push(inB(r.lon, r.lat) ? 'swapped' : 'outside');
+    const k = r.lat.toFixed(5) + ',' + r.lon.toFixed(5);
+    if (!dup.has(k)) dup.set(k, []); dup.get(k).push(r);
+  }
+  for (const g of dup.values()) if (g.length > 1) g.forEach(r => { r.dup = g.length; });
+  // Filter fields
+  const lc = cols.map(c => c.toLowerCase());
+  S.fields = CFG.filterFields.map(f => cols[lc.indexOf(f.toLowerCase())]).filter(Boolean);
+  if (!S.fields.length) {
+    S.fields = cols.filter(c => ![latCol, lonCol, nameCol].includes(c)).filter(c => {
+      const u = new Set(S.all.map(r => String(r.p[c] ?? '').trim())); return u.size >= 2 && u.size <= 80 && u.size < S.all.length * 0.8;
+    }).slice(0, 5);
+  }
+  S.filters = {};
+  buildFilters();
+  buildColorBy();
+  $('#clEstWrap').hidden = !S.all.some(r => r.prec === 'estimate');
+  applyFilters(true);
+  renderDataTab();
+  return true;
+}
+function resetAll() {
+  clusterLayer.clearLayers(); plainLayer.clearLayers(); hullLayer.clearLayers(); nearLayer.clearLayers(); measLayer.clearLayers();
+  map.closePopup();
+  S.origin = null; S.nearList = []; S.A = null; S.B = null; S.cl.result = null;
+  $('#nearOut').innerHTML = ''; $('#measOut').innerHTML = ''; $('#qResults').innerHTML = ''; $('#q').value = '';
+  setMode(null);
+}
+
+/* ---------- Filters ---------- */
+const fval = (r, f) => String(r.p[f] ?? '').trim() || '(blank)';
+function passes(r, skip) {
+  for (const [i, v] of Object.entries(S.filters)) {
+    if (+i === skip || v == null) continue;
+    if (fval(r, S.fields[i]) !== v) return false;
+  }
+  return true;
+}
+function buildFilters() {
+  $('#filterBox').innerHTML = S.fields.map((f, i) => `<label class="fld"><span>${esc(f)}</span><select data-f="${i}"></select></label>`).join('')
+    || '<p class="hint">No filter columns found in this data.</p>';
+  refreshFilterOptions();
+}
+function refreshFilterOptions() {
+  for (let pass = 0; pass < 2; pass++) {
+    S.fields.forEach((f, i) => {
+      const counts = new Map();
+      for (const r of S.all) if (passes(r, i)) { const v = fval(r, f); counts.set(v, (counts.get(v) || 0) + 1); }
+      if (S.filters[i] != null && !counts.has(S.filters[i])) delete S.filters[i];
+      if (pass === 1) {
+        const total = [...counts.values()].reduce((a, b) => a + b, 0);
+        const opts = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true }));
+        $(`#filterBox select[data-f="${i}"]`).innerHTML = `<option value="">All (${total})</option>` +
+          opts.map(([v, c]) => `<option value="${esc(v)}"${S.filters[i] === v ? ' selected' : ''}>${esc(v)} (${c})</option>`).join('');
+      }
+    });
+  }
+  const n = Object.values(S.filters).filter(v => v != null).length;
+  $('#filterSummary').textContent = n ? `${n} active` : '';
+}
+$('#filterBox').addEventListener('change', e => {
+  const sel = e.target.closest('select[data-f]'); if (!sel) return;
+  if (sel.value === '') delete S.filters[sel.dataset.f]; else S.filters[sel.dataset.f] = sel.value;
+  refreshFilterOptions(); applyFilters(true);
+});
+$('#clearFilters').onclick = () => { S.filters = {}; refreshFilterOptions(); applyFilters(true); };
+
+function applyFilters(fit) {
+  S.view = S.all.filter(r => passes(r, -1));
+  S.viewSet = new Set(S.view.map(r => r.id));
+  if (S.cl.on) runClusters(); else { S.cl.result = null; hullLayer.clearLayers(); }
+  renderMarkers();
+  renderLegend();
+  updateCounts();
+  if (S.origin) renderNearest(false);
+  if (fit) fitTo(S.view);
+}
+function fitTo(recs) {
+  if (!recs.length) return;
+  if (recs.length === 1) { map.setView([recs[0].lat, recs[0].lon], 13); return; }
+  map.fitBounds(L.latLngBounds(recs.map(r => [r.lat, r.lon])).pad(0.08), { maxZoom: 14 });
+}
+function updateCounts() {
+  const st = S.fields.find(f => /^state$/i.test(f));
+  const nStates = st ? new Set(S.view.map(r => fval(r, st))).size : 0;
+  $('#countBadge').textContent = (S.view.length === S.all.length ? `${S.all.length} hospitals` : `${S.view.length} of ${S.all.length} hospitals shown`) +
+    (nStates ? ` · ${nStates} state${nStates === 1 ? '' : 's'}` : '');
+  const n = S.view.length;
+  $('#matrixInfo').textContent = `${n} × ${n} table of km` + (n > 1500 ? ' — large; filter first' : '');
+}
+
+/* ---------- Colours & markers ---------- */
+function buildColorBy() {
+  const sel = $('#colorBy');
+  const opts = S.fields.map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+  sel.innerHTML = opts + '<option value="">Single colour</option>';
+  const pref = S.fields.find(f => f.toLowerCase() === CFG.defaultColorBy.toLowerCase()) || S.fields[0] || '';
+  sel.value = pref; setColorBy(pref);
+}
+function setColorBy(f) {
+  S.colorBy = f || null; S.colorMap = {};
+  if (S.colorBy) {
+    const counts = new Map();
+    for (const r of S.all) { const v = fval(r, f); counts.set(v, (counts.get(v) || 0) + 1); }
+    [...counts.entries()].sort((a, b) => b[1] - a[1]).forEach(([v], i) => { S.colorMap[v] = i < 11 ? PALETTE[i] : GREY; });
+  }
+}
+function groupOf(r) { return S.cl.on && S.cl.result ? S.cl.result.byRec.get(r.id) : null; }
+function colorOf(r) {
+  if (S.cl.on && S.cl.result) { const g = groupOf(r); return g && g.size > 1 ? g.color : GREY; }
+  if (!S.colorBy) return PALETTE[0];
+  return S.colorMap[fval(r, S.colorBy)] || GREY;
+}
+function visibleRecs() {
+  if (S.cl.on && S.cl.result && !S.cl.singles) return S.view.filter(r => { const g = groupOf(r); return g && g.size > 1; });
+  return S.view;
+}
+function renderMarkers() {
+  clusterLayer.clearLayers(); plainLayer.clearLayers();
+  const ms = visibleRecs().map(r => {
+    if (!r.m) {
+      r.m = L.marker([r.lat, r.lon], { icon: dotIcon(colorOf(r), r.prec), title: r.name, riseOnHover: true });
+      r.m.on('click', () => onHospitalClick(r));
+    } else r.m.setIcon(dotIcon(colorOf(r), r.prec));
+    return r.m;
+  });
+  const use = S.groupMarkers ? clusterLayer : plainLayer, other = S.groupMarkers ? plainLayer : clusterLayer;
+  if (map.hasLayer(other)) map.removeLayer(other);
+  if (!map.hasLayer(use)) use.addTo(map);
+  if (S.groupMarkers) clusterLayer.addLayers(ms); else ms.forEach(m => plainLayer.addLayer(m));
+}
+const legend = L.control({ position: 'bottomright' });
+legend.onAdd = () => {
+  const d = L.DomUtil.create('div', 'legend'); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+  d.addEventListener('click', e => { if (e.target.closest('#legTog')) { legendOpen = !legendOpen; renderLegend(); } });
+  return d;
+};
+legend.addTo(map);
+let legendOpen = !isMobile();
+function renderLegend() {
+  const el = legend.getContainer(); if (!el) return;
+  const head = `<button class="tog" type="button" id="legTog">${legendOpen ? '▾' : '▸'} Legend</button>`;
+  if (!legendOpen) { el.innerHTML = head; return; }
+  let body = '';
+  if (S.cl.on && S.cl.result) {
+    const r = S.cl.result;
+    body += `<b>Proximity groups</b><div class="li"><span class="hd" style="--c:${PALETTE[0]}"></span>${r.nGroups} groups (colour = group)</div><div class="li"><span class="hd" style="--c:${GREY}"></span>Not in a group (${r.nSingles})</div>`;
+  } else if (S.colorBy) {
+    const present = new Map();
+    for (const r of S.view) { const v = fval(r, S.colorBy); present.set(v, (present.get(v) || 0) + 1); }
+    const items = [...present.entries()].sort((a, b) => b[1] - a[1]);
+    let other = 0;
+    body += `<b>${esc(S.colorBy)}</b>`;
+    for (const [v, c] of items) {
+      if (S.colorMap[v] === GREY) { other += c; continue; }
+      body += `<div class="li" title="${esc(v)}"><span class="hd" style="--c:${S.colorMap[v]}"></span>${esc(v)} (${c})</div>`;
+    }
+    if (other) body += `<div class="li"><span class="hd" style="--c:${GREY}"></span>Other (${other})</div>`;
+  }
+  if (S.precCol) {
+    body += `<hr><b>Location accuracy</b>
+      <div class="li"><span class="hd p-exact" style="--c:#475569"></span>Exact</div>
+      <div class="li"><span class="hd p-approx" style="--c:#475569"></span>Approximate / probable</div>
+      <div class="li"><span class="hd p-estimate" style="--c:#475569"></span>Estimate (LGA/State centre)</div>`;
+  }
+  el.innerHTML = head + '<div style="margin-top:4px">' + body + '</div>';
+}
+
+/* ---------- Popups ---------- */
+function issuesHTML(r) {
+  const out = [];
+  if (r.issues.includes('swapped')) out.push('Latitude and longitude look swapped — please check.');
+  if (r.issues.includes('outside')) out.push('These coordinates fall outside Nigeria — please check.');
+  if (r.prec === 'estimate') out.push('Location is only an estimate (area centre), so distances are rough.');
+  else if (r.prec === 'approx') out.push('Location is approximate.');
+  if (r.dup) out.push(`${r.dup} hospitals share exactly these coordinates.`);
+  return out.length ? `<div class="note">${out.map(esc).join('<br>')}</div>` : '';
+}
+function popupHTML(r) {
+  const rows = S.cols.filter(c => c !== S.latCol && c !== S.lonCol && c !== S.nameCol && String(r.p[c] ?? '').trim() !== '')
+    .map(c => `<tr><th>${esc(c)}</th><td>${esc(r.p[c])}</td></tr>`).join('');
+  const g = groupOf(r);
+  const grp = g ? `<tr><th>Group</th><td>${g.size > 1 ? `Group ${g.no} (${g.size} hospitals)` : 'Not in a group'}</td></tr>` : '';
+  const ll = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
+  return `<div class="pop"><h3>${esc(r.name)}</h3><table>${rows}${grp}<tr><th>Coordinates</th><td>${ll}</td></tr></table>${issuesHTML(r)}
+    <div class="pop-actions">
+      <button type="button" data-act="near" data-id="${r.id}">Nearest from here</button>
+      <button type="button" data-act="A" data-id="${r.id}">Set as A</button>
+      <button type="button" data-act="B" data-id="${r.id}">Set as B</button>
+      <button type="button" data-act="copy" data-id="${r.id}">Copy coordinates</button>
+    </div>
+    <div class="pop-links"><a href="https://www.google.com/maps/dir/?api=1&destination=${ll}" target="_blank" rel="noopener">Directions (Google Maps)</a> ·
+      <a href="https://www.openstreetmap.org/?mlat=${r.lat}&mlon=${r.lon}#map=16/${r.lat}/${r.lon}" target="_blank" rel="noopener">OpenStreetMap</a></div></div>`;
+}
+function openPopup(r) {
+  L.popup({ maxWidth: 330, minWidth: 240, autoPanPadding: [40, 40], offset: [0, -4] }).setLatLng([r.lat, r.lon]).setContent(popupHTML(r)).openOn(map);
+}
+map.on('popupopen', e => {
+  const el = e.popup.getElement(); if (!el) return;
+  el.querySelectorAll('[data-act]').forEach(b => b.addEventListener('click', () => {
+    const r = S.all[+b.dataset.id]; if (!r) return;
+    const a = b.dataset.act;
+    if (a === 'near') { map.closePopup(); setOrigin({ lat: r.lat, lon: r.lon, label: r.name, rec: r }); }
+    else if (a === 'A' || a === 'B') { setAB(a, r); }
+    else if (a === 'copy') copyText(`${r.lat}, ${r.lon}`, 'Coordinates');
+  }));
+});
+function onHospitalClick(r) {
+  if (S.mode === 'measure') return addMeasurePoint({ lat: r.lat, lon: r.lon, label: r.name, rec: r });
+  if (S.mode === 'pick') return setOrigin({ lat: r.lat, lon: r.lon, label: r.name, rec: r });
+  openPopup(r);
+}
+function focusHospital(r) {
+  if (!S.viewSet.has(r.id)) { S.filters = {}; refreshFilterOptions(); applyFilters(false); toast('Filters cleared to show this hospital'); }
+  if (S.cl.on && !S.cl.singles && r.m && !map.hasLayer(r.m) && !clusterLayer.hasLayer(r.m)) { $('#clSingles').checked = true; S.cl.singles = true; renderMarkers(); }
+  if (isMobile()) document.body.classList.remove('side-open');
+  const go = () => openPopup(r);
+  if (S.groupMarkers && r.m && clusterLayer.hasLayer(r.m)) {
+    clusterLayer.zoomToShowLayer(r.m, go);
+  } else { map.setView([r.lat, r.lon], Math.max(map.getZoom(), 13)); go(); }
+}
+
+/* ---------- Search ---------- */
+function doSearch() {
+  const q = $('#q').value.trim().toLowerCase(), out = $('#qResults');
+  if (q.length < 2) { out.innerHTML = ''; return; }
+  const toks = q.split(/\s+/);
+  const hits = [];
+  for (const r of S.all) {
+    if (!r._hay) r._hay = (r.name + ' ' + S.cols.filter(c => c !== S.latCol && c !== S.lonCol).map(c => r.p[c] ?? '').join(' ')).toLowerCase();
+    if (toks.every(t => r._hay.includes(t))) hits.push(r);
+  }
+  hits.sort((a, b) => (b.name.toLowerCase().includes(q) - a.name.toLowerCase().includes(q)) || a.name.localeCompare(b.name));
+  const sub = r => S.fields.filter(f => !/precision|denomination|region/i.test(f)).slice(0, 3).map(f => r.p[f]).filter(Boolean).reverse().join(', ');
+  out.innerHTML = hits.length ? hits.slice(0, 40).map(r => `<li><button type="button" data-id="${r.id}"><span class="rname">${esc(r.name)}</span><span class="rsub">${esc(sub(r))}${S.viewSet.has(r.id) ? '' : '<span class="tag">hidden by filters</span>'}${r.prec === 'estimate' ? '<span class="tag warn">estimated location</span>' : ''}</span></button></li>`).join('')
+    + (hits.length > 40 ? `<li class="hint">…and ${hits.length - 40} more. Type more to narrow down.</li>` : '')
+    : '<li class="hint">No matching hospitals.</li>';
+}
+$('#q').addEventListener('input', debounce(doSearch, 120));
+$('#q').addEventListener('keydown', e => { if (e.key === 'Enter') { const b = $('#qResults button'); if (b) b.click(); } });
+$('#qResults').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) focusHospital(S.all[+b.dataset.id]); });
+
+/* ---------- Modes (pick point / measure) ---------- */
+function setMode(m) {
+  S.mode = m;
+  map.getContainer().classList.toggle('leaflet-crosshair', !!m);
+  $('#btnPick').classList.toggle('on', m === 'pick');
+  $('#btnMeasure').classList.toggle('on', m === 'measure');
+  $('#btnMeasure').textContent = m === 'measure' ? '📏 Measuring… (click to stop)' : '📏 Start measuring';
+  $('#modeBar').hidden = !m;
+  if (m === 'pick') $('#modeText').textContent = 'Click the map (or a hospital) to find the nearest hospitals';
+  if (m === 'measure') $('#modeText').textContent = 'Click two hospitals or points to measure';
+  if (m) map.closePopup();
+  if (m && isMobile()) document.body.classList.remove('side-open');
+}
+$('#modeCancel').onclick = () => setMode(null);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { setMode(null); $('#modal').hidden = true; } });
+map.on('click', e => {
+  if (S.mode === 'pick') setOrigin({ lat: e.latlng.lat, lon: e.latlng.lng, label: 'Selected point' });
+  else if (S.mode === 'measure') addMeasurePoint({ lat: e.latlng.lat, lon: e.latlng.lng, label: `Point (${e.latlng.lat.toFixed(4)}, ${e.latlng.lng.toFixed(4)})` });
+});
+
+/* ---------- Nearest ---------- */
+$('#btnPick').onclick = () => setMode(S.mode === 'pick' ? null : 'pick');
+$('#btnLocate').onclick = () => {
+  if (!navigator.geolocation) return toast('This browser can\'t share your location. Use "Pick a point on map" instead.', 5000);
+  toast('Getting your location…', 8000);
+  let done = false;
+  const fail = msg => { if (done) return; done = true; toast(`Couldn't get your location (${msg}). Use "Pick a point on map" instead.`, 6000); };
+  const timer = setTimeout(() => fail('timed out'), 16000);
+  try {
+    navigator.geolocation.getCurrentPosition(p => {
+      if (done) return; done = true; clearTimeout(timer);
+      setOrigin({ lat: p.coords.latitude, lon: p.coords.longitude, label: 'Your location', acc: p.coords.accuracy });
+    }, err => { clearTimeout(timer); fail(err && err.code === 1 ? 'permission denied or blocked by this viewer' : (err && err.message) || 'unavailable'); },
+    { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+  } catch (e) { clearTimeout(timer); fail('blocked'); }
+};
+$('#nearN').onchange = () => S.origin && renderNearest(true);
+$('#nearRadius').addEventListener('input', debounce(() => S.origin && renderNearest(true), 300));
+
+function setOrigin(o) {
+  S.origin = o; setMode(null); switchTab('nearest');
+  if (isMobile()) document.body.classList.add('side-open');
+  renderNearest(true);
+}
+function placeLabel(r) { return S.fields.filter(f => /lga|state|district|county|province/i.test(f)).map(f => r.p[f]).filter(Boolean).join(', '); }
+function renderNearest(fit) {
+  nearLayer.clearLayers();
+  const o = S.origin, out = $('#nearOut');
+  if (!o) { out.innerHTML = ''; return; }
+  L.marker([o.lat, o.lon], { icon: originIcon, zIndexOffset: 1000, interactive: false }).addTo(nearLayer);
+  if (o.acc) L.circle([o.lat, o.lon], { radius: o.acc, color: '#c2410c', weight: 1, fillOpacity: 0.08, interactive: false }).addTo(nearLayer);
+  const R = parseFloat($('#nearRadius').value), N = +$('#nearN').value;
+  const all = S.view.filter(r => r !== o.rec).map(r => ({ r, km: hav(o.lat, o.lon, r.lat, r.lon) })).sort((a, b) => a.km - b.km);
+  let shown, head;
+  if (R > 0) {
+    shown = all.filter(x => x.km <= R);
+    L.circle([o.lat, o.lon], { radius: R * 1000, color: '#0b6e69', weight: 1.5, dashArray: '5 5', fillOpacity: 0.05, interactive: false }).addTo(nearLayer);
+    head = `<b>${shown.length}</b> hospital${shown.length === 1 ? '' : 's'} within ${R} km`;
+    shown = shown.slice(0, 300);
+  } else { shown = all.slice(0, N); head = `Nearest ${shown.length} hospital${shown.length === 1 ? '' : 's'}`; }
+  S.nearList = shown;
+  shown.slice(0, 60).forEach(x => L.polyline([[o.lat, o.lon], [x.r.lat, x.r.lon]], { color: '#c2410c', weight: 1.5, opacity: 0.55, dashArray: '4 5', interactive: false }).addTo(nearLayer));
+  const roadBtn = S.orsKey ? `<button class="btn sm" id="nearRoad" type="button">Add road distance & drive time</button>`
+    : `<p class="hint small">Want road distance and driving time? Add a free OpenRouteService key in the <a href="#" data-goto="data">Data</a> tab.</p>`;
+  out.innerHTML = `<div class="card"><span class="rsub">From</span><br><b>${esc(o.label)}</b>${o.rec ? `<br><span class="rsub">${esc(placeLabel(o.rec))}</span>` : ''}
+      <div class="rsub" style="margin-top:4px">${o.lat.toFixed(5)}, ${o.lon.toFixed(5)}</div></div>
+    <div class="row" style="align-items:center"><div>${head}</div>${S.orsKey && shown.length ? roadBtn : ''}</div>
+    ${!S.orsKey ? roadBtn : ''}
+    ${shown.length ? '' : '<p class="hint">No hospitals found. Try a larger radius or clear filters.</p>'}
+    <ul class="list" id="nearList">${shown.map((x, i) => `<li><button type="button" data-id="${x.r.id}">
+      <span class="km">${fmtKm(x.km)}<span class="road" data-road="${i}"></span></span>
+      <span class="rname">${i + 1}. ${esc(x.r.name)}</span>
+      <span class="rsub">${esc(placeLabel(x.r))}${x.r.prec === 'estimate' ? '<span class="tag warn">estimated location</span>' : ''}</span></button></li>`).join('')}</ul>
+    ${shown.length ? `<div class="row" style="margin-top:10px"><button class="btn sm ghost" id="nearCsv" type="button">Download list</button><button class="btn sm ghost" id="nearCopy" type="button">Copy list</button><button class="btn sm ghost" id="nearClear" type="button">Clear</button></div>` : ''}
+    <p class="hint small">Straight-line distances.</p>`;
+  if (fit) {
+    const pts = [[o.lat, o.lon], ...shown.slice(0, Math.min(shown.length, 10)).map(x => [x.r.lat, x.r.lon])];
+    if (R > 0) map.fitBounds(L.latLng(o.lat, o.lon).toBounds(R * 2000).pad(0.05));
+    else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts).pad(0.2), { maxZoom: 14 });
+    else map.setView(pts[0], 12);
+  }
+}
+$('#nearOut').addEventListener('click', async e => {
+  const b = e.target.closest('button[data-id]');
+  if (b) return focusHospital(S.all[+b.dataset.id]);
+  const t = e.target.closest('button,[data-goto]'); if (!t) return;
+  if (t.dataset.goto) { e.preventDefault(); return switchTab(t.dataset.goto); }
+  if (t.id === 'nearClear') { S.origin = null; renderNearest(); }
+  if (t.id === 'nearCsv' || t.id === 'nearCopy') {
+    const rows = [['Rank', 'Hospital', ...S.fields, 'Latitude', 'Longitude', 'Straight-line km', 'Road km', 'Drive minutes']];
+    S.nearList.forEach((x, i) => rows.push([i + 1, x.r.name, ...S.fields.map(f => x.r.p[f] ?? ''), x.r.lat, x.r.lon, x.km.toFixed(3), x.roadKm != null ? x.roadKm.toFixed(2) : '', x.roadMin != null ? Math.round(x.roadMin) : '']));
+    const csv = toCSV(rows);
+    if (t.id === 'nearCsv') saveText('nearest-hospitals.csv', csv); else copyText(csv, 'Nearest hospitals');
+  }
+  if (t.id === 'nearRoad') {
+    const o = S.origin, list = S.nearList.slice(0, 25);
+    t.disabled = true; t.textContent = 'Getting road distances…';
+    try {
+      const res = await orsMatrix(o, list.map(x => x.r));
+      list.forEach((x, i) => { x.roadKm = res[i].km; x.roadMin = res[i].min; });
+      let best = null;
+      list.forEach((x, i) => {
+        const el = document.querySelector(`[data-road="${i}"]`);
+        if (el) el.textContent = x.roadKm != null ? `${fmtKm(x.roadKm)} · ${fmtMin(x.roadMin)} by road` : 'no road route';
+        if (x.roadMin != null && (!best || x.roadMin < best.roadMin)) best = x;
+      });
+      t.textContent = 'Road distances added';
+      if (best) toast(`Quickest by road: ${best.r.name} (${fmtMin(best.roadMin)}, ${fmtKm(best.roadKm)})`, 7000);
+      if (S.nearList.length > 25) toast('Road distance added for the first 25 hospitals.', 5000);
+    } catch (err) { t.disabled = false; t.textContent = 'Add road distance & drive time'; toast(err.message, 7000); }
+  }
+});
+
+/* ---------- Road distance (OpenRouteService) ---------- */
+async function orsFetch(url, body) {
+  let r;
+  try {
+    r = await fetch(url, { method: 'POST', headers: { 'Authorization': S.orsKey, 'Content-Type': 'application/json', 'Accept': 'application/json, application/geo+json' }, body: JSON.stringify(body) });
+  } catch (e) { throw new Error('Could not reach OpenRouteService. Check your internet connection (this preview viewer also blocks it — use the hosted page).'); }
+  if (r.status === 401 || r.status === 403) throw new Error('OpenRouteService rejected the API key. Check it in the Data tab.');
+  if (r.status === 429) throw new Error('OpenRouteService daily limit reached. Try again later.');
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error('OpenRouteService error: ' + ((j.error && (j.error.message || j.error)) || r.status));
+  return j;
+}
+async function orsMatrix(o, dests) {
+  const j = await orsFetch('https://api.openrouteservice.org/v2/matrix/driving-car', {
+    locations: [[o.lon, o.lat], ...dests.map(d => [d.lon, d.lat])], sources: [0], destinations: dests.map((_, i) => i + 1),
+    metrics: ['distance', 'duration'], units: 'km'
+  });
+  return dests.map((_, i) => ({ km: j.distances && j.distances[0][i], min: j.durations && j.durations[0][i] != null ? j.durations[0][i] / 60 : null }));
+}
+async function orsRoute(a, b) {
+  const j = await orsFetch('https://api.openrouteservice.org/v2/directions/driving-car/geojson', { coordinates: [[a.lon, a.lat], [b.lon, b.lat]] });
+  const f = j.features && j.features[0];
+  if (!f) throw new Error('No road route found between these points.');
+  return { km: f.properties.summary.distance / 1000, min: f.properties.summary.duration / 60, geom: f.geometry };
+}
+$('#orsKey').value = S.orsKey = CFG.orsKey || storage.get('orsKey') || '';
+$('#orsSave').onclick = () => {
+  S.orsKey = $('#orsKey').value.trim(); storage.set('orsKey', S.orsKey);
+  toast(S.orsKey ? 'Key saved. Road distance buttons are now available.' : 'Key removed.');
+  if (S.origin) renderNearest(false); renderMeasure();
+};
+
+/* ---------- Measure A–B ---------- */
+$('#btnMeasure').onclick = () => setMode(S.mode === 'measure' ? null : 'measure');
+$('#btnClearMeasure').onclick = () => { S.A = S.B = null; renderMeasure(); };
+function addMeasurePoint(p) {
+  if (!S.A || S.B) { S.A = p; S.B = null; } else S.B = p;
+  renderMeasure();
+}
+function setAB(which, r) {
+  S[which] = { lat: r.lat, lon: r.lon, label: r.name, rec: r };
+  map.closePopup(); renderMeasure(); switchTab('distance');
+  if (isMobile() && S.A && S.B) document.body.classList.add('side-open');
+  if (!(S.A && S.B)) toast(`${which} set. Now choose ${which === 'A' ? 'B' : 'A'} (click a hospital, then "Set as ${which === 'A' ? 'B' : 'A'}").`, 5000);
+}
+function renderMeasure() {
+  measLayer.clearLayers();
+  const { A, B } = S, out = $('#measOut');
+  if (A) L.marker([A.lat, A.lon], { icon: abIcon('A'), zIndexOffset: 1100, interactive: false }).addTo(measLayer);
+  if (B) L.marker([B.lat, B.lon], { icon: abIcon('B'), zIndexOffset: 1100, interactive: false }).addTo(measLayer);
+  if (!A && !B) { out.innerHTML = ''; return; }
+  const line = p => p ? `<b>${esc(p.label)}</b>${p.rec ? `<br><span class="rsub">${esc(placeLabel(p.rec))}</span>` : ''}` : '<span class="rsub">click a second hospital or point…</span>';
+  let res = '';
+  if (A && B) {
+    const km = turf.distance(turf.point([A.lon, A.lat]), turf.point([B.lon, B.lat]), { units: 'kilometers' });
+    const ln = L.polyline([[A.lat, A.lon], [B.lat, B.lon]], { color: '#1e293b', weight: 3, dashArray: '8 6', interactive: false }).addTo(measLayer);
+    L.tooltip({ permanent: true, direction: 'center', className: 'dist-label' }).setLatLng(ln.getCenter()).setContent(fmtKm(km)).addTo(measLayer);
+    const warn = [A, B].filter(p => p.rec && p.rec.prec === 'estimate').map(p => p.rec.name);
+    res = `<div class="card"><span class="rsub">Straight-line distance</span><div class="big">${fmtKm(km)}</div>
+      <div id="roadRes" class="rsub"></div>
+      ${warn.length ? `<div class="note">${warn.map(esc).join(' and ')} ${warn.length > 1 ? 'have' : 'has'} only an estimated location, so this distance is rough.</div>` : ''}
+      <div class="row" style="margin:8px 0 0">${S.orsKey ? '<button class="btn sm" id="abRoad" type="button">Road distance & time</button>' : ''}
+      <a class="btn sm ghost" style="text-decoration:none;text-align:center" href="https://www.google.com/maps/dir/?api=1&origin=${A.lat},${A.lon}&destination=${B.lat},${B.lon}" target="_blank" rel="noopener">Route in Google Maps</a></div></div>`;
+    map.fitBounds(L.latLngBounds([[A.lat, A.lon], [B.lat, B.lon]]).pad(0.3), { maxZoom: 14 });
+  }
+  out.innerHTML = `<div class="card"><span class="rsub">A</span> ${line(A)}<br><span class="rsub">B</span> ${line(B)}</div>${res}`;
+}
+$('#measOut').addEventListener('click', async e => {
+  const t = e.target.closest('#abRoad'); if (!t) return;
+  t.disabled = true; t.textContent = 'Getting route…';
+  try {
+    const r = await orsRoute(S.A, S.B);
+    L.geoJSON(r.geom, { style: { color: '#c2410c', weight: 4, opacity: 0.8 }, interactive: false }).addTo(measLayer);
+    $('#roadRes').innerHTML = `By road: <b>${fmtKm(r.km)}</b> · about <b>${fmtMin(r.min)}</b> driving`;
+    t.textContent = 'Route shown in orange';
+  } catch (err) { t.disabled = false; t.textContent = 'Road distance & time'; toast(err.message, 7000); }
+});
+
+/* ---------- Proximity groups ---------- */
+const METHOD_HINT = {
+  complete: 'Every hospital in a group is within the distance of <b>every</b> other hospital in that group. Best for supervision routes, shared logistics and referral clusters.',
+  dbscan: 'A hospital joins a group if it is within the distance of <b>at least one</b> group member, so groups can stretch along a corridor. Hospitals with no close neighbour are left out.',
+  kmeans: 'Splits the shown hospitals into <b>exactly</b> this many groups of nearby hospitals. No maximum distance is guaranteed, so check each group\'s "max apart" value.'
+};
+function syncClUI() {
+  const m = S.cl.method;
+  $('#clMethodHint').innerHTML = METHOD_HINT[m];
+  $('#clKmBox').hidden = m === 'kmeans'; $('#clKBox').hidden = m !== 'kmeans'; $('#clMinBox').hidden = m !== 'dbscan';
+  $('#clKmLabel').textContent = m === 'complete' ? 'Maximum distance between any two hospitals in a group (km)' : 'Neighbour distance (km)';
+  $('#clOpts').disabled = !S.cl.on;
+}
+const reCluster = debounce(() => { if (S.cl.on) { runClusters(); renderMarkers(); renderLegend(); } }, 180);
+$('#clOn').onchange = e => {
+  S.cl.on = e.target.checked; syncClUI();
+  if (S.cl.on && S.groupMarkers) { S.groupMarkers = false; $('#groupMarkers').checked = false; toast('Marker bundling turned off so group colours are visible.'); }
+  applyFilters(false);
+  if (!S.cl.on) $('#clOut').innerHTML = '<p class="hint">Turn grouping on to colour hospitals by group.</p>';
+};
+$$('input[name=clm]').forEach(r => r.onchange = () => { S.cl.method = r.value; syncClUI(); reCluster(); });
+function linkRange(rng, num, key) {
+  rng.addEventListener('input', () => { num.value = rng.value; S.cl[key] = +rng.value; reCluster(); });
+  num.addEventListener('input', () => { const v = parseFloat(num.value); if (v > 0) { S.cl[key] = v; rng.value = Math.min(v, +rng.max); reCluster(); } });
+}
+linkRange($('#clKm'), $('#clKmNum'), 'km');
+linkRange($('#clK'), $('#clKNum'), 'k');
+$('#clMin').addEventListener('input', () => { const v = parseInt($('#clMin').value, 10); if (v >= 2) { S.cl.minPts = v; reCluster(); } });
+$('#clHulls').onchange = e => { S.cl.hulls = e.target.checked; drawHulls(); };
+$('#clSingles').onchange = e => { S.cl.singles = e.target.checked; renderMarkers(); };
+$('#clEst').onchange = e => { S.cl.excludeEst = e.target.checked; reCluster(); };
+
+function runClusters() {
+  const pts = S.view.filter(r => !(S.cl.excludeEst && r.prec === 'estimate'));
+  const t0 = performance.now();
+  let groups = [];
+  const m = S.cl.method;
+  if (pts.length) {
+    if (m === 'complete') {
+      if (pts.length > 4000) { toast('Too many hospitals for this method — filter to fewer than 4,000 first.', 6000); groups = pts.map(p => [p]); }
+      else groups = completeLinkage(pts, S.cl.km).map(g => g.map(i => pts[i]));
+    } else {
+      const fc = turf.featureCollection(pts.map((p, i) => turf.point([p.lon, p.lat], { i })));
+      if (m === 'dbscan') {
+        const res = turf.clustersDbscan(fc, S.cl.km, { units: 'kilometers', minPoints: S.cl.minPts });
+        const gm = new Map();
+        res.features.forEach(f => {
+          const p = pts[f.properties.i];
+          if (f.properties.cluster == null || f.properties.dbscan === 'noise') groups.push([p]);
+          else { if (!gm.has(f.properties.cluster)) gm.set(f.properties.cluster, []); gm.get(f.properties.cluster).push(p); }
+        });
+        groups.push(...gm.values());
+      } else {
+        const k = Math.max(1, Math.min(Math.round(S.cl.k), pts.length));
+        const res = turf.clustersKmeans(fc, { numberOfClusters: k });
+        const gm = new Map();
+        res.features.forEach(f => { const c = f.properties.cluster; if (!gm.has(c)) gm.set(c, []); gm.get(c).push(pts[f.properties.i]); });
+        groups = [...gm.values()];
+      }
+    }
+  }
+  groups.sort((a, b) => b.length - a.length || a[0].name.localeCompare(b[0].name));
+  let no = 0;
+  const byRec = new Map();
+  const out = groups.map(members => {
+    const size = members.length;
+    const g = {
+      members, size, no: size > 1 ? ++no : null, color: size > 1 ? PALETTE[(no - 1) % PALETTE.length] : GREY,
+      maxKm: size > 1 ? maxPairKm(members) : 0,
+      lat: members.reduce((s, r) => s + r.lat, 0) / size, lon: members.reduce((s, r) => s + r.lon, 0) / size
+    };
+    members.forEach(r => byRec.set(r.id, g));
+    return g;
+  });
+  S.cl.result = { groups: out, byRec, nGroups: no, nSingles: out.filter(g => g.size === 1).length, excluded: S.view.length - pts.length, ms: performance.now() - t0 };
+  drawHulls();
+  renderClusterPanel();
+}
+function drawHulls() {
+  hullLayer.clearLayers();
+  if (!S.cl.on || !S.cl.hulls || !S.cl.result) return;
+  for (const g of S.cl.result.groups) {
+    if (g.size < 2) continue;
+    const ll = g.members.map(r => [r.lat, r.lon]);
+    let layer = null;
+    if (g.size >= 3) {
+      const hull = turf.convex(turf.featureCollection(g.members.map(r => turf.point([r.lon, r.lat]))));
+      if (hull) layer = L.geoJSON(hull, { style: { color: g.color, weight: 1.5, fillColor: g.color, fillOpacity: 0.12 } });
+    }
+    if (!layer) layer = L.polyline(ll, { color: g.color, weight: 4, opacity: 0.55 });
+    layer.bindTooltip(`Group ${g.no} · ${g.size} hospitals · max ${fmtKm(g.maxKm)} apart`, { sticky: true });
+    layer.on('click', () => selectGroup(g.no));
+    hullLayer.addLayer(layer);
+  }
+}
+function topValues(recs, field, n) {
+  const c = new Map(); recs.forEach(r => { const v = fval(r, field); c.set(v, (c.get(v) || 0) + 1); });
+  return [...c.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(e => e[0]);
+}
+function renderClusterPanel() {
+  const r = S.cl.result, out = $('#clOut');
+  if (!r) { out.innerHTML = ''; return; }
+  const multi = r.groups.filter(g => g.size > 1);
+  const inGroups = multi.reduce((s, g) => s + g.size, 0);
+  const lgaF = S.fields.find(f => /lga|district/i.test(f)) || S.fields.find(f => /state/i.test(f));
+  const desc = S.cl.method === 'kmeans' ? `${Math.round(S.cl.k)} groups requested` : `${S.cl.method === 'complete' ? 'max' : 'neighbour'} distance ${S.cl.km} km`;
+  const estCount = S.view.filter(x => x.prec === 'estimate').length;
+  out.innerHTML = `<div class="stats"><div class="stat"><b>${r.nGroups}</b><span>groups</span></div><div class="stat"><b>${inGroups}</b><span>hospitals in groups</span></div><div class="stat"><b>${r.nSingles}</b><span>not in a group</span></div></div>
+    <p class="hint small">${esc(desc)} · ${S.view.length} hospitals · calculated in ${Math.max(1, Math.round(r.ms))} ms${r.excluded ? ` · ${r.excluded} estimated locations left out` : ''}</p>
+    ${estCount && !S.cl.excludeEst ? `<div class="note">${estCount} of the shown hospitals only have estimated (LGA/State centre) coordinates, and several share the same point, so they may group together artificially. Tick "Leave out estimated locations" to group only reliable points.</div>` : ''}
+    <div class="row"><button class="btn sm ghost" data-exp="list" data-how="dl" type="button">Download groups</button><button class="btn sm ghost" data-exp="list" data-how="copy" type="button">Copy groups</button></div>
+    <ul class="list" id="grpList">${multi.slice(0, 300).map(g => `<li class="grp" data-no="${g.no}"><button type="button" data-g="${g.no}">
+      <span class="sw" style="background:${g.color}"></span><span style="flex:1"><span class="rname">Group ${g.no} · ${g.size} hospitals</span>
+      <span class="rsub">max ${fmtKm(g.maxKm)} apart${lgaF ? ' · ' + esc(topValues(g.members, lgaF, 3).join(', ')) : ''}</span></span></button></li>`).join('')}</ul>
+    ${multi.length > 300 ? `<p class="hint">Showing the 300 largest groups.</p>` : ''}
+    ${multi.length === 0 ? '<p class="hint">No groups at this setting. Try a larger distance.</p>' : ''}`;
+}
+function selectGroup(no) {
+  const g = S.cl.result && S.cl.result.groups.find(x => x.no === no); if (!g) return;
+  switchTab('groups');
+  map.fitBounds(L.latLngBounds(g.members.map(r => [r.lat, r.lon])).pad(0.35), { maxZoom: 14 });
+  const li = document.querySelector(`#grpList li[data-no="${no}"]`);
+  if (li) {
+    let ul = li.querySelector('.members');
+    if (!ul) {
+      li.insertAdjacentHTML('beforeend', `<ul class="members">${g.members.map(r => `<li><button type="button" data-id="${r.id}">${esc(r.name)}</button> <span class="rsub">${esc(placeLabel(r))}</span></li>`).join('')}</ul>`);
+    }
+    li.scrollIntoView({ block: 'nearest' });
+  }
+}
+$('#clOut').addEventListener('click', e => {
+  const m = e.target.closest('button[data-id]'); if (m) return focusHospital(S.all[+m.dataset.id]);
+  const b = e.target.closest('button[data-g]'); if (!b) return;
+  const li = b.parentElement, ul = li.querySelector('.members');
+  if (ul) { ul.remove(); return; }
+  selectGroup(+b.dataset.g);
+});
+
+/* ---------- Exports ---------- */
+function labelCols() { return [/lga|district/i, /state|province/i, /region/i].map(rx => S.fields.find(f => rx.test(f))).filter(Boolean).slice(0, 2); }
+function buildExport(kind) {
+  const V = S.view, lc = labelCols();
+  if (kind === 'list') {
+    const extra = S.cl.on && S.cl.result ? ['Group', 'Group size', 'Group max km apart', 'Grouping method'] : [];
+    const desc = S.cl.method === 'kmeans' ? `k-means, ${Math.round(S.cl.k)} groups` : `${S.cl.method === 'complete' ? 'max distance' : 'neighbour chain'} ${S.cl.km} km`;
+    const rows = [[...S.cols, ...extra]];
+    V.forEach(r => {
+      const g = groupOf(r);
+      rows.push([...S.cols.map(c => r.p[c] ?? ''), ...(extra.length ? (g ? [g.no ?? '', g.size, g.size > 1 ? g.maxKm.toFixed(2) : '', desc] : ['', '', '', 'left out (estimated)']) : [])]);
+    });
+    return { name: extra.length ? 'hospitals-with-groups.csv' : 'hospitals.csv', csv: toCSV(rows) };
+  }
+  if (V.length < 2) throw new Error('Need at least two hospitals shown.');
+  if (kind === 'pairs') {
+    const lim = parseFloat($('#pairKm').value) || 10;
+    const rows = [];
+    for (let i = 0; i < V.length; i++) for (let j = i + 1; j < V.length; j++) {
+      const d = hav(V[i].lat, V[i].lon, V[j].lat, V[j].lon);
+      if (d <= lim) rows.push([d, i, j]);
+    }
+    rows.sort((a, b) => a[0] - b[0]);
+    $('#pairInfo').textContent = `${rows.length} pairs within ${lim} km`;
+    const head = ['Hospital A', ...lc.map(c => c + ' A'), 'Hospital B', ...lc.map(c => c + ' B'), 'Distance km'];
+    return { name: `hospital-pairs-within-${lim}km.csv`, csv: toCSV([head, ...rows.map(([d, i, j]) => [V[i].name, ...lc.map(c => V[i].p[c] ?? ''), V[j].name, ...lc.map(c => V[j].p[c] ?? ''), d.toFixed(3)])]) };
+  }
+  if (kind === 'nn') {
+    const rows = [['Hospital', ...lc, 'Nearest hospital', ...lc.map(c => 'Nearest ' + c), 'Distance km']];
+    V.forEach((a, i) => {
+      let best = -1, bd = Infinity;
+      V.forEach((b, j) => { if (i !== j) { const d = hav(a.lat, a.lon, b.lat, b.lon); if (d < bd) { bd = d; best = j; } } });
+      const b = V[best];
+      rows.push([a.name, ...lc.map(c => a.p[c] ?? ''), b.name, ...lc.map(c => b.p[c] ?? ''), bd.toFixed(3)]);
+    });
+    return { name: 'nearest-neighbour.csv', csv: toCSV(rows) };
+  }
+  if (kind === 'matrix') {
+    if (V.length > 3000) throw new Error('Too many hospitals for a full matrix — filter to fewer than 3,000.');
+    const rows = [['Hospital', ...V.map(r => r.name)]];
+    V.forEach(a => rows.push([a.name, ...V.map(b => a === b ? '0' : hav(a.lat, a.lon, b.lat, b.lon).toFixed(2))]));
+    return { name: 'distance-matrix-km.csv', csv: toCSV(rows) };
+  }
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-exp]'); if (!b) return;
+  try {
+    const { name, csv } = buildExport(b.dataset.exp);
+    if (b.dataset.how === 'copy') copyText(csv, name); else saveText(name, csv);
+  } catch (err) { toast(err.message, 5000); }
+});
+
+async function saveText(filename, text) {
+  try {
+    if (window.claude && typeof window.claude.use === 'function') {
+      const dl = await window.claude.use('downloads');
+      if (dl) {
+        try { await dl.save({ filename, data: '﻿' + text }); toast('Saved ' + filename); }
+        catch (err) { if (!err || err.code !== 'declined') toast('Download isn\'t available here — use Copy instead.', 5000); }
+        return;
+      }
+    }
+  } catch (e) { /* fall back to a normal browser download */ }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['﻿' + text], { type: 'text/csv;charset=utf-8' }));
+  a.download = filename; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  if (window.claude) toast('If no file appeared, use Copy instead — this viewer may block downloads.', 5000);
+}
+async function copyText(text, label) {
+  try { await navigator.clipboard.writeText(text); toast(`${label} copied — paste into Excel or a document.`); }
+  catch (e) {
+    $('#modalTitle').textContent = label; $('#modalText').value = text; $('#modal').hidden = false;
+    $('#modalText').focus(); $('#modalText').select();
+  }
+}
+$('#modalClose').onclick = () => { $('#modal').hidden = true; };
+
+/* ---------- Data tab ---------- */
+function renderDataTab() {
+  const sw = S.all.filter(r => r.issues.includes('swapped')), outside = S.all.filter(r => r.issues.includes('outside'));
+  const dupRecs = S.all.filter(r => r.dup), dupPts = new Set(dupRecs.map(r => r.lat.toFixed(5) + ',' + r.lon.toFixed(5))).size;
+  const precCounts = {};
+  if (S.precCol) S.all.forEach(r => { const v = fval(r, S.precCol); precCounts[v] = (precCounts[v] || 0) + 1; });
+  const list = (recs, max = 60) => `<ul class="list">${recs.slice(0, max).map(r => `<li><button type="button" data-id="${r.id}"><span class="rname">${esc(r.name)}</span><span class="rsub">Row ${r.row} · ${r.lat}, ${r.lon}</span></button></li>`).join('')}</ul>`;
+  $('#dataSummary').innerHTML = `<h3>Data check</h3>
+    <div class="stats"><div class="stat"><b>${S.all.length}</b><span>on the map</span></div><div class="stat"><b>${S.skipped.length}</b><span>skipped (no coordinates)</span></div><div class="stat"><b>${sw.length + outside.length}</b><span>suspicious coordinates</span></div></div>
+    <p class="hint small">Source: ${esc(S.source)} · columns used: latitude = "${esc(S.latCol)}", longitude = "${esc(S.lonCol)}", name = "${esc(S.nameCol || '—')}"</p>
+    ${S.skipped.length ? `<details><summary>${S.skipped.length} rows skipped</summary><ul class="list">${S.skipped.slice(0, 100).map(s => `<li class="rsub" style="padding:4px 0">Row ${s.row}: ${esc(s.name)} — ${s.why}</li>`).join('')}</ul></details>` : ''}
+    ${sw.length ? `<details open><summary class="tag warn">${sw.length} possibly swapped latitude/longitude</summary>${list(sw)}</details>` : ''}
+    ${outside.length ? `<details open><summary class="tag warn">${outside.length} outside Nigeria</summary>${list(outside)}</details>` : ''}
+    ${dupRecs.length ? `<details><summary>${dupRecs.length} hospitals share ${dupPts} identical points</summary><p class="hint small">Usually LGA/State-level estimates. Distances between them show as 0 km.</p>${list(dupRecs, 150)}</details>` : ''}
+    ${S.precCol ? `<details><summary>Location accuracy breakdown</summary><ul class="list">${Object.entries(precCounts).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<li class="rsub" style="padding:3px 0">${esc(k)}: <b>${v}</b></li>`).join('')}</ul></details>` : ''}`;
+}
+$('#dataSummary').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) focusHospital(S.all[+b.dataset.id]); });
+$('#fileIn').onchange = e => { const f = e.target.files[0]; if (f) loadFile(f); e.target.value = ''; };
+const mapWrap = $('#mapWrap');
+let dragDepth = 0;
+mapWrap.addEventListener('dragenter', e => { if ([...(e.dataTransfer?.types || [])].includes('Files')) { e.preventDefault(); dragDepth++; $('#dropHint').hidden = false; } });
+mapWrap.addEventListener('dragover', e => { if ([...(e.dataTransfer?.types || [])].includes('Files')) e.preventDefault(); });
+mapWrap.addEventListener('dragleave', () => { if (--dragDepth <= 0) { dragDepth = 0; $('#dropHint').hidden = true; } });
+mapWrap.addEventListener('drop', e => { e.preventDefault(); dragDepth = 0; $('#dropHint').hidden = true; const f = e.dataTransfer.files[0]; if (f) loadFile(f); });
+
+/* ---------- Tabs & layout ---------- */
+function switchTab(name) {
+  $$('.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
+  $$('.panel').forEach(p => { p.hidden = p.dataset.panel !== name; });
+}
+$$('.tabs button').forEach(b => b.onclick = () => switchTab(b.dataset.tab));
+$('#menuBtn').onclick = () => {
+  if (isMobile()) document.body.classList.toggle('side-open');
+  else { document.body.classList.toggle('side-closed'); }
+  setTimeout(() => map.invalidateSize(), 250);
+};
+$('#colorBy').onchange = e => { setColorBy(e.target.value); renderMarkers(); renderLegend(); };
+$('#basemap').onchange = e => setBasemap(e.target.value);
+$('#groupMarkers').onchange = e => { S.groupMarkers = e.target.checked; renderMarkers(); };
+$('#fitAll').onclick = () => fitTo(S.view);
+$('#pairKm').addEventListener('input', () => { $('#pairInfo').textContent = 'One row per pair, sorted by distance'; });
+window.addEventListener('resize', debounce(() => map.invalidateSize(), 200));
+
+/* ---------- Start ---------- */
+document.title = CFG.title; $('#appTitle').textContent = CFG.title;
+setBasemap('voyager');
+syncClUI();
+renderLegend();
+if (isMobile()) document.body.classList.remove('side-open');
+(async () => {
+  try {
+    const r = await fetch(CFG.dataUrl, { cache: 'no-cache' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const p = parseCSV(decodeBuf(await r.arrayBuffer()));
+    ingest(p.rows, p.cols, CFG.dataUrl);
+  } catch (e) {
+    console.warn(e);
+    $('#countBadge').textContent = 'No data loaded';
+    switchTab('data');
+    $('#dataSummary').innerHTML = `<div class="note">Couldn't load <b>${esc(CFG.dataUrl)}</b> automatically. If you opened this page straight from your computer, browsers block that — choose the file below, or open the page from GitHub Pages.</div>`;
+  }
+})();
+</script>
+</body>
+</html>
