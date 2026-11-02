@@ -242,9 +242,9 @@ fieldset:disabled{opacity:.5}
       <label class="fld"><span>Colour markers by</span><select id="colorBy"></select></label>
       <label class="fld"><span>Background map</span>
         <select id="basemap">
-          <option value="voyager" selected>Streets (CARTO)</option>
-          <option value="light">Light (CARTO)</option>
           <option value="osm">Streets (OpenStreetMap)</option>
+          <option value="esriStreet">Streets (Esri)</option>
+          <option value="esriTopo">Topographic (Esri)</option>
           <option value="sat">Satellite (Esri)</option>
           <option value="none">None</option>
         </select></label>
@@ -481,13 +481,14 @@ if (!window.L) {
 }
 const map = L.map('map', { zoomControl: true, worldCopyJump: false }).setView([9.08, 8.68], 6);
 L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
+const ESRI = n => `https://server.arcgisonline.com/ArcGIS/rest/services/${n}/MapServer/tile/{z}/{y}/{x}`;
 const BASEMAPS = {
-  voyager: { url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', opt: { maxZoom: 20, subdomains: 'abcd', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>' } },
   // OpenStreetMap's volunteer servers refuse tiles when the browser sends no Referer
-  // (e.g. the page opened straight from a computer as file://). Use only on a hosted site.
+  // (e.g. the page opened straight from a computer as file://), so Esri is used there instead.
   osm: { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', opt: { maxZoom: 19, referrerPolicy: 'strict-origin-when-cross-origin', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors' } },
-  light: { url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', opt: { maxZoom: 20, subdomains: 'abcd', attribution: '&copy; OpenStreetMap contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>' } },
-  sat: { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', opt: { maxZoom: 19, attribution: 'Imagery &copy; Esri, Maxar, Earthstar Geographics' } }
+  esriStreet: { url: ESRI('World_Street_Map'), opt: { maxZoom: 19, attribution: 'Tiles &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors' } },
+  esriTopo: { url: ESRI('World_Topo_Map'), opt: { maxZoom: 19, attribution: 'Tiles &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors' } },
+  sat: { url: ESRI('World_Imagery'), opt: { maxZoom: 19, attribution: 'Imagery &copy; Esri, Maxar, Earthstar Geographics' } }
 };
 let tileOk = 0, tileErr = 0, tileTimer = null;
 function setBasemap(key) {
@@ -1293,7 +1294,7 @@ $('#menuBtn').onclick = () => {
   setTimeout(() => map.invalidateSize(), 250);
 };
 $('#colorBy').onchange = e => { setColorBy(e.target.value); renderMarkers(); renderLegend(); };
-$('#basemap').onchange = e => setBasemap(e.target.value);
+$('#basemap').onchange = e => { setBasemap(e.target.value); storage.set('basemap', e.target.value); };
 $('#groupMarkers').onchange = e => { S.groupMarkers = e.target.checked; renderMarkers(); };
 $('#fitAll').onclick = () => fitTo(S.view);
 $('#pairKm').addEventListener('input', () => { $('#pairInfo').textContent = 'One row per pair, sorted by distance'; });
@@ -1301,7 +1302,9 @@ window.addEventListener('resize', debounce(() => map.invalidateSize(), 200));
 
 /* ---------- Start ---------- */
 document.title = CFG.title; $('#appTitle').textContent = CFG.title;
-setBasemap('voyager');
+const startBase = (() => { const v = storage.get('basemap'); return v && v in BASEMAPS ? v : (location.protocol === 'file:' ? 'esriStreet' : 'osm'); })();
+$('#basemap').value = startBase;
+setBasemap(startBase);
 syncClUI();
 renderLegend();
 if (isMobile()) document.body.classList.remove('side-open');

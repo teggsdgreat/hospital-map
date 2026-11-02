@@ -42,7 +42,9 @@ Straight-line distance works out of the box. For road distance:
 
 ## Background maps
 
-The default background is CARTO Streets, with CARTO Light and Esri Satellite also on offer. OpenStreetMap's own tiles are available too, but their volunteer servers block requests that carry no website address (Referer). That happens when `index.html` is opened straight from your computer (a `file://` address) or when a browser extension strips the Referer. If you see an "Access blocked" tile, switch to another background, or use the GitHub Pages link.
+There are four background maps, none of which needs an API key: OpenStreetMap streets (the default), Esri Streets, Esri Topographic and Esri Satellite. The page remembers each visitor's choice.
+
+OpenStreetMap's volunteer servers block requests that don't say which website they come from (the Referer). That's why opening `index.html` straight from your computer (a `file://` address) shows an "Access blocked" tile. In that case the page starts on Esri Streets instead. On GitHub Pages, OpenStreetMap works normally.
 
 ## Customising
 
