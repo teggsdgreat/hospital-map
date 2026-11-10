@@ -1,606 +1,164 @@
-Region,State,LGA,Hospital Name,Address/locality,Denomination,Latitude,Longitude,Location precision
-North Central,BENUE,Buruku,Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center  UATSOR,Tomanyiin,NKST,7.51358,9.11127,Probable - similar name/place; verify
-North Central,BENUE,Buruku,Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center - Biliji,Biliji,NKST,7.51475,8.98249,Exact - facility matched by name
-North Central,BENUE,Buruku,Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center - Sev av,Agwabi,NKST,7.48773,9.24321,Approximate - village/area
-North Central,BENUE,Buruku,St Paul's Health Center Ashamena,Ashamena,Roman Catholic Church,7.24968,9.22906,Exact - facility matched by name
-North Central,BENUE,Buruku,"St.Martha's Health Clinic, Ugbema",Ugbema,Roman Catholic Church,7.1181,9.27112,Exact - facility matched by name
-North Central,BENUE,GWER EAST,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Centre, Taraku","Taraku Market , Otukpo Road",NKST,7.25892,8.2716,Exact - facility matched by name
-North Central,BENUE,GWER EAST,St Vincent's Hospital Aliade,Aliade,Roman Catholic Church,7.29972,8.46808,Exact - facility matched by name
-North Central,BENUE,GWER EAST,St. Gregory's Hospital  Ikpayongo,Mbasumbo,Roman Catholic Church,7.30826,8.48751,Approximate - village/area
-North Central,BENUE,GWER EAST,St. Patrick's PHC Taraku,TARAKU MARKET OTUKPO RD,Roman Catholic Church,7.25661,8.25952,Approximate - village/area
-North Central,BENUE,Gboko,Bethany Hospital,Mbatan Gboko Aliade Road,Roman Catholic Church,7.3174,8.99726,Approximate - town/neighbourhood centre
-North Central,BENUE,Gboko,Nongu u Kristu ke Sudan hen Tiv (NKST)  BL & Rehab Hospital,Mkar,NKST,7.32024,9.06291,Exact - facility matched by name
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST)  Clinic, Orya",Orya,NKST,7.39013,8.91323,Exact - facility matched by name
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST)  Health Centre, Ikpa",Ikpa Mbatierev,NKST,7.51367,8.76648,Exact - facility matched by name
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST)  PHC,  Gboko East",Behind NKST Gboko,NKST,7.32841,9.01333,Probable - similar name/place; verify
-North Central,BENUE,Gboko,Nongu u Kristu ke Sudan hen Tiv (NKST) Anwan,Anwan,NKST,7.60529,8.76389,Probable - similar name/place; verify
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST) Clinic,  Kuhe",Akpagher Mbadim,NKST,7.30247,8.78524,Exact - facility matched by name
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital, Mkar","Mkar, Gboko",NKST,7.31728,9.04503,Exact - facility matched by name
-North Central,BENUE,Gboko,St John's Hospital,St John's Cathedral Gboko Central,Roman Catholic Church,7.3174,8.99726,Approximate - town/neighbourhood centre
-North Central,BENUE,Gboko,"St. Veronica Comprehensive Health Center, Agidi",Gboko Road,Roman Catholic Church,7.30686,8.76799,Exact - facility matched by name
-North Central,BENUE,Guma,Fr. Ikponko's PHC Uhembe,Mbayev-Yandev,Roman Catholic Church,8.0401,8.44171,Exact - facility matched by name
-North Central,BENUE,Guma,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Centre,  Ishan",Ishan,NKST,7.66028,9.15149,Exact - facility matched by name
-North Central,BENUE,Guma,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Centre, Awambe",Awambe,NKST,7.58237,9.08362,Probable - similar name/place; verify
-North Central,BENUE,Guma,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Centre, Isherev",Isherev,NKST,8.0066,8.55908,Exact - facility matched by name
-North Central,BENUE,Guma,Sacred Heart PHC Udei,Mbayev-Yandev,Roman Catholic Church,8.07921,8.55305,Approximate - village/area
-North Central,BENUE,Guma,St. Francis PHC Daudu,Daudu,Roman Catholic Church,7.91309,8.59112,Approximate - village/area
-North Central,BENUE,Guma,"St. Michael's Health Centre, Agasha",Agasha,Roman Catholic Church,7.71026,8.86453,Probable - similar name/place; verify
-North Central,BENUE,Gwer West,Fr. Mathias Clinic Naka,Naka,Roman Catholic Church,7.58647,8.21075,Exact - facility matched by name
-North Central,BENUE,Gwer West,"Nongu u Kristu ke Sudan hen Tiv (NKST) Clinic, Atukpu",Naka,NKST,7.55267,8.19568,Exact - facility matched by name
-North Central,BENUE,Gwer West,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Centre, Ajigba",Ajigba,NKST,7.73643,8.13546,Exact - facility matched by name
-North Central,BENUE,Gwer West,St. Francis Xavier  Primary Health Center - Agagbe,,Roman Catholic Church,7.71351,8.14417,Approximate - village/area
-North Central,BENUE,Gwer West,St. Veronica Clinic Aondoana,Aondoana,Roman Catholic Church,7.39587,8.22089,Approximate - village/area
-North Central,BENUE,Katsina-Ala,Bishop Peter Adoboh Memorial Clinic & Maternity Katsina-Ala,Katsina-Ala,Roman Catholic Church,7.17542,9.30089,Approximate - village/area
-North Central,BENUE,Katsina-Ala,"Fr. Nicholas Adumba Primary Health Centre, Gbor",Gbor,Roman Catholic Church,7.36971,9.48406,Approximate - village/area
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Amber",,NKST,7.23828,9.37848,Probable - similar name/place; verify
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Anber",Anber,NKST,7.23618,9.37328,Exact - facility matched by name
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Harga",Harga,NKST,7.2237,9.57152,Approximate - village/area
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Kasar",Kasar,NKST,7.36753,9.64866,Exact - facility matched by name
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital, Ubaya",Ubaya,NKST,7.40909,9.51527,Exact - facility matched by name
-North Central,BENUE,Katsina-Ala,St. Mary's Primary Health Center - Tor Donga,Tor Donga,Roman Catholic Church,7.23132,9.62347,Approximate - village/area
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) ,  Clinic Ishua",Mbaimo,NKST,6.90471,8.82875,Exact - facility matched by name
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) ,  Deke",ikyurav,NKST,6.91621,8.65601,Exact - facility matched by name
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) , Yande",Mbakeen,NKST,7.1933,8.64612,Exact - facility matched by name
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) ,Tondo",Mbagbaya,NKST,6.83818,8.95732,Approximate - village/area
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center HC, Mbaakpuur",mbayegh,NKST,7.14339,8.62442,Exact - facility matched by name
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center HC, Uavande",Mbamar,NKST,7.29303,8.58001,Exact - facility matched by name
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center,  Iber",Mbaakighir,NKST,6.99299,8.72133,Exact - facility matched by name
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Ikaave",mbakpur,NKST,6.9265,8.90055,Exact - facility matched by name
-North Central,BENUE,Konshisha,St. Joseph Maternity Clinic - Korinya,,Roman Catholic Church,6.91823,8.92445,Probable - similar name/place; verify
-North Central,BENUE,Konshisha,St. Lucy PHC Awajir,,Roman Catholic Church,7.28889,8.53529,Approximate - village/area
-North Central,BENUE,Kwande,36 Matyrs Clinic- Mbape,,Roman Catholic Church,6.80792,9.21631,Exact - facility matched by name
-North Central,BENUE,Kwande,Avaa Gbande Memorial H/C Jato -Aka,,Roman Catholic Church,6.89861,9.50795,Approximate - village/area
-North Central,BENUE,Kwande,Holy Child Clinic and Maternity,,Roman Catholic Church,6.89109,9.23635,Exact - facility matched by name
-North Central,BENUE,Kwande,Holy Trinity PHC Dagba,,Roman Catholic Church,6.77046,9.36252,Probable - similar name/place; verify
-North Central,BENUE,Kwande,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center, Abenga",,NKST,6.79116,9.27047,Probable - similar name/place; verify
-North Central,BENUE,Kwande,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital, Jato/Aka",,NKST,6.91229,9.49109,Exact - facility matched by name
-North Central,BENUE,Kwande,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital,Adikpo",,NKST,6.88535,9.23948,Exact - facility matched by name
-North Central,BENUE,Kwande,Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center - Ahobee,,NKST,6.69222,9.43009,Exact - facility matched by name
-North Central,BENUE,Kwande,Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center - Jaki,,NKST,6.74822,9.19552,Exact - facility matched by name
-North Central,BENUE,Kwande,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Ichol",,NKST,6.82161,9.35556,Exact - facility matched by name
-North Central,BENUE,Kwande,PHC Agu-Achia,,Roman Catholic Church,6.78887,9.44725,Approximate - village/area
-North Central,BENUE,Kwande,St Agnes PHC Yande,,Roman Catholic Church,6.66748,9.41168,Exact - facility matched by name
-North Central,BENUE,Kwande,St Francis PHC Hiitom,,Roman Catholic Church,6.97161,9.36203,Probable - similar name/place; verify
-North Central,BENUE,Kwande,St Monica's Hospital Adikpo,,Roman Catholic Church,6.89571,9.23743,Exact - facility matched by name
-North Central,BENUE,Kwande,St Theresa's PHC Mbangough,,Roman Catholic Church,6.80773,9.26259,Probable - similar name/place; verify
-North Central,BENUE,Kwande,St. Simon’s PHC Javer,,Roman Catholic Church,6.58673,9.48118,Probable - similar name/place; verify
-North Central,BENUE,Logo,Nongu u Kristu ke Sudan hen Tiv (NKST)  Health Center AUDU,Audu,NKST,7.7379,9.1939,Exact - facility matched by name
-North Central,BENUE,Logo,"Nongu u Kristu ke Sudan hen Tiv (NKST)  Health Center, Azege",Azege town,NKST,7.80487,9.03571,Exact - facility matched by name
-North Central,BENUE,Logo,"Nongu u Kristu ke Sudan hen Tiv (NKST)  Hospital, Anyiin",Close to anyiin motor park,NKST,7.81512,9.24559,Exact - facility matched by name
-North Central,BENUE,Logo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center, Ugba",Anyiin road ugba,NKST,7.51005,9.3447,Exact - facility matched by name
-North Central,BENUE,Logo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center, Ugo",Opp. Nkst church ugo,NKST,7.70352,9.26499,Exact - facility matched by name
-North Central,BENUE,Logo,Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center Abeda,Opp.RCM Primary sch. Abeda,NKST,7.71689,9.30908,Exact - facility matched by name
-North Central,BENUE,Logo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center , Akaa",Akaa Opp. NKST church,NKST,7.60668,9.40713,Exact - facility matched by name
-North Central,BENUE,Makurdi,Bishop Murray Medical Centre,High Level Makurdi,Roman Catholic Church,7.72528,8.53707,Exact - facility matched by name
-North Central,BENUE,Makurdi,"Nongu u Kristu ke Sudan hen Tiv (NKST) Clinic, Akile",Gboko Road,NKST,7.71941,8.68249,Exact - facility matched by name
-North Central,BENUE,Makurdi,"Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Centre Hospital, Apir",Apir,NKST,7.63318,8.5662,Exact - facility matched by name
-North Central,BENUE,Makurdi,RCN Medical centre,"114 Senator Akuma Street, Makurdi 970101",Christian Pentecostal Fellowship,7.72141,8.51822,Approximate - town/neighbourhood centre
-North Central,BENUE,Okpokwu,Holy Name Clinic - Ugbokolo,Ugbokolo,Roman Catholic Church,7.15212,7.78692,Exact - facility matched by name
-North Central,BENUE,Okpokwu,St. Christopher's Clinic,Effoyo,Roman Catholic Church,7.1521,7.79468,Probable - similar name/place; verify
-North Central,BENUE,Okpokwu,St. Mary's Hospital,Ugwu Okpoga,Roman Catholic Church,7.03247,7.8089,Exact - facility matched by name
-North Central,BENUE,Otukpo,"Maria'Ene'ihotu Hospital Asa II, Otukpo",,Roman Catholic Church,7.19716,8.14423,Approximate - town/neighbourhood centre
-North Central,BENUE,Otukpo,"Sisters of the Nativity Hospital,  Otukpo-Icho,  Otukpo",,Roman Catholic Church,7.19716,8.14423,Approximate - town/neighbourhood centre
-North Central,BENUE,Otukpo,St Veronica's Hospital,,Roman Catholic Church,7.18274,8.12218,Exact - facility matched by name
-North Central,BENUE,Otukpo,St. Charles' Hospital Adoka,Adoka,Roman Catholic Church,7.45382,7.97719,Exact - facility matched by name
-North Central,BENUE,Otukpo,St. Daniel's Hospital,Otukpo,Roman Catholic Church,7.20787,8.12119,Exact - facility matched by name
-North Central,BENUE,Otukpo,St. Joseph's Hospital-Ogobia,Ogobia,Roman Catholic Church,7.3452,8.04408,Approximate - village/area
-North Central,BENUE,Tarka,"Nongu u Kristu ke Sudan hen Tiv (NKST) Clinic, Asukunya",NKST Church Asukunya,NKST,7.65177,8.86925,Exact - facility matched by name
-North Central,BENUE,Tarka,"Nongu u Kristu ke Sudan hen Tiv (NKST) Clinic, Uchi",Uchi,NKST,7.68574,8.81038,Exact - facility matched by name
-North Central,BENUE,Tarka,"Nongu u Kristu ke Sudan hen Tiv (NKST), Wannunne",NKST Cenral CH Zongu,NKST,7.54662,8.89295,Exact - facility matched by name
-North Central,BENUE,Tarka,"St Christopher's Primary Health Center, Wannune","St Christopher's Parish, Wannune",Roman Catholic Church,7.57222,8.87659,Exact - facility matched by name
-North Central,BENUE,Tarka,St Michael's Clinic,,Roman Catholic Church,7.5601,8.88964,Probable - similar name/place; verify
-North Central,BENUE,Ukum,Nongu u Kristu ke Sudan hen Tiv (NKST) Hospita; Ayati,Ayati,NKST,7.51318,9.75003,Exact - facility matched by name
-North Central,BENUE,Ukum,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital, Zaki-Biam",Zaki-Biam,NKST,7.51689,9.61276,Exact - facility matched by name
-North Central,BENUE,Ukum,Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center Bosua,Bosua,NKST,7.57719,9.60862,Exact - facility matched by name
-North Central,BENUE,Ukum,"St Anthony's Hospital, Zaki Biam",Zaki -Biam,Roman Catholic Church,7.5116,9.59988,Exact - facility matched by name
-North Central,BENUE,Ukum,"St Christopher's Primary Health Center, Kyado",,Roman Catholic Church,7.60756,9.71446,Approximate - village/area
-North Central,BENUE,Ukum,"St Mary's Primary Health care Center, Chito",Chito,Roman Catholic Church,7.71182,9.59748,Exact - facility matched by name
-North Central,BENUE,Ukum,"St. Thomas Primary Health centre, Afia",,Roman Catholic Church,7.75637,9.49237,Approximate - village/area
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center ,Korinjo",Igboor,NKST,6.98547,9.17468,Exact - facility matched by name
-North Central,BENUE,Ushongo,Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center Faajir,Ude,NKST,6.99742,9.39405,Probable - similar name/place; verify
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center,  Ifo Mbakuwa",Ifo,NKST,7.04593,8.99184,Exact - facility matched by name
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Lessel",Lessel,NKST,7.13224,9.02219,Exact - facility matched by name
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Taangahar",Taangahar,NKST,7.02417,9.25821,Exact - facility matched by name
-North Central,BENUE,Ushongo,Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center - Mayange,Mayange,NKST,7.16981,8.97427,Exact - facility matched by name
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Aku",Aku,NKST,7.06572,8.92638,Exact - facility matched by name
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Gbe",Abia- Mbagba,NKST,7.03948,9.06947,Exact - facility matched by name
-North Central,BENUE,Ushongo,St Peter & Paul Clinic Ugohol,Ugohol,Roman Catholic Church,7.04735,8.97395,Probable - similar name/place; verify
-North Central,BENUE,Ushongo,St. Augustine’s PHC Tarungwa,Taringwa,Roman Catholic Church,6.9959,9.18403,Probable - similar name/place; verify
-North Central,BENUE,Ushongo,St. Jacintha’s PHC Utange,Utange,Roman Catholic Church,7.03779,9.28487,Exact - facility matched by name
-North Central,BENUE,Ushongo,"St. Mary's Primary Health Center, Alumunku",Alumunku,Roman Catholic Church,7.04187,9.1377,Exact - facility matched by name
-North Central,BENUE,Ushongo,St. Monica’s PHC Atimenya,Atimenya,Roman Catholic Church,7.0929,8.87012,Approximate - village/area
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) , Igyu",Igyu Mbagbera,NKST,6.73669,9.1275,Exact - facility matched by name
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) , PHC Abwa",Abwa Mbaduku,NKST,6.67803,9.12075,Exact - facility matched by name
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Kpamo",Kpamo,NKST,6.8315,9.17986,Probable - similar name/place; verify
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Uka",Uka- Mbawuar,NKST,6.91931,9.00409,Exact - facility matched by name
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital, Mbaakon",Mbaakon,NKST,6.9029,9.13395,Exact - facility matched by name
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Adeyongo",Adeyongo,NKST,6.98922,9.11202,Probable - similar name/place; verify
-North Central,BENUE,Vandeikya,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Shangbum",Shangbum,NKST,6.73529,9.0495,Probable - similar name/place; verify
-North Central,BENUE,Vandeikya,"PHC Dagba, Mbaduku",Mbaduku,Roman Catholic Church,6.65631,9.08472,Probable - similar name/place; verify
-North Central,BENUE,Vandeikya,St Robert’s PHC Adamgbe,Adamgbe,Roman Catholic Church,6.70366,9.08615,Approximate - village/area
-North Central,BENUE,Vandeikya,St. Elizabeth Hospital,Vandeikya,Roman Catholic Church,6.78047,9.07057,Exact - facility matched by name
-North Central,BENUE,Vandeikya,St. Felix PHC Koti-yough,Koti-Yough,Roman Catholic Church,6.84851,9.16888,Exact - facility matched by name
-North Central,BENUE,Vandeikya,St. Paul's Clinic - Ikyaator,Ikyaator,Roman Catholic Church,6.80236,9.03224,Exact - facility matched by name
-North Central,BENUE,Vandeikya,St. Thomas Hospital - Ihugh,Ihugh,Roman Catholic Church,7.01897,9.03331,Probable - similar name/place; verify
-North Central,FCT,Abaji,St. Peter's Catholic Hospital,"Abaji, FCT",Roman Catholic Church,8.48791,6.93988,Exact - facility matched by name
-North Central,FCT,Abuja Municipal (AMAC),Bethrapha Medical Center,"Wuse District / Wuse, Abuja",Anglican,9.0627,7.46895,Approximate - town/neighbourhood centre
-North Central,FCT,Abuja Municipal (AMAC),Bethrapha Medical Center,"Wuse, Abuja",Anglican,9.0627,7.46895,Approximate - town/neighbourhood centre
-North Central,FCT,Abuja Municipal (AMAC),Cornelian Jubilee Hospital Jikwoyi,"Jikwoyi, Abuja",Roman Catholic Church,8.98466,7.56365,Approximate - village/area
-North Central,FCT,Abuja Municipal (AMAC),Cornelian Rural Health Clinic and Maternity Hospital Gidan Mangoro,"Gidan Mangoro, Abuja",Roman Catholic Church,8.91843,7.56504,Exact - facility matched by name
-North Central,FCT,Abuja Municipal (AMAC),"ECWA Comprehensive Medical Centre, Karu","Karu, Abuja Municipal Area Council (AMAC), FCT (Nyanya-Karshi Road)",ECWA,9.0096,7.57486,Exact - facility matched by name
-North Central,FCT,Abuja Municipal (AMAC),"ECWA Goodnews Health Clinic, Kabusa","Kabusa, AMAC, FCT (Behind ECWA Idugbagyi)",ECWA,8.94967,7.44129,Approximate - village/area
-North Central,FCT,Abuja Municipal (AMAC),Faith Medical Center Karmo,"Karmo (Opposite Dantata Quarters, Old Karmo Jiwa, AMAC)",Others,9.06051,7.37434,Probable - similar name/place; verify
-North Central,FCT,Abuja Municipal (AMAC),Medical Missionaries of Mary Clinic & Maternity,Lugbe,Roman Catholic Church,8.93592,7.32707,Probable - similar name/place; verify
-North Central,FCT,Abuja Municipal (AMAC),"Redeemed Christian Church of God Clinic and Maternity, Kubwa","Kubwa, Abuja, FCT",Others,9.15706,7.34078,Approximate - village/area
-North Central,FCT,Abuja Municipal (AMAC),Sisters of Nativity Hospital,Jikwoyi,Roman Catholic Church,8.98466,7.56365,Approximate - village/area
-North Central,FCT,Bwari,Daughters of Charity Hospital,Kubwa,Roman Catholic Church,9.15706,7.34078,Approximate - village/area
-North Central,FCT,Bwari,Kubwa Muslim Community Hospital,"Kubwa, Bwari",Islamic,9.15527,7.34589,Exact - facility matched by name
-North Central,FCT,Bwari,Kuchibuyi Primary Healthcare Center,Bwari Area Council,Others,9.20726,7.3449,Probable - similar name/place; verify
-North Central,FCT,Bwari,Our Lady and St. Francis Catholic Hospital,Bwari,Roman Catholic Church,9.28141,7.3848,Approximate - village/area
-North Central,FCT,Bwari,Our Lady of Fatima Catholic Hospital,Bwari,Roman Catholic Church,9.27533,7.38049,Exact - facility matched by name
-North Central,FCT,Bwari,St Andrew's Anglican Hospital Kubwa,"Kubwa, Bwari",Anglican,9.15706,7.34078,Approximate - village/area
-North Central,FCT,Bwari / Gwagwa (Dei-Dei axis),CalvaryLand Healthcare LTD,"Beside Muslim School Filindabo, Gwagwa / Dei-Dei, Federal Capital Territory",Islamic,9.11479,7.25939,Approximate - village/area
-North Central,FCT,FCT-wide,FaithCare Hospital,"Kuje, Wuye",Others,8.88438,7.23071,Approximate - town/neighbourhood centre
-North Central,FCT,Gwagwalada,Anawin Homes OSS,Gwagwalada,Roman Catholic Church,8.93483,7.07897,Approximate - village/area
-North Central,FCT,Gwagwalada,St. Mary's Catholic Hospital,Gwagwalada,Roman Catholic Church,8.94087,7.0872,Approximate - village/area
-North Central,FCT,Kwali,Rhema Foundation Hospital,Kwali,Others,8.81223,7.02641,Approximate - village/area
-North Central,FCT,Wuse II / Jahi,Habib Medical Clinic,"Plot 187 Adetokunbo Ademola Crescent (also referenced as 2nd Floor, Prime Plaza, Opposite Rock View Classic Hotel), Wuse II, Abuja (with additional presence in Jahi)",Others,9.0627,7.46895,Approximate - town/neighbourhood centre
-North Central,KOGI,Adavi,ECWA Hospital & Maternity,Ibeke Kuroko,ECWA,7.57829,6.24459,Approximate - village/area
-North Central,KOGI,Adavi,Mary Joseph,Ebogogo,Anglican,7.56968,6.23285,Approximate - village/area
-North Central,KOGI,Adavi,St. Joseph Hospital & Maternity,Ikaraworo,Roman Catholic Church,7.55548,6.2395,Probable - similar name/place; verify
-North Central,KOGI,Ankpa,Mother and Child Hospital,Ankpa,Roman Catholic Church,7.40991,7.63547,Probable - similar name/place; verify
-North Central,KOGI,Ankpa,Our Lady of Hope Clinic,Okenyi,Roman Catholic Church,7.35168,7.68231,Exact - facility matched by name
-North Central,KOGI,Bassa,Sheria Catholic Hospital,Sheria,Roman Catholic Church,7.89313,7.0755,Probable - similar name/place; verify
-North Central,KOGI,Dekina,Grimard Hospital,Anyingba,Roman Catholic Church,7.49944,7.17211,Exact - facility matched by name
-North Central,KOGI,Dekina,St Luke Maternity & Dispensary,Egume,Roman Catholic Church,7.4721,7.25071,Exact - facility matched by name
-North Central,KOGI,Idah,Our Lady Mother of Mercy Hospital Idah,Idah Town,Roman Catholic Church,7.10913,6.73871,Exact - facility matched by name
-North Central,KOGI,Kabba-Bunu,St. John's Hospital,Kabba,Roman Catholic Church,7.82658,6.08147,Exact - facility matched by name
-North Central,KOGI,Koton Karfe,ECWA Community Health Clinic,,ECWA,8.09103,6.80048,Approximate - town/neighbourhood centre
-North Central,KOGI,Lokoja,Ministry of Mercy Orphanage,Lokoja,Christian Pentecostal Fellowship,7.8009,6.73094,Approximate - town/neighbourhood centre
-North Central,KOGI,Ofu,Holly Memorial Hospital,Ochadamu,Christian Pentecostal Fellowship,7.39102,7.03281,Exact - facility matched by name
-North Central,KOGI,Ofu,"Mercy of Jesus Hospital, Ejule",Ejule,Roman Catholic Church,7.36667,7.09989,Approximate - village/area
-North Central,KOGI,Okene,Al Hilma Hospital,Agassa Okene,Islamic,7.5437,6.22179,Approximate - village/area
-North Central,KOGI,Yagba East,"ECWA Hospital, Makutu",Isanlu,ECWA,8.28271,5.80829,Approximate - village/area
-North Central,KOGI,Yagba West,ECWA Hospital,Egbe,ECWA,8.21187,5.51633,Exact - facility matched by name
-North Central,NASARAWA,Akwanga,Baptist Clinic Akwanga,Akwanga,Baptist,8.91452,8.38777,Approximate - village/area
-North Central,NASARAWA,Akwanga,ERCC Medical Center Alushi,,ERCC,8.91697,8.36939,Probable - similar name/place; verify
-North Central,NASARAWA,Akwanga,"Evangelical Reformed Church of Christ, Alushi","Alushi, Akwanga",Others,8.91697,8.36939,Probable - similar name/place; verify
-North Central,NASARAWA,Akwanga,"Our Lady of Apostle Hospital, Akwanga",,Roman Catholic Church,8.91452,8.38777,Approximate - village/area
-North Central,NASARAWA,Awe,ERCC Clinic Kanji,Kanji,Others,8.43873,9.09928,Exact - facility matched by name
-North Central,NASARAWA,Awe,Maternal & Health Center Agwatashi,Agwatashi,Roman Catholic Church,8.31595,8.85325,Probable - similar name/place; verify
-North Central,NASARAWA,Doma,ERCC Clinic Rukubi,Rukumbi,Others,7.93145,8.30275,Approximate - village/area
-North Central,NASARAWA,Keana,ERCC Clinic Keana,Keana,Others,8.14776,8.80381,Exact - facility matched by name
-North Central,NASARAWA,Keffi,ERCC Clinic  Keffi,,ERCC,8.8588,7.87298,Probable - similar name/place; verify
-North Central,NASARAWA,Keffi,"Evangelical Reformed Church of Christ, Keffi",,Others,8.8588,7.87298,Probable - similar name/place; verify
-North Central,NASARAWA,Lafia,ERCC Clinic Assakio,Asakio,Others,8.59671,8.8537,Approximate - village/area
-North Central,NASARAWA,Lafia,ERCC Clinic Keffi Wambai,Wanbai,Others,8.54923,8.45256,Approximate - village/area
-North Central,NASARAWA,Lafia,"Voice of Islam Hospital, Bukan Sidi",,Islamic,8.52368,8.52368,Exact - facility matched by name
-North Central,NASARAWA,Nas/Eggon,ERCC Clinic Kagbu,Kagbu,Others,8.6836,8.44004,Exact - facility matched by name
-North Central,NASARAWA,Nas/Eggon,ERCC Clinic Ung Shuru,Angwan Shuru,Islamic,8.65585,8.3057,Exact - facility matched by name
-North Central,NASARAWA,Nasarawa,ECWA Bishara Rural Clinic,ECWA BISHARA RURAL HOSPITAL AFTER LGA PRIMARY SCHOOL AGBODA VILLAGE NASARAWA,ECWA,8.19737,7.73649,Exact - facility matched by name
-North Central,NASARAWA,Obi,ERCC Clinic Dedere,Dedere,Others,8.44541,8.71141,Exact - facility matched by name
-North Central,NASARAWA,Obi,St Benard Clinic Akanga,Akanga,Roman Catholic Church,8.29932,8.56152,Exact - facility matched by name
-North Central,NASARAWA,Wamba,ERCC Clinic Kango,Kango,Others,9.00084,8.62601,Exact - facility matched by name
-North Central,NASARAWA,Wamba,ERCC Clinic Konvah,Konva,Others,8.87042,8.66314,Exact - facility matched by name
-North Central,NASARAWA,Wamba,Seventh Day Adventist Health Care Centre,"Seventh day Adventist health services,Arum wamba",Others,8.95093,8.60071,Approximate - village/area
-North Central,NIGER,Agwara Local Government Area,St. John Catholic dispensary Sabon Papiri.,,Roman Catholic Church,10.62628,4.40149,Probable - similar name/place; verify
-North Central,NIGER,Borgu,"Ahmadiyya Hospital, New Bussa","New Bussa, Niger State, Nigeria",Islamic,9.88269,4.51894,Approximate - village/area
-North Central,NIGER,Chanchaga,Divine Mercy Hospital and Maternity,"Dutsen Kura Gwari, Minna, Niger State; Plus Code: JGG9+7RF",Roman Catholic Church,9.62592,6.51947,Exact - facility matched by name
-North Central,NIGER,Lapai,"Assemblies Of God Medical Centre, New Market Road (opposite Paiko Motel), Birnin Maza / Tashibo, Niger State. Birnin Maza / Tashibo, Lapai, Niger State.",,Assemblies of God,8.99449,6.71558,Approximate - village/area
-North Central,NIGER,Mashegu,"St Mary Magdalene,PHC. Tungan gero",,Roman Catholic Church,10.11212,5.40008,Probable - similar name/place; verify
-North Central,NIGER,Munya,ECWA Clinic,"Dnawi, near Sarkin Pawa, Niger State; Plus Code: 24CF+HFF",ECWA,10.021437,7.123672,Exact - from plus code in source address
-North Central,NIGER,Paikoro,Divine Faith Medical Clinic,"Tunga Low-Cost, Minna",,9.61524,6.54776,Approximate - town/neighbourhood centre
-North Central,NIGER,Paikoro,ECWA Clinic,,ECWA,9.43521,6.63373,Probable - similar name/place; verify
-North Central,NIGER,Rafi,Medical Missionaries of Mary Primary Health Centre,"Fuka, Niger State; the published mailing address is PMB 214, Minna, Niger State.",Roman Catholic Church,9.64893,6.93671,Approximate - village/area
-North Central,NIGER,Suleja,Danfodui? Islamic Health Center,"Yunusa Paiko Road, Minna",Islamic,9.61524,6.54776,Approximate - town/neighbourhood centre
-North Central,NIGER,Suleja,Fertile Medical Faith Hospital,"Bakin Iku Road, Kwamba, Suleja",,9.21702,7.17069,Approximate - town/neighbourhood centre
-North Central,NIGER,Suleja,Hujjah Islamic Medicine Center,"Aliyu Maiyaki Street, Minna South",Islamic,9.61524,6.54776,Approximate - town/neighbourhood centre
-North Central,NIGER,Suleja,Islamic Medical Centre,"Suleja–Bakin Iku Road, Madalla",Islamic,9.10444,7.21333,Approximate - town/neighbourhood centre
-North Central,NIGER,Suleja,Khaisal Islamic Medical & Research Center,"Kpakungu, along Minna–Bida Road",Islamic,9.59618,6.5303,Approximate - village/area
-North Central,NIGER,Suleja,Venerable Lanteri Hospital,"Opposite the Seminary of the Oblates of the Virgin Mary, London Quarters, Kwamba, Suleja, Niger State",Roman Catholic Church,9.21702,7.17069,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Barkin Ladi,"Harat Christian Clinic, Foron","Harat Christian Clinic, Foron, Barkin Ladi (ward: Zabot, Barkin Ladi LGA)",Not verified,9.69067,8.9469,Approximate - village/area
-North Central,PLATEAU,Bassa,"COCIN Primary Health Clinic, Taagbe (Zobwo)","Beside cocin Church,Taagbe (ward: Zobwo, Bassa LGA)",COCIN,9.85989,8.66841,Exact - facility matched by name
-North Central,PLATEAU,Bassa,"ECWA Clinic/Maternity, Miango","Within Ecwa Church Bishara No.1,, Miango (ward: Tahu, Bassa LGA)",ECWA,9.8529,8.67932,Approximate - village/area
-North Central,PLATEAU,Bassa,"ECWA Health Clinic, Rimi","Behind Government secondary school,Rimi (ward: Rimi, Bassa LGA)",ECWA,10.31744,8.81647,Approximate - village/area
-North Central,PLATEAU,Bassa,"ECWA Health Clinic, Zabolo","Beside Ecwa Church Zabolo (ward: Zabolo, Bassa LGA)",ECWA,10.1225,8.88361,Approximate - village/area
-North Central,PLATEAU,Bassa,Jengre Seventh-day Adventist Hospital,"Opposite seventh day Adventist Church #1, jengre,jos (ward: Jengre, Bassa LGA)",Others,10.24221,8.79856,Approximate - village/area
-North Central,PLATEAU,Bassa,Maigamo Dispensary (Adventist rural clinic),"Along Old Jos–Zaria Road, Jengre area (c/o PMB 2054, Jos)",Others,10.24221,8.79856,Approximate - village/area
-North Central,PLATEAU,Bassa,"Mandela Primary Health Clinic, Kwall","Within saint Williams Catholic Church,kwall (ward: Zodu, Bassa LGA)",Roman Catholic Church,9.80913,8.65886,Approximate - village/area
-North Central,PLATEAU,Bokkos,COCIN Clinic Marish,"Inside Cocin Church  Marish (ward: Kwatas, Bokkos LGA)",COCIN,9.42908,9.02771,Approximate - village/area
-North Central,PLATEAU,Bokkos,COCIN Clinic Mushu,"After Cocin  Primary School  Mushu (ward: Tangur, Bokkos LGA)",COCIN,9.28693,9.09088,Approximate - village/area
-North Central,PLATEAU,Bokkos,"COCIN Clinic, Ikngwagap (Mushere Central)","After Cocin  Rcc church Ikngwagap (ward: Mushere Central, Bokkos LGA)",COCIN,9.17248,9.05292,Approximate - village/area
-North Central,PLATEAU,Bokkos,"COCIN Clinic, Kawel (Mushere North)","Before Cocin Church Kawel (ward: Mushere North, Bokkos LGA)",COCIN,9.19739,9.0613,Exact - facility matched by name
-North Central,PLATEAU,Bokkos,"COCIN Primary Health Care Centre, Daffo","Inside Cocin Mission House Daffo (ward: Daffo, Bokkos LGA)",COCIN,9.2014,8.83377,Approximate - village/area
-North Central,PLATEAU,Bokkos,"OLA Clinic, Makarang","Makarang, c/o St Thomas' Parish, Bokkos",Roman Catholic Church,9.25952,8.91431,Exact - facility matched by name
-North Central,PLATEAU,Jos North,"Adventist Medical Centre, Jos","Naburn Gwong Lamingo Road,Jos (ward: Naraguta B, Jos North LGA)",Others,9.98379,8.89791,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Jos North,Bingham University Teaching Hospital (BHUTH) – formerly ECWA Evangel Hospital (est. 1959); includes Evangel VVF Centre,"No 23 Zaria By-Pass (ward: Jenta Adamu, Jos North LGA)",ECWA,9.93043,8.87817,Exact - facility matched by name
-North Central,PLATEAU,Jos North,COCIN Barnden Memorial Hospital,"No1 Busa Buji-Laranto Street (ward: Jenta Apata, Jos North LGA)",COCIN,9.94232,8.87433,Exact - facility matched by name
-North Central,PLATEAU,Jos North,"Christian Medical Centre, Jos",Jos (address not verified),Not verified,9.92849,8.89212,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Jos North,"ECWA Central Pharmacy, Jos",Jos (street address not verified; directory plus-code WV6Q+2QC),ECWA,9.910063,8.889391,Exact - from plus code in source address
-North Central,PLATEAU,Jos North,"ECWA Health Clinic and Maternity, Lamingo (Cele Bridge)","Cele Bridge (ward: Lamingo, Jos North LGA)",ECWA,9.91309,8.94391,Approximate - village/area
-North Central,PLATEAU,Jos North,"ECWA Health Quarters Clinic, Jos","No1 North Avenue (ward: Jenta Adamu, Jos North LGA)",ECWA,9.92849,8.89212,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Jos North,"ECWA Holistic Health Clinic / PHC, Tudun Wada","Angwan  Miango Opposite Federal Secretariat  Jos (ward: Tundun Wada, Jos North LGA)",ECWA,9.89868,8.8717,Exact - facility matched by name
-North Central,PLATEAU,Jos North,"EMS of ECWA Community Primary Health Clinic, Ahwol","After Police Station Junction (ward: Ahwol, Jos North LGA)",ECWA,9.99043,8.88616,Approximate - village/area
-North Central,PLATEAU,Jos North,El-Roi (Inland) Mission Hospital (registry also lists 'El-Roi Inland Missions Hospital'),"Z.2 Alhaji Baba Street, Katapo Road, Jos (ward: Jenta Apata, Jos North LGA)",Not verified,9.93875,8.87996,Exact - facility matched by name
-North Central,PLATEAU,Jos North,"FOMWAN Maternity and Child Welfare Clinic, Nassarawa","Number 14, Nassarawa Corona (ward: Gangare, Jos North LGA)",Islamic,9.91103,8.89436,Probable - similar name/place; verify
-North Central,PLATEAU,Jos North,Faith Alive Foundation Hospital (FAF),"No 29 zik Avenue  Plateau Jos (ward: Tafawa Balewa, Jos North LGA)",Others,9.92792,8.88247,Exact - facility matched by name
-North Central,PLATEAU,Jos North,Ikukumung ECWA Health Clinic and Maternity,"Jos North Tudun Wada Ikukumung Ecwa Church Bishara 4 (ward: Tundun Wada, Jos North LGA)",ECWA,9.90747,8.85632,Probable - similar name/place; verify
-North Central,PLATEAU,Jos North,"Jama'a Hospital, Rikkos (aka Jamaah Nursing Home; possibly also 'Jama'a Medical Centre')","Rikkos, Yar Kasuwa (ward: Lamingo, Jos North LGA)",Not verified,9.91586,8.89957,Exact - facility matched by name
-North Central,PLATEAU,Jos North,"Our Lady of Apostles (OLA) Hospital, Jos (aka OLA Maternity)","Jos North Plateau State No 1 Zaria Bye Pass (ward: Jenta Apata, Jos North LGA)",Roman Catholic Church,9.92971,8.88442,Exact - facility matched by name
-North Central,PLATEAU,Jos North,"Sunnah Hospital, Anguwan Rimi / Rogo","Angwan Rimi (ward: Angwa Rogo/Rimi, Jos North LGA)",Not verified,9.95736,8.88111,Probable - similar name/place; verify
-North Central,PLATEAU,Jos South,"Ahmadiyya Muslim Hospital/Clinic, Bukuru","Bukuru, Jos (address not verified)",Islamic,9.80049,8.85927,Approximate - village/area
-North Central,PLATEAU,Jos South,"Andrew Stirrett ECWA Hospital, Bukuru (aka ECWA Bukuru)","Andrew Stirrett Ecwa Hospital Yelwa Club Junction Bukuru, Jos Plateau State (ward: Bukuru, Jos South LGA)",ECWA,9.80249,8.86731,Probable - similar name/place; verify
-North Central,PLATEAU,Jos South,"COCIN Primary Health Clinic, Gyel (Bukuru)","DB Zang Junction Jos South (ward: Gyel A, Jos South LGA)",COCIN,9.7961,8.84766,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Jos South,"Christian Hospital, Du","Du Jos South (ward: Du A, Jos South LGA)",Not verified,9.76428,8.8869,Approximate - village/area
-North Central,PLATEAU,Jos South,"Mandela Hospital / Mandela Clinic, K. Vom","Mandela Hospital Beside Police Station K. Vom Jos Plateau (ward: Turu A, Jos South LGA)",Roman Catholic Church,9.72574,8.79782,Exact - facility matched by name
-North Central,PLATEAU,Jos South,"Our Lady of Apostles Hospital & Orphanage, Zawan","Ola Hospital And Orphanage Zawan Jos Plateau State (ward: Zawang A, Jos South LGA)",Roman Catholic Church,9.74548,8.87769,Exact - facility matched by name
-North Central,PLATEAU,Jos South,Our Lady of Victory Rehabilitation Centre,"Sabon Gidan Kanar, Bukuru (P.O. Box 122)",Roman Catholic Church,9.80049,8.86574,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Jos South,Vom Christian Hospital (VCH),"Vom Christian Hospital Along Jos Manchok Abuja Road Jos Plateau State (ward: Vwang, Jos South LGA)",COCIN,9.72931,8.79132,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Kanam,"Sunnah Clinic, Kanam","Opposite Sunah oil, Dengi, Kanam (ward: Dengi, Kanam LGA)",Not verified,9.36511,9.96033,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Kanke,"COCIN Dispensary, Gor (Garram)","Gor Close to cocin church (ward: Garram, Kanke LGA)",COCIN,9.21824,9.51077,Exact - facility matched by name
-North Central,PLATEAU,Kanke,Kabwir COCIN Dispensary,"Kabwir (ward: Kwarip, Kanke LGA)",COCIN,9.39929,9.56311,Approximate - village/area
-North Central,PLATEAU,Langtang South,"COCIN Primary Health Centre, Sabon Gida","Opposite Central East Primary School Sabongida, Langtang South. (ward: Sabon Gida, Langtang South LGA)",COCIN,8.73608,9.71887,Exact - facility matched by name
-North Central,PLATEAU,Mangu,Ampang COCIN Clinic,"Along Kerang Mangun (ward: Ampang, Mangu LGA)",COCIN,9.307,9.18858,Exact - facility matched by name
-North Central,PLATEAU,Mangu,"Baptist Health Clinic, Kerang","Along Panyam Shandam Road, before Air force  Base kerang (ward: Kerang, Mangu LGA)",Baptist,9.34369,9.21173,Approximate - village/area
-North Central,PLATEAU,Mangu,Bwai COCIN Clinic / Maternity,"By Bokkos  Road Bwai (ward: Kombun, Mangu LGA)",COCIN,9.42572,9.09668,Exact - facility matched by name
-North Central,PLATEAU,Mangu,"COCIN Clinic and Maternity, Panyam","By Pankshin, Shandam Round About Panyam (ward: Panyam North, Mangu LGA)",COCIN,9.40393,9.21112,Exact - facility matched by name
-North Central,PLATEAU,Mangu,"COCIN Health Centre, Gindiri (mission compound)","Within mission compound Gindiri (ward: Gindiri 1, Mangu LGA)",COCIN,9.58649,9.2113,Exact - facility matched by name
-North Central,PLATEAU,Mangu,"COCIN Hospital and Rehabilitation Centre, Mangu (formerly Mangu Leprosy Settlement; aka 'COCIN Rehabilitation Centre', Sabon Layi)","Along Jwakkom Road Sabon Laye Mangu (ward: Mangu 2, Mangu LGA)",COCIN,9.48099,9.1507,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Mangu,"COCIN Hospital, Panyam (aka Panyam COCIN Comprehensive Health Centre; possibly 'CCD Hosp. Panyam')","Fish Farm Road, opposite Kyamden Bottle  Water,  panyam (ward: Panyam North, Mangu LGA)",COCIN,9.41589,9.20532,Exact - facility matched by name
-North Central,PLATEAU,Mangu,"COCIN Primary Health Clinic, Halle","Opposite Ecwa church Halle (ward: Halle, Mangu LGA)",COCIN,9.5221,9.09729,Approximate - village/area
-North Central,PLATEAU,Mangu,"Chakfem COCIN Clinic, Mwar","Before Cocin Church Chakfem (ward: Chakfem, Mangu LGA)",COCIN,9.09528,9.16748,Approximate - village/area
-North Central,PLATEAU,Mangu,Gindiri Boys' Secondary School Health Clinic,"Within mission compound Gindiri (ward: Gindiri 1, Mangu LGA)",Not verified,9.58649,9.2113,Approximate - village/area
-North Central,PLATEAU,Mangu,"Girls' High School Clinic, Gindiri","Within mission compound Gindiri (ward: Gindiri 1, Mangu LGA)",Not verified,9.5813,9.20972,Probable - similar name/place; verify
-North Central,PLATEAU,Mangu,Gung ECWA Clinic,"After Ecwa Church Gung (ward: Mangun, Mangu LGA)",ECWA,9.16707,9.15666,Approximate - village/area
-North Central,PLATEAU,Mangu,"Seventh Day Adventist Hospital, Gindiri","Gindiri, Mangu (address not verified)",Others,9.59271,9.2251,Approximate - village/area
-North Central,PLATEAU,Pankshin,"Holy Cross Primary Health Care Clinic, Pankshin","Catholic Diocese Of Pankshin, Holy Cross cathedral (ward: Pankshin, Pankshin LGA)",Roman Catholic Church,9.32799,9.43001,Approximate - village/area
-North Central,PLATEAU,Pankshin,Kangmum Longkat Church of Christ in Nigeria Primary Health Care,"Befor Church of Christ In Nations Longkat Pankshin Local Government (ward: Kangmum, Pankshin LGA)",COCIN,9.14569,9.35571,Exact - facility matched by name
-North Central,PLATEAU,Qua'an Pan,Bakin Ciyawa COCIN Clinic,"Along Bembem Kwande Road (ward: Luukwo, Qua'an Pan LGA)",COCIN,8.60809,9.29431,Approximate - village/area
-North Central,PLATEAU,Qua'an Pan,"COCIN Clinic, Bwall","Close to Bwall Market (ward: Bwall, Qua'an Pan LGA)",COCIN,8.9317,9.16926,Approximate - village/area
-North Central,PLATEAU,Qua'an Pan,"COCIN Clinic, Hancin Kare (Janta-Aningo)","Close to COCIN Church Hancin Kare (ward: Janta-Aningo, Qua'an Pan LGA)",COCIN,8.5383,9.00272,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Qua'an Pan,"COCIN Primary Health Care Centre, Kwoor Road (Moeda/Shangfuup)","Along Kwoor Road (ward: Moeda/Shangfuup, Qua'an Pan LGA)",COCIN,8.90747,9.26428,Approximate - village/area
-North Central,PLATEAU,Qua'an Pan,"COCIN Primary Health Care Clinic, Angwan Bwai (Shindai)","COCIN Primary School Angwan Bwai (ward: Njak-Shindai, Qua'an Pan LGA)",COCIN,8.78669,9.14911,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Qua'an Pan,Kurgwi COCIN Clinic,"Close COCIN LCC Kurgwi (ward: Kurgwi  West, Qua'an Pan LGA)",COCIN,8.78224,9.28877,Exact - facility matched by name
-North Central,PLATEAU,Qua'an Pan,Kurgwi Seventh-Day Adventist Clinic,"Along Kurgwi Shendam Road (ward: Kurgwi East, Qua'an Pan LGA)",Others,8.78168,9.29608,Approximate - village/area
-North Central,PLATEAU,Qua'an Pan,Kwa COCIN Clinic,"Close to Dapong River (ward: Kwa, Qua'an Pan LGA)",COCIN,9.02289,9.26493,Exact - facility matched by name
-North Central,PLATEAU,Qua'an Pan,"Langkaku Virgilius Memorial Clinic (Catholic PHC, Langkaku)","Inside Saint Gabriel Catholic Church Langkaku (ward: Lankaku-Kwari, Qua'an Pan LGA)",Roman Catholic Church,8.55109,9.1377,Exact - facility matched by name
-North Central,PLATEAU,Qua'an Pan,Namu COCIN Clinic,"Along Shwa'as Road,Namu (ward: Namu, Qua'an Pan LGA)",COCIN,8.67779,9.0941,Exact - facility matched by name
-North Central,PLATEAU,Qua'an Pan,Sabon Gida COCIN Clinic,"Besides LGEA Primary School Sabon Gida (ward: Luukwo, Qua'an Pan LGA)",COCIN,8.56525,9.31115,Approximate - village/area
-North Central,PLATEAU,Qua'an Pan,"Virgilius Memorial Catholic Rural Health Centre, Namu (aka St. Vigillus Catholic Rural Health Centre)","Inside Saint John Bosco Catholic Church,Namu (ward: Namu, Qua'an Pan LGA)",Roman Catholic Church,8.69067,9.0965,Exact - facility matched by name
-North Central,PLATEAU,Riyom,Faith Medical Centre,"Church Of Christ In Nation Sambak Riyom Plateau State (ward: Ra-Hoss, Riyom LGA)",Not verified,9.63208,8.75012,Approximate - town/neighbourhood centre
-North Central,PLATEAU,Riyom,Zion Medical Centre,"Beside Church Of Christ In Nations Riyom Plateau State (ward: Riyom, Riyom LGA)",Not verified,9.63629,8.75891,Approximate - village/area
-North Central,PLATEAU,Shendam,"COCIN Primary Health Care Clinic, Kalong","Cocin Primary Health Care Kalong, Shendam, Plateau State (ward: Kalong, Shendam LGA)",COCIN,8.7193,9.51428,Exact - facility matched by name
-North Central,PLATEAU,Shendam,"COCIN Primary Health Care Clinic, Pangshom","Pangshom, Shendam",COCIN,8.97965,9.41871,Approximate - village/area
-North Central,PLATEAU,Shendam,"Church of Christ in Nigeria Dispensary, Mambial","Mambial, Shendam",COCIN,8.59142,9.40335,Exact - facility matched by name
-South West,EKITI,Ado Ekiti,Redeemed Christian Church of God (RCCG) Clinics / Health Outposts,"Regional Headquarters, Off Fadamiluyi Street, Ado Ekiti, Ekiti State",Others,7.63788,5.21292,Approximate - town/neighbourhood centre
-South West,EKITI,Ado-Ekiti,Maria Assumpta Catholic Hospital,"Ado–Ikere Road in the Ureje area of Ado-Ekiti, Ekiti State",Roman Catholic Church,7.59356,5.21849,Exact - facility matched by name
-South West,EKITI,Ekiti East,Omuo Methodist Hospital,Iworo quarters omuo Ekiti,Methodist,7.72401,5.72545,Exact - facility matched by name
-South West,EKITI,Ekiti South West,Saint Mary'S Catholic Hospital,"Along Ikere Road, Igbara odo",Roman Catholic Church,7.50303,5.0699,Exact - facility matched by name
-South West,EKITI,Emure,CAC Oke-Anu Mission Clinic,"Emure LGA, Ekiti State; exact address to confirm",Others,7.43637,5.46044,Approximate - town/neighbourhood centre
-South West,EKITI,Emure,CAC Oke-Ayo Mission Clinic,"Emure LGA, Ekiti State; exact address to confirm",Others,7.43637,5.46044,Approximate - town/neighbourhood centre
-South West,EKITI,Emure,CAC Oke-Isegun Mission Clinic,"Idamudu Ward, Emure LGA, Ekiti State",Others,7.43452,5.46044,Exact - facility matched by name
-South West,EKITI,Emure,CAC Temiasese Mission Clinic,"Emure LGA, Ekiti State; exact address to confirm",Others,7.43637,5.46044,Approximate - town/neighbourhood centre
-South West,EKITI,Emure,Spiritual Church of God Clinic,"Ariyasi Ward, Emure LGA, Ekiti State",Others,7.42087,5.46182,Approximate - village/area
-South West,EKITI,Ido/Osi,Mercy International Mission health services,"Osi-Ekiti, Ekiti State; facility address and name to confirm",Others,7.78024,5.15206,Approximate - village/area
-South West,EKITI,Ikere,St. Gregory's Hospital,"Along Ise/Emure Road, Ikere Ekiti, Ekiti State",Roman Catholic Church,7.49481,5.22878,Approximate - town/neighbourhood centre
-South West,EKITI,Ikole,Ikole Methodist Primary Health Care Centre,"Ilegure Street, Ikole Ekiti",Methodist,7.80162,5.53443,Approximate - village/area
-South West,EKITI,Irepodun/Ifelodun,Ekiti Baptist High School Clinic Igede-Ekiti,Ekiti Baptist High School Along Aramoko Road,Others,7.68114,5.125,Approximate - village/area
-South West,EKITI,Irepodun/Ifelodun,Mater Christi Catholic Clinic and Maternity,"After Cornerstone Hotel, Oke-Aga, Igede-Ekiti, Irepodun/Ifelodun LGA, Ekiti State",Roman Catholic Church,7.68114,5.125,Approximate - village/area
-South West,EKITI,Irepodun/Ifelodun,Oke Igbala Mission Clinic (CAC),"Igede-Ekiti, Irepodun/Ifelodun Local Government Area, Ekiti Stat",Others,7.67023,5.1253,Exact - facility matched by name
-South West,EKITI,Irepodun/Ifelodun,Oke Irapada Mission Clinic (CAC),"Iyin-Ekiti, Irepodun/Ifelodun LGA, Ekiti State",Others,7.66339,5.16682,Exact - facility matched by name
-South West,EKITI,Moba,Al-Ma'Arif Islamic Health Center,"Idofin Quarters, Kabba Road, Omuo-Ekiti, Ekiti State",Islamic,7.74519,5.71875,Approximate - village/area
-South West,EKITI,Moba,Dr. Olukayode Samuel Omotunde Memorial Adventist Hospital,"Ikun-Amure, Moba LGA, Ekiti State",Others,7.99951,5.20425,Approximate - village/area
-South West,LAGOS,Agege,Al Imaan Hospital,"20 Surulere Road, Dopemu",Islamic,6.62283,3.30969,Exact - facility matched by name
-South West,LAGOS,Agege,Anthony Cardinal Okogie Medical Centre,"1 Akinsegun Street, off Charity Road, New Oko-Oba",Roman Catholic Church,6.65332,3.31272,Exact - facility matched by name
-South West,LAGOS,Agege,Methodist Church Clinic,"Oke Koto Axis / Methodist Church Street, Dopemu / Agege, Lagos",Methodist,6.611166,3.315179,Approximate - village/area
-South West,LAGOS,Agege,St. Sabina Catholic Hospital,"Idi-Mangoro, Agege",Roman Catholic Church,6.61064,3.32919,Exact - facility matched by name
-South West,LAGOS,Agege,The Apostolic Church Medical Centre,,Christian Pentecostal Fellowship,6.62477,3.33238,Exact - facility matched by name
-South West,LAGOS,Ajeromi-Ifelodun,Al-Hikmah Islamic Maternity Clinic,"Boundary Market Area, Ajegunle",Islamic,6.456276,3.345381,Approximate - village/area
-South West,LAGOS,Ajeromi-Ifelodun,Cardoso Catholic Primary Health Care,"Cardoso Street, Ajegunle-Apapa",Roman Catholic Church,6.45367,3.33508,Exact - facility matched by name
-South West,LAGOS,Ajeromi-Ifelodun,Our Lady of Lourdes Clinic,"Catholic Mission Street, Coker, Orile-Iganmu",Roman Catholic Church,6.48025,3.33687,Approximate - village/area
-South West,LAGOS,Ajeromi-Ifelodun,St. Charles Borromeo Catholic Clinic,"Wilmer Crescent, Olodi-Apapa, Ajegunle",Roman Catholic Church,6.44874,3.32868,Exact - facility matched by name
-South West,LAGOS,Ajeromi-Ifelodun,St. Mary’s Catholic Clinic,"Kirikiri Road, Olodi-Apapa, Ajegunle",Roman Catholic Church,6.45197,3.33115,Approximate - town/neighbourhood centre
-South West,LAGOS,Ajeromi-Ifelodun,St. Matthew’s Primary Health Care,Amukoko,Roman Catholic Church,6.466105,3.342793,Approximate - village/area
-South West,LAGOS,Alimosho,Eucharist Heart Of Jesus,"8, BABS ODUKALE STREET OFF MEIRAN ROAD MEIRAN LAGOS",Roman Catholic Church,6.663683,3.281841,Approximate - village/area
-South West,LAGOS,Alimosho,Living Faith Health Care Centre,"4 Ola Amusa Avenue, Off Ikotun-Idimu Road, Ikotun / Alakuko, Lagos",Christian Pentecostal Fellowship,6.55246,3.26931,Approximate - town/neighbourhood centre
-South West,LAGOS,Alimosho,Mother Theresa Medical Centre,"107 Liasu Road, St. Francis Catholic Church, Ikotun Idimu",Roman Catholic Church,6.552455,3.269309,Approximate - village/area
-South West,LAGOS,Alimosho,RCCG Maternity Home,"1 REDEMPTION CLOSE, OPP UNITY ESTATE. ABULE ODU BUSTOP, IDIMU ROAD, LAGOS",Christian Pentecostal Fellowship,6.56135,3.28444,Approximate - town/neighbourhood centre
-South West,LAGOS,Alimosho,Rev. Fr. John Burke Hospital,"St. Ferdinand Catholic Church, Boys’ Town, Ipaja",Roman Catholic Church,6.60445,3.25419,Approximate - village/area
-South West,LAGOS,Alimosho,St. Kizito Catholic Hospital,"31 Olabisi Nana Street, Off Community Road Ijegun.",Roman Catholic Church,6.51403,3.25174,Approximate - village/area
-South West,LAGOS,Alimosho,St. Modestus Mission Hospital Eye and Dental Centre,"Igando-Ikotun Road, Igando",Roman Catholic Church,6.55658,3.24785,Approximate - town/neighbourhood centre
-South West,LAGOS,Alimosho,St. Patrick Catholic Clinic,"Kudeyibu, Ijegun",Roman Catholic Church,6.51403,3.25174,Approximate - village/area
-South West,LAGOS,Amuwo-Odofin,Holy Family Hospital & Maternity Home Ltd,"22 Road, 2nd Avenue, Festac Town",Roman Catholic Church,6.4457,3.26132,Exact - facility matched by name
-South West,LAGOS,Amuwo-Odofin,"Redeemed Christian Church Of God Maternity, Festac Town, Lagos","7TH AVENUE, C CLOSE, FESTAC TOWN, LAGOS",Christian Pentecostal Fellowship,6.469454,3.28377,Approximate - village/area
-South West,LAGOS,Amuwo-Odofin,St Joseph Catholic Mission Hospital,"1,DILLION STREET, KIRIKIRI TOWN",Roman Catholic Church,6.44621,3.31103,Exact - facility matched by name
-South West,LAGOS,Apapa,Ahmadiyyah Hospital Apapa,"24A Creek Road, Apapa",Islamic,6.44233,3.36843,Approximate - village/area
-South West,LAGOS,Apapa,Al-Amanah Islamic Community Clinic,"Ijora-Badia / Boundary Axis, Apapa LGA",Islamic,6.46784,3.36788,Approximate - town/neighbourhood centre
-South West,LAGOS,Apapa,An-Najah Islamic Medical Centre,Liverpool Road / Ajegunle-Apapa Border Axis,Islamic,6.45197,3.33115,Approximate - town/neighbourhood centre
-South West,LAGOS,Apapa,Our Lady of Lourdes Clinic,"Catholic Mission Street, Coker, Orile-Iganmu",Roman Catholic Church,6.48025,3.33687,Approximate - village/area
-South West,LAGOS,Apapa,Sacred Heart Clinic,"26A, Pelewura Crescent, Apapa, P. O. Box 3342, Apapa, Lagos",Roman Catholic Church,6.44541,3.36794,Exact - facility matched by name
-South West,LAGOS,Apapa,Sacred Heart Clinic,"26 Pelewura Crescent,Apapa",Roman Catholic Church,6.44541,3.36794,Exact - facility matched by name
-South West,LAGOS,Apapa,St. Theresa Primary Health Centre,"3, Maiyegunro-Oro Street, P. O. Box 609, Apapa, Lagos",Roman Catholic Church,6.44233,3.36843,Approximate - village/area
-South West,LAGOS,Badagry,"Sacred Heart Hospital, Badagry","1 Along Market RD, Beside ST Thomas Primary School, Mobil Bus Stop, Badagry",Roman Catholic Church,6.414361,2.897278,Approximate - village/area
-South West,LAGOS,Badagry,St. Patrick’s Catholic Health Centre,"Catholic Mission Area, Ajara, Badagry",Roman Catholic Church,6.434645,2.890563,Approximate - village/area
-South West,LAGOS,Badagry,St. Theresa’s Catholic Health Centre,"No. 3, Maiyegunro-Oro Street, Amukoko. Iworo-Ajido Road, Rural Badagry Coastal Axis",Roman Catholic Church,6.415919,3.012087,Approximate - village/area
-South West,LAGOS,Epe,Eucharistic Heart of Jesus Clinic & Maternity,"Ibonwon, Epe",Roman Catholic Church,6.67504,3.99269,Exact - facility matched by name
-South West,LAGOS,Epe,Our Lady of Good Counsel Clinic,Epe Town (Epe LGA).,Roman Catholic Church,6.58981,3.97989,Approximate - village/area
-South West,LAGOS,Eti-Osa,"Ancilla Catholic Eye Hospital, Lekki","45b Christ Avenue, Lekki Phase 1, Lagos, Nigeria.",Roman Catholic Church,6.4349,3.49401,Approximate - town/neighbourhood centre
-South West,LAGOS,Eti-Osa,Ave Maria Hospital,"52 Adetokunbo Ademola Street, Victoria Island",Catholic,6.4344,3.43926,Approximate - town/neighbourhood centre
-South West,LAGOS,Eti-Osa,Church of Assumption Clinic,"123, Awolowo Way, P. O. Box 56242, Falomo, Ikoyi",Roman Catholic Church,6.44827,3.41706,Approximate - village/area
-South West,LAGOS,Eti-Osa,Church of Assumption Clinic,"123 Awolowo Way, Falomo, Ikoyi",Roman Catholic Church,6.44827,3.41706,Approximate - village/area
-South West,LAGOS,Eti-Osa,St. Kizito Hospital,"Ilasan Jakande Lekki, c/o AVSI - 14 Maitama Sule Street, Box 50928 Falomo",Roman Catholic Church,6.43487,3.50511,Exact - facility matched by name
-South West,LAGOS,Ifako-Ijaiye - 2,"Ahmadiyya Muslim Hospital, Ojokoro","KM 27 Lagos-Abeokuta Expressway, Ojokoro",Islamic,6.66083,3.29254,Exact - facility matched by name
-South West,LAGOS,Ifako-Ijaiye - 2,Ancilla Catholic Hospital Iju,"Odumosu Close, off Iju Road. 3/5 Muyiwa Olojo Street, Iju-Ishaga Lagos",Roman Catholic Church,6.66625,3.32425,Approximate - village/area
-South West,LAGOS,Ikeja - 4,Holy Rosary Medical Centre,"9B Ondo Street, Oke-Ira, Ogba",Roman Catholic Church,6.63057,3.3423,Approximate - town/neighbourhood centre
-South West,LAGOS,Ikeja - 4,St. Leo’s Catholic Medical Centre,"19/21 Toyin Street, Ikeja",Roman Catholic Church,6.59717,3.35049,Exact - facility matched by name
-South West,LAGOS,Ikeja - 4,St. Timothy Catholic Clinic,Ojodu area,Roman Catholic Church,6.64746,3.35875,Approximate - village/area
-South West,LAGOS,Ikorodu,Ansar-Ud-Deen Health Centre,"Sabo / Ijebu-Ode Road axis, Ikorodu.",Islamic,6.62832,3.51428,Approximate - village/area
-South West,LAGOS,Ikorodu,Rosalie Rendu Hospital,"56 Renecon Road, Macaulay, Baiyeku, Igbogbo",Roman Catholic Church,6.54662,3.54292,Approximate - village/area
-South West,LAGOS,Ikorodu,"St. Augustine Catholic Hospital, Ikorodu","St. Augustine Catholic Church, Ikorodu",Roman Catholic Church,6.62471,3.48834,Exact - facility matched by name
-South West,LAGOS,Ikorodu,St. Raphael Divine Mercy Specialist  Hospital,"Ijede Road, Igbogbo-Bayeku",Roman Catholic Church,6.62481,3.54956,Exact - facility matched by name
-South West,LAGOS,Kosofe,Al Sadiq Memorial Hospital,"21 Ayisat Street, off Agiliti Road, Mile 12, Ketu",Islamic,6.61232,3.39507,Probable - similar name/place; verify
-South West,LAGOS,Kosofe,"St. Michael Medical Clinic, Ketu","4 Onosanya Street, Araromi Quarters, Ketu",Roman Catholic Church,6.59782,3.39634,Probable - similar name/place; verify
-South West,LAGOS,Lagos Island,Al-Jaamiah Islamic Maternity Clinic,"Isale-Eko Axis, Lagos Island Central",Islamic,6.45407,3.39467,Approximate - town/neighbourhood centre
-South West,LAGOS,Lagos Island,Ansar-Ud-Deen Society Medical Post,"80, Ajanaku Street, Olowogbowo, Lagos Island",Islamic,6.459315,3.382036,Approximate - village/area
-South West,LAGOS,Lagos Island,Cathedral Church Clinic (Marina),"Cathedral Church Compound, Marina, Lagos Island",Anglican,6.45407,3.39467,Approximate - town/neighbourhood centre
-South West,LAGOS,Lagos Island,Holy Cross Clinic,"Holy Cross Cathedral, Lagos",Roman Catholic Church,6.44977,3.39672,Exact - facility matched by name
-South West,LAGOS,Lagos Island,St. Michael Catholic Church Clinic,"111, Lewis Street, Lafaiji, Lagos",Roman Catholic Church,6.45227,3.40259,Approximate - village/area
-South West,LAGOS,Lagos Mainland,Ansar-Ud-Deen Hospital & Maternity,"10, Randle Avenue / Market Street, Ebute Metta",Islamic,6.50525,3.35128,Probable - similar name/place; verify
-South West,LAGOS,Lagos Mainland,RCCG Maternity & Health Centre,"1-9 Redemption Way, Ebute Metta, Lagos",Faith-Based (RCCG Headquarters),6.48807,3.38492,Approximate - village/area
-South West,LAGOS,Lagos Mainland,St. Dominic PHC,"Herbert Macaulay Street, P. O. Box 44, Yaba, Lagos",Roman Catholic Church,6.51268,3.37446,Probable - similar name/place; verify
-South West,LAGOS,Lagos Mainland,"St. Luke's Anglican Hospital, Adekunle","Adekunle, Lagos Mainland",Anglican,6.51345,3.38388,Probable - similar name/place; verify
-South West,LAGOS,Lagos Mainland,St. Martin De Porres Clinic,"Annex of Dominic Clinic, 9, Bale Street, Makoko, Lagos",Roman Catholic Church,6.49583,3.38776,Exact - facility matched by name
-South West,LAGOS,Lagos Mainland,St. Patrick’s Catholic Health Post,"St. Patrick Catholic Church Compound, Idumota / Ebute Metta Border Axis",Catholic,6.48535,3.38712,Approximate - town/neighbourhood centre
-South West,LAGOS,Lagos Mainland,St. Paul's Parish Clinic,"88, Muritala Muhammed Way, Ebute-Metta, Lagos",Roman Catholic Church,6.48749,3.3891,Probable - similar name/place; verify
-South West,LAGOS,Lagos Mainland,Standard Bearers Islamic Health Post,"Makoko Community Axis, Yaba / Lagos Mainland",Islamic,6.49611,3.38778,Approximate - town/neighbourhood centre
-South West,LAGOS,Lagos Mainland,Yaba Baptist Church Clinic,Yaba (exact address to verify),Baptist,6.51004,3.37318,Approximate - town/neighbourhood centre
-South West,LAGOS,Lagos Mainland,Yaba Baptist Church Clinic,Yaba (exact address to verify),Baptist,6.51004,3.37318,Approximate - town/neighbourhood centre
-South West,LAGOS,Mushin - 4,Regina Mundi Catholic Hospital,142/144 Agege Motor Road,Roman Catholic Church,6.52735,3.35561,Exact - facility matched by name
-South West,LAGOS,Mushin - 4,Salvation Army Medical Clinic,"Agege Motor Road, Mushin",Christian Pentecostal Fellowship,6.53149,3.34631,Approximate - town/neighbourhood centre
-South West,LAGOS,Mushin - 4,"St. Kizito Clinic, Idi-Araba","40/42 Ojerinde Street, Idi-Araba",Roman Catholic Church,6.52073,3.35168,Exact - facility matched by name
-South West,LAGOS,Mushin - 4,The Solace Hospital,"No 33 Aladesuru, Mushin Lagos",Islamic,6.53149,3.34631,Approximate - town/neighbourhood centre
-South West,LAGOS,Ojo - 3,Cor Maria Clinic,"Immaculate Heart Parish, Mission Street, Iba New Town",Roman Catholic Church,6.50704,3.19856,Approximate - town/neighbourhood centre
-South West,LAGOS,Ojo - 3,St. Joseph Mission Hospital,"Kirikiri, Navy Town, Ojo",Roman Catholic Church,6.44621,3.31103,Probable - similar name/place; verify
-South West,LAGOS,Ojo - 3,St. Thomas Catholic Health Post,"Ibeshe / Riverine Outskirts Axis, Ojo LGA",Roman Catholic Church,6.55843,3.47562,Approximate - town/neighbourhood centre
-South West,LAGOS,Oshodi-Isolo - 5,Mother Mary Catholic Hospital,"38 Ganiyu Shogunle Kamoru, Ire-Akari Estate, Isolo",Roman Catholic Church,6.52218,3.32112,Exact - facility matched by name
-South West,LAGOS,Oshodi-Isolo - 5,St. Catherine of Sienna Medical Centre,"45/49 Old Ewu Road, Mafoluku-Oshodi",Roman Catholic Church,6.55467,3.32952,Exact - facility matched by name
-South West,LAGOS,Oshodi-Isolo - 5,St. Emmanuel’s Hospital,"2 Bola Ademuyi Street, Osolo Way, Isolo",Roman Catholic Church,6.53828,3.32886,Exact - facility matched by name
-South West,LAGOS,Oshodi-Isolo - 5,St. John the Evangelist Clinic,"2 Wuraola Street, Ladipo, Oshodi",Roman Catholic Church,6.56916,3.34032,Probable - similar name/place; verify
-South West,LAGOS,Oshodi-Isolo - 5,"St. Raphael Hospital, Okota","Baba Ewe Street, Ago Palace Way, Okota",Roman Catholic Church,6.509178,3.296505,Approximate - village/area
-South West,LAGOS,Surulere,Ansar-Ud-Deen Community Maternity,"Itire-Ikate Axis, Surulere LGA",Islamic,6.50992,3.33723,Approximate - town/neighbourhood centre
-South West,LAGOS,Surulere,NASFAT Health Centre,"Aguda / Itire Community Axis, Surulere LGA",Islamic,6.48828,3.33807,Approximate - village/area
-South West,LAGOS,Surulere,NASFAT Health Outreach Clinic,"Sangotedo Community Axis, Eti-Osa LGA",Islamic,6.472453,3.632537,Approximate - village/area
-South West,LAGOS,Surulere,Our Lady of Fatima Clinic,"1, Adetayo Shode Street, Aguda, P. O. Box 528, Surulere, Lagos",Roman Catholic Church,6.49512,3.34491,Exact - facility matched by name
-South West,LAGOS,Surulere,Our Lady of Lourdes Catholic Clinic,"Bode Thomas Street / Eric Moore Axis, Surulere",Catholic,6.50965,3.36158,Approximate - town/neighbourhood centre
-South West,LAGOS,Surulere,"Ss. Mulumba & David Clinic, Lawanson","2/3, Olatilewa/Abayomi Street, Lawanson, P. O. Box 1037, Surulere, Lagos",Roman Catholic Church,6.51146,3.34762,Exact - facility matched by name
-South West,LAGOS,Surulere,St Edmund Eye Hospital,Surulere,Catholic,6.5099,3.35911,Probable - similar name/place; verify
-South West,LAGOS,Surulere,St. Anthony Catholic Clinic,"St. Anthony Catholic Church, P. O. Box 266, Gbaja, Surulere, Lagos",Roman Catholic Church,6.5057,3.3533,Approximate - town/neighbourhood centre
-South West,LAGOS,Surulere,"St. Kizito Clinic, Idi-Araba","40/42, Ojerinde Street, Idi-Araba, Surulere, P. O. Box 374, Mushin",Roman Catholic Church,6.52073,3.35168,Probable - similar name/place; verify
-South West,LAGOS,Surulere,St. Theresa’s Catholic Health Centre,"Ikota Community / Off Lekki-Epe Expressway, Eti-Osa",Catholic,6.45446,3.55585,Approximate - village/area
-South West,ONDO,Akoko North East,Al-Huda Muslim Hospital,"BESIDE LOCAL GOVERNMENT QUARTERS EPINMI ROAD ,UGBE AKOKO",Islamic,7.5271,5.78552,Exact - facility matched by name
-South West,ONDO,Akoko South West,Daughters of Charity Clinic,"Mother and Child Hospital Complex, Laje Road, Ondo City, Ondo State",Roman Catholic Church,7.42132,5.7722,Probable - similar name/place; verify
-South West,ONDO,Akoko South West,Sancta Maria Catholic Hospital,"Oka-Akoko, Akoko South-West LGA, Ondo State",Roman Catholic Church,7.45094,5.7795,Approximate - village/area
-South West,ONDO,Akure North,Al-Jazeerah Hospital Igoba Akure.,"Besides Igoba Secondary School, Igoba Akure, Akure North",Islamic,7.28338,5.22337,Approximate - village/area
-South West,ONDO,Akure North,Teebah Hospital,"New Alagbaka Extension, Off Oba Ile Road, Akure",Islamic,7.25256,5.19312,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,Akure Anglican Diocese Medical Centre,"Araromi, Akure, Ondo State",Anglican,7.25256,5.19312,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,Akure Muslim Hospital,"Adeyeye Bus Stop, Akure High School, Akure",Islamic,7.25256,5.19312,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,Crown Hospital Akure,"37 A, Oja Oshodi, Akure",Islamic,7.2574,5.19467,Probable - similar name/place; verify
-South West,ONDO,Akure South,Don Bosco health and diagnosis center,127 Araromi Street Akure Ondo State,Roman Catholic Church,7.26805,5.1954,Probable - similar name/place; verify
-South West,ONDO,Akure South,Kharis Life Hospital and Diagnostic Centre,"No 20, Club 20 Street, Agape Headquarters Area, Ilesha Road, Akure",Others,7.25256,5.19312,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,Kharis Medical Centre,"189, Oyemukun Road, Lafe Busstop, Akure",Others,7.25256,5.19312,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,RCCG Jesus House Cathedral (Region 22),"Oke-Ijebu Road (Opposite Rubbies Court), Akure, Ondo State",Christian Pentecostal Fellowship,7.27871,5.21067,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,RCCG MATERNITY OKE-IJEBU,"Rccg Jesus House, Oke Ijebu Akure",Christian Pentecostal Fellowship,7.27944,5.21088,Approximate - village/area
-South West,ONDO,Akure South,Rohi Specialist Hospital,"No 9 Iwanike Street Off Okunbo,Oshinle Akure",Others,7.27228,5.16933,Exact - facility matched by name
-South West,ONDO,Akure South,Shifau Hospital Akure,"No4. Araromi Street, Vulganizer Bus Stop, Akure",Islamic,7.25256,5.19312,Approximate - town/neighbourhood centre
-South West,ONDO,Akure South,St John and Mary,52 Odo Ikoyi Street Akure,Roman Catholic Church,7.2469,5.17992,Exact - facility matched by name
-South West,ONDO,Idanre,Imoleayo clinic,"Opashorun, Idanre",Islamic,7.08508,5.14789,Exact - facility matched by name
-South West,ONDO,Idanre,Jimade clinic,"128, Technical Road, Idanre",Islamic,7.10178,5.14172,Approximate - town/neighbourhood centre
-South West,ONDO,Ile Oluji,Baptist Hospital,BEHIND POLARIS BANK,Baptist,7.21528,4.86715,Exact - facility matched by name
-South West,ONDO,Irele,St Theresa’s Catholic Hospital (HC),Along Ebute Road Ode Irele,Roman Catholic Church,6.4895,4.8631,Exact - facility matched by name
-South West,ONDO,Ondo West,All Saints Anglican Church Hospital,"Ogbankowo Street, Ondo City, Ondo State",Anglican,7.07958,4.84271,Approximate - town/neighbourhood centre
-South West,ONDO,Ondo West,Catholic Hospital Olanyinde Ondo,"3RFJ+CWF, Olayinde District, Ondo City, Ondo State",Roman Catholic Church,7.073562,4.832297,Exact - from plus code in source address
-South West,ONDO,Ondo West,Medical Missionaries of Mary (MMM)Catholic Hospital,"Ore-Ondo Road, Ondo City, Ondo State",Roman Catholic Church,7.07958,4.84271,Approximate - town/neighbourhood centre
-South West,ONDO,Ondo West,Olaiya Medical Clinic,"15, Olaoluwa Street, Rainbow, Ondo",Islamic,7.07958,4.84271,Approximate - town/neighbourhood centre
-South West,ONDO,Owo,St Louis Catholic Hospital Owo,"Pm 1043 Oke Ogun, Owo, Ondo State",Roman Catholic Church,7.20222,5.5763,Exact - facility matched by name
-South West,ONDO,Owo,St. Mary's Catholic Hospital Owo,"Along Oke-Ogun Road (Adjacent to Polaris Bank), Owo, Ondo State.",Roman Catholic Church,7.19611,5.58389,Approximate - town/neighbourhood centre
-South West,OYO,Egbeda,St. Dominic Catholic Hospital,"Ogungbade Village, New Ife Road, Ibadan, Oyo State",Roman Catholic Church,7.39208,4.01048,Exact - facility matched by name
-South West,OYO,Ibadan North,Methodist Cathedral of Light Clinic,"Methodist Cathedral of Light Church, Gate Bus Stop, Agodi, Ibadan, Oyo State",Methodist,7.40167,3.91669,Approximate - town/neighbourhood centre
-South West,OYO,Ibadan North,Redeemer's Health Centre – Awolowo,"37 Awolowo Avenue, Bodija, Ibadan, Oyo State",Others,7.41709,3.90254,Probable - similar name/place; verify
-South West,OYO,Ibadan North,St. Francis Catholic Hospital,"Behind Aboyunogun Hill, Oritamefa, Ibadan, Oyo State",Roman Catholic Church,7.38075,3.87976,Approximate - town/neighbourhood centre
-South West,OYO,Ibadan North (provisional),St. Theresa's Clinic,"Oke-Are, Ibadan, Oyo State",Roman Catholic Church,7.38158,3.89754,Approximate - village/area
-South West,OYO,Ibadan North East,Our Lady of Apostles (O.L.A.) Catholic Hospital,"Oluyoro, Oke-Ofa, Ibadan, Oyo State",Roman Catholic Church,7.3891,3.92029,Exact - facility matched by name
-South West,OYO,Ibadan North East,Redeemer's Health Centre – Ikolaba,"Tewogbade area, Akinyele Street, behind Ibachi Chinese Restaurant, Ikolaba/New Bodija, Ibadan, Oyo State",Others,7.40448,3.92688,Probable - similar name/place; verify
-South West,OYO,Ibadan South East,"St. Mary's Catholic General Hospital, Eleta","Eleta, P.M.B. 085, Mapo-Eleta, Ibadan, Oyo State",Roman Catholic Church,7.3553,3.91076,Exact - facility matched by name
-South West,OYO,Ibadan South West,Zoe Specialist Mission Hospital,"No. 4 Adeogun Street, off Alaafin Avenue, Oluyole Estate, Ibadan, Oyo State",Others,7.36515,3.84832,Exact - facility matched by name
-South West,OYO,Ibarapa East,Akef Maghraby Eye Clinic,"Eruwa, Ibarapa East LGA, Oyo State",Roman Catholic Church,7.53992,3.42828,Approximate - village/area
-South West,OYO,Ido,"Baptist Cottage Hospital, Omi-Adio","No. 7 Oke-Oloro Street, Omi-Adio, Ido LGA, Oyo State",Baptist,7.39252,3.74847,Probable - similar name/place; verify
-South West,OYO,Iseyin,Our Lady Catholic Hospital (Iseyin listing 2),"Irawote Road, Isalu 7, Iseyin, Oyo State",Roman Catholic Church,7.94873,3.61749,Approximate - village/area
-South West,OYO,Iseyin,"Our Lady Catholic Hospital, Iseyin","Irawote Street, Iseyin town, Oyo State",Roman Catholic Church,7.94873,3.61749,Approximate - village/area
-South West,OYO,Iwajowa,"Oba Olabisi Alabi Memorial Baptist Specialist Hospital, Iganna","Iganna, Iwajowa LGA, Oyo State (street address to be confirmed)",Baptist,7.95776,3.25707,Approximate - village/area
-South West,OYO,Iwajowa,St. Joseph Catholic Clinic,"St. Joseph Catholic Church, Iwere-Ile, Oyo State",Roman Catholic Church,7.99707,3.08112,Approximate - village/area
-South West,OYO,Kajola,"Baptist Medical Centre, Okeho","Isia 9, Ajegunle, Okeho, Oyo State",Baptist,8.04327,3.38013,Approximate - village/area
-South West,OYO,Kajola,"Baptist Medical Centre, Okeho (duplicate listing)","Isia 9, Ajegunle, Okeho, Oyo State",Baptist,8.04327,3.38013,Approximate - village/area
-South West,OYO,Ogbomoso North,Bowen University Teaching Hospital (Baptist hospital),"Ogbomoso, Oyo State",Baptist,8.13312,4.23431,Exact - facility matched by name
-South West,OYO,Ogbomoso North (provisional),Living Faith Clinic and Maternity Home,"Along Shalom Baptist Church, Onire Area, Ogbomoso, Oyo State",Others,8.13373,4.24014,Approximate - town/neighbourhood centre
-South West,OYO,Oluyole (provisional),St. Joseph Marello's Clinic,"Km 8, Old Lagos Road, Opere Village, New Garage, Ibadan, Oyo State",Roman Catholic Church,7.3197,3.86609,Probable - similar name/place; verify
-South West,OYO,Oluyole (provisional),St. Marello Catholic Hospital,"Opere Village, Ibadan, Oyo State",Roman Catholic Church,7.3197,3.86609,Exact - facility matched by name
-South West,OYO,Oyo East,Baptist Clinic,Baptist Church Community,Baptist,7.84107,3.92748,Approximate - town/neighbourhood centre
-South West,OYO,Oyo East,Baptist Hospital And Maternity Centre,"Olivet heights, Oyo",Baptist,7.84107,3.92748,Approximate - town/neighbourhood centre
-South West,OYO,Oyo East,"Baptist Hospital, Oyo","Oyo town, Oyo East LGA, Oyo State",Baptist,7.81974,3.91947,Probable - similar name/place; verify
-South West,OYO,Oyo East,Methodist Clinic And Maternity Centre,"Methodist Clinic and Maternity Centre Ajagba, Oyo.",Methodist,7.83929,3.93829,Probable - similar name/place; verify
-South West,OYO,Oyo East,Olivet Baptist High School Clinic,"Olivet School, Araromi, Along Owode Road, Oyo",Baptist,7.82962,3.92036,Approximate - town/neighbourhood centre
-South West,OYO,Saki West,"Baptist Medical Centre, Saki","Ajegunle Area, Saki, Oyo State",Baptist,8.66229,3.39972,Exact - facility matched by name
-South West,OYO,Saki West,"Muslim Hospital, Saki","Ogbooro–Igboho Road, Saki, Oyo State",Islamic,8.67212,3.39691,Approximate - village/area
-South West,OYO,Saki West,Saki Baptist Medical Centre,"No. 1, Dr. V. O. Fatunla Street, Ajegunle, Saki, Oyo State",Baptist,8.66229,3.39972,Exact - facility matched by name
-South South,AKWA IBOM,Abak,Mercy Hospital,"95 Hospital Road, Abak",Roman Catholic Church,4.98644,7.79179,Exact - facility matched by name
-South South,AKWA IBOM,Eket,Immanuel Hospital Health Centre (Lutheran Affiliated),"6 Main School Road, Off Hospital Road, Eket",Others,4.6371,7.91941,Probable - similar name/place; verify
-South South,AKWA IBOM,Essien Udim,St. Joseph Hospital,"Ikot Ekpene - Abak Rd, Ukana Iba",Roman Catholic Church,5.12728,7.77514,Approximate - village/area
-South South,AKWA IBOM,Essien Udim,St. Mary’s Hospital & Maternity,"Urua Akpan Axis (BECOHTECH Founding Hospital Site), Essien Udim LGA",Roman Catholic Church,5.12873,7.62726,Exact - facility matched by name
-South South,AKWA IBOM,Etim Ekpo,Divine Love Hospital & Maternity,"Utu Ikot Imonte, Etim Ekpo LGA, Akwa Ibom State",Christian Pentecostal Fellowship,5.0063,7.602,Exact - facility matched by name
-South South,AKWA IBOM,Etinan,Salvation Army Community Clinic,"Along Hospital Road, Etinan Central Division",Others,4.82518,7.86587,Approximate - village/area
-South South,AKWA IBOM,Ibeno,Ekpene Obom Qua Iboe Church Leprosy Hospital,"Adjacent Qua Iboe Church, Ekpene Obom, Ibeno LGA",Others,4.86133,7.82068,Probable - similar name/place; verify
-South South,AKWA IBOM,Ibeno,Ekpene Obom Qua Iboe Church Leprosy Hospitam,"Adjacent Qua Iboe Church, Ekpene Obom.",Others,4.86133,7.82068,Probable - similar name/place; verify
-South South,AKWA IBOM,Ibiono Ibom,Hand Maids Hospital,Ikot Ambang,Roman Catholic Church,5.06082,7.87158,Exact - facility matched by name
-South South,AKWA IBOM,Ibiono Ibom,Palmer Memorial Mission Hospital,"Ikot Usen Village Axis (Off Uyo-Ikot Ekpene / Oko Ita Road), Ibiono Ibom LGA",Roman Catholic Church,5.17345,7.89572,Exact - facility matched by name
-South South,AKWA IBOM,Ibiono Ibom,St. Theresa's Hospital,"Useh Ikot Usan, Ibiono",Roman Catholic Church,5.11205,7.8454,Exact - facility matched by name
-South South,AKWA IBOM,Ikot Ekpene,Presbyterian Comprehensive Health Centre,"Mission Road / Gra Land Road, Ikot Ekpene",Presbyterian,5.18719,7.70706,Approximate - village/area
-South South,AKWA IBOM,Ikot Ekpene,St. Mary’s Hospital,"Urua Akpan, Essien Udim / Ikot Ekpene axis",Roman Catholic Church,5.12873,7.62726,Probable - similar name/place; verify
-South South,AKWA IBOM,Itu,Mary Slessor Mission Hospital (Presbyterian),"Calabar-Ito Highway, Itu LGA",Presbyterian,5.20531,8.00027,Probable - similar name/place; verify
-South South,AKWA IBOM,Mkpat-Enin,True Whig / Qua Iboe Mission Outreach Clinic,"Mission Road, Ikot Ebak",Others,4.99548,7.77808,Approximate - town/neighbourhood centre
-South South,AKWA IBOM,Nsit Ibom,Mount Carmel Hospital,Akpautong Community,Roman Catholic Church,4.85883,7.93632,Probable - similar name/place; verify
-South South,AKWA IBOM,Nsit Ubium,Holy Cross Hospital,Ndukpoise Community,Roman Catholic Church,4.8064,7.96433,Approximate - village/area
-South South,AKWA IBOM,Nsit Ubium,Holy Cross Hospital,"Ndukpoise, Nsit Ubium LGA",Roman Catholic Church,4.8064,7.96433,Approximate - village/area
-South South,AKWA IBOM,Oruk Anam,Redeemer Cottage Hospital,"Ibesit Town Center (Diocesan Secondary Center), Oruk Anam LGA",Roman Catholic Church,4.76136,7.63088,Exact - facility matched by name
-South South,AKWA IBOM,Uruan,Eman Catholic Mission Post,"Rural Dispensary Route, Eman",Roman Catholic Church,5.04387,8.00961,Approximate - village/area
-South South,AKWA IBOM,Uruan,Ibiaku Catholic Health Post,"Rural Outreach Center, Ibiaku",Roman Catholic Church,5.09323,7.95434,Approximate - town/neighbourhood centre
-South South,AKWA IBOM,Uruan,Idu Mission Clinic,"Parish Health Center, Idu",Roman Catholic Church,5.02235,8.01696,Approximate - village/area
-South South,AKWA IBOM,Uruan,Mbiaya Catholic Dispensary,Mbiaya Rural Outreach,Roman Catholic Church,5.09856,7.99423,Approximate - village/area
-South South,AKWA IBOM,Uruan,Methodist General Hospital (Mission Affiliated),"Ituk Mbang Community, Uruan LGA",Methodist,4.91914,8.03792,Probable - similar name/place; verify
-South South,AKWA IBOM,Uyo,Family Life Centre (VVF),"VVF Road, off Idoro Road, Uyo",Roman Catholic Church,5.03571,7.89191,Probable - similar name/place; verify
-South South,AKWA IBOM,Uyo,Idoro Catholic Health Clinic,Idoro Village Outreach Road,Roman Catholic Church,5.02568,7.86658,Approximate - village/area
-South South,AKWA IBOM,Uyo,St. Athanasius Hospital Ltd,"No. 1 Ufeh Street, Federal Housing Estate, Off Abak Road, Uyo",Roman Catholic Church,5.02411,7.91388,Exact - facility matched by name
-South South,AKWA IBOM,Uyo,St. Luke’s Hospital,"Nwaniba Road, Anua Offot, Uyo LGA",Roman Catholic Church,5.04028,7.92212,Exact - facility matched by name
-South South,BAYELSA,Ogbia LGA,Christ the King Catholic Hospital,"Imiringi Town, Ogbia Local Government Area, Bayelsa State",Roman Catholic Church,4.85468,6.36853,Exact - facility matched by name
-South South,BAYELSA,Yenagoa LGA,Believer's Faith Medical Clinic (also noted as Believers Faith Medical Clinic),"No. 10 Egemuze Street, Onopa (Atissa I), Yenagoa, Bayelsa State",Others,4.9363,6.28084,Exact - facility matched by name
-South South,BAYELSA,"Yenagoa LGA,",Asueifai (New Life) Hospital,"No. 14 Asueifai, off Baybridge Road / Hospital Road, Onopa, Yenagoa, Bayelsa State",Others,4.93689,6.31592,Exact - facility matched by name
-South South,CROSS RIVER,Akamkpa,Assemblies of God Outreach Clinic,Central Street Akamkpa Town,Others,5.32685,8.34431,Approximate - village/area
-South South,CROSS RIVER,Akpabuyo,Methodist Health Centre,Ikot Nakanda Akpabuyo LGA,Methodist,4.88391,8.4823,Approximate - village/area
-South South,CROSS RIVER,Akpabuyo,St. Joseph's Catholic Hospital,Ikot Ene Akpabuyo LGA,Roman Catholic Church,4.91574,8.46782,Exact - facility matched by name
-South South,CROSS RIVER,Boki,St. Patrick's Catholic Clinic,Okundi Boki LGA,Roman Catholic Church,6.43825,8.7937,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Calabar,"Immanuel Infirmary, 1 Assemblies of God Road, Army Junction, Ikot Effang, Calabar, Cross River State.",,Assemblies of God,5.03457,8.35075,Probable - similar name/place; verify
-South South,CROSS RIVER,Calabar Municipal,Bogobri Muslim Community Clinic,Bogobri Street Calabar,Islamic,4.95878,8.32701,Approximate - village/area
-South South,CROSS RIVER,Calabar Municipal,Borrow Pit Health Care,The Apostolic Church Borrow Pit Calabar,Baptist,4.9517,8.322,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Calabar Municipal,Faith Foundation Specialist Clinic,57 Ndidem Usang Iso Rd Big Qua Town Calabar,Christian Pentecostal Fellowship,4.97124,8.33951,Exact - facility matched by name
-South South,CROSS RIVER,Calabar Municipal,Holy Family Catholic Hospital,12 Kakwa Road Calabar,Roman Catholic Church,4.9517,8.322,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Calabar Municipal,Immanuel Infirmary Hospital,No. 1 Assemblies of God / Army Junction Ediba Road Calabar,Christian Pentecostal Fellowship,5.03457,8.35075,Exact - facility matched by name
-South South,CROSS RIVER,Calabar Municipal,Sacred Heart Catholic Clinic,22 Calabar Road Calabar,Roman Catholic Church,4.9517,8.322,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Calabar South,Qua Iboe Church (QIC) Health Centre,45 Atu Street Calabar,Christian Pentecostal Fellowship,4.9517,8.322,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Calabar South,Sacred Heart Hospital,3 Egerton Street Calabar,Roman Catholic Church,4.9517,8.322,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Calabar South,St. Luke's Presbyterian Clinic,88 Goldie Street Calabar South,Presbyterian,4.9517,8.322,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Ikom,Holy Family Catholic Hospital,50 Hospital Road Four Corners Ikom,Roman Catholic Church,5.95585,8.71463,Exact - facility matched by name
-South South,CROSS RIVER,Ikom,Rev. Fr Victor Achima Owan Enoh Foundation,Ikom HQ Outreach State-wide,Roman Catholic Church,5.98248,8.7174,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Ikom,St. Thomas Catholic Hospital,Mission Road Ikom,Roman Catholic Church,5.98248,8.7174,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Obubra,Good Samaritan Mission Clinic,Afikpo Road Obubra,Others,6.07439,8.32288,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Obubra,Methodist Clinic Nkechicolwill,Apiapum Obubra LGA,Methodist,5.99811,8.28899,Approximate - village/area
-South South,CROSS RIVER,Obubra,Presbyterian Health Centre (Apiapum),Apiapum Obubra LGA,Presbyterian,5.99811,8.28899,Approximate - village/area
-South South,CROSS RIVER,Obudu,Deeper Life Gospel Clinic,Central Avenue Obudu,Christian Pentecostal Fellowship,6.61537,9.1459,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Obudu,Sacred Heart Catholic Hospital,Hospital Road Obudu Town,Roman Catholic Church,6.67375,9.17027,Exact - facility matched by name
-South South,CROSS RIVER,Odukpani,Presbyterian Health Centre,Creek Town Odukpani,Presbyterian,4.99206,8.27474,Approximate - village/area
-South South,CROSS RIVER,Odukpani,St. Mary's Catholic Hospital,Adiabo Odukpani LGA,Roman Catholic Church,5.06501,8.28055,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Ogoja,Eja Memorial Hospital,,Presbyterian,5.8935,8.02309,Probable - similar name/place; verify
-South South,CROSS RIVER,Ogoja,Holy Child Secondary School / Clinic,Convent Avenue Ogoja,Roman Catholic Church,6.65183,8.79425,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Ogoja,Moniaya Catholic Hospital,Moniaya Ogoja Town,Roman Catholic Church,6.66485,8.8268,Exact - facility matched by name
-South South,CROSS RIVER,Yakurr,Presbyterian Joint Hospital (Ugep),Hospital Road Ugep Town,Presbyterian,5.80849,8.07234,Approximate - village/area
-South South,CROSS RIVER,Yala,Lutheran Health Post,Okpoma Yala LGA,Christian Pentecostal Fellowship,6.6099,8.65145,Approximate - town/neighbourhood centre
-South South,CROSS RIVER,Yala,St. John's Catholic Clinic,Okpoma Yala LGA,Roman Catholic Church,6.615,8.67026,Approximate - village/area
-South South,EDO,Egor,Evangel Model Hospital,"121 New Lagos Road, Uselu, Benin City",Christian Pentecostal Fellowship,6.35859,5.62174,Exact - facility matched by name
-South South,EDO,Egor,Mary Martin Hospital,"5 Etinosa Street, Uselu, Benin City",Roman Catholic Church,6.38429,5.60984,Approximate - town/neighbourhood centre
-South South,EDO,Esan Central,St. Camillus Catholic Hospital – Annexe I,"Ewu, Edo State (exact street address to confirm)",Roman Catholic Church,6.80214,6.24086,Approximate - village/area
-South South,EDO,Esan North-East,St. Camillus Catholic Hospital,"Catholic Mission Road, Uromi",Roman Catholic Church,6.71368,6.32672,Exact - facility matched by name
-South South,EDO,Etsako East,Santa Maria Catholic Medical Centre,Agenebode,Roman Catholic Church,7.10848,6.69127,Approximate - village/area
-South South,EDO,Etsako West,Santa Maria Catholic Hospital,Uzairue,Roman Catholic Church,7.0946,6.30074,Exact - facility matched by name
-South South,EDO,Igueben,St. Camillus Catholic Hospital – Annexe II,"Ebelle, Edo State (exact street address to confirm)",Roman Catholic Church,6.49131,6.22847,Approximate - village/area
-South South,EDO,Oredo,Precious Maternity Home,29 Country Home Motel Road Benin City,Christian Pentecostal Fellowship,6.33815,5.62575,Approximate - town/neighbourhood centre
-South South,EDO,Oredo,St Matthias Anglican Maternity and Hospital,No 35 Awo Street Off First East Circular,Anglican,6.32369,5.62944,Probable - similar name/place; verify
-South South,EDO,Oredo,St. Philomena's Catholic Hospital,"23 Dawson Road, off Akpakpava Road, Benin City",Roman Catholic Church,6.34516,5.63016,Exact - facility matched by name
-South East,EBONYI,Abakaliki,The Presbyterian Rural Health Services,,Presbyterian,6.32453,8.12432,Approximate - town/neighbourhood centre
-South East,EBONYI,Abakiliki,Anglican Betel Mission Hospital,"Ndiagu, Abakiliki",Anglican,6.31461,8.10893,Probable - similar name/place; verify
-South East,EBONYI,Abakiliki,Christ the King Hospital,"Amaegu Unuhu, Abakaliki",Roman Catholic Church,6.31107,8.10261,Exact - facility matched by name
-South East,EBONYI,Abakiliki,Evangel Mission Hospital,"Amachi, Amaegu Unuhu, Abakaliki",Others,6.24768,8.10651,Exact - facility matched by name
-South East,EBONYI,Abakiliki,Good Shephered Clinic and Maternity,"943G+R39 Udemezue Street & Water Works Road, Abakaliki",Roman Catholic Church,6.354537,8.125234,Exact - from plus code in source address
-South East,EBONYI,Abakiliki,Mother Mary Hospital Unuhu,"Ebyia Unuhu, Izzi Unuhu, Abakaliki",Roman Catholic Church,6.29327,8.08191,Approximate - town/neighbourhood centre
-South East,EBONYI,Abakiliki,St. John Hospital and Maternity,"Azuiyiokwu, Abakaliki Urban",Others,6.31839,8.11112,Probable - similar name/place; verify
-South East,EBONYI,Afikpo North,"Maranatha Hospital, Amangbala","Amangbala Afikpo, Afikpo North",Others,5.8834,7.93651,Exact - facility matched by name
-South East,EBONYI,Afikpo North,Mater Misericordae Hospital,,Roman Catholic Church,5.89451,7.93689,Approximate - town/neighbourhood centre
-South East,EBONYI,Afikpo North,"St. Paul's Hospital and Maternity, Afikpo","Ohaisu, Afikpo Town, Afikpo North",Roman Catholic Church,5.89081,7.94733,Probable - similar name/place; verify
-South East,EBONYI,Afikpo South,"Ekoli Presbyterian Joint Hospital (EPJH)PVHM+963 Ocha, Ekoli-Edda, Edda LGA (formerly Afikpo South LGA)",,Presbyterian,5.74887,7.83562,Exact - facility matched by name
-South East,EBONYI,Ebonyi,Good Shephered Clinic and Maternity,"Eke Mgbo Abofia, Abaofia, Ebonyi Local Government Area, Ebonyi State.",Roman Catholic Church,6.35475,8.1252,Probable - similar name/place; verify
-South East,EBONYI,Ebonyi,St. Patrick Mile 4 Hospital,"Mile 4, Abakaliki - Afikpo Road, Abakaliki",Roman Catholic Church,6.36511,8.06628,Exact - facility matched by name
-South East,EBONYI,Ezza North,Baptist Hospital and Maternity,"Oshiegbe, Ezza North LGA",Baptist,6.34806,7.94704,Probable - similar name/place; verify
-South East,EBONYI,Ezza North,Mercy Mission Hospital,"Oriuzor, Ezza North LGA",Roman Catholic Church,6.21635,8.05768,Approximate - town/neighbourhood centre
-South East,EBONYI,Ezza North,St. Augustine Hospital and Maternity,"Omege Umuezekoha Axis, Ezza North",Roman Catholic Church,6.34169,8.00981,Approximate - village/area
-South East,EBONYI,Ezza North,St. Deakins Maternity,"Umuoghara/Ebiaji, Ezza North",Others,6.26776,8.03281,Approximate - town/neighbourhood centre
-South East,EBONYI,Ezza South,Angel Raphael Cortege Hospital,Onueke,Roman Catholic Church,6.14358,8.00763,Probable - similar name/place; verify
-South East,EBONYI,Ezza South,Divine Grace Hospital (Ezza),"Onueke Urban, Ezza South",Others,6.16865,8.02837,Approximate - town/neighbourhood centre
-South East,EBONYI,Ezza South,Saviour Hospital,"Onueke, Ezza South LGA",Others,6.17152,8.02654,Probable - similar name/place; verify
-South East,EBONYI,Ezza South,"St. Vincent Hospital, Amudo","Eziegu Amudo, Amudo Okoffia in Ezza South Local Government Area, Ebonyi State, Nigeria, near the Onueke area",Roman Catholic Church,6.07291,8.01322,Exact - facility matched by name
-South East,EBONYI,Ikwo,Blessed Martins International Institute Hospital,"Ohatekwe-Amagu, Ikwo",Roman Catholic Church,6.05605,8.10492,Approximate - village/area
-South East,EBONYI,Ikwo,Rural Improvement Mission Hospital,"Ndiagu Echara,",Presbyterian,6.14836,8.2766,Exact - facility matched by name
-South East,EBONYI,Ikwo,Secred Heart Clinic,Alike Ikwo,Roman Catholic Church,6.17456,8.2387,Approximate - town/neighbourhood centre
-South East,EBONYI,Ishielu,Maria Ines Hospital,"Ezillo 2, Ishielu LGA, Ebonyi State",Roman Catholic Church,6.42263,7.79869,Exact - facility matched by name
-South East,EBONYI,Ivo,"Assemblies of God Mission Clinic, Akaeze","Akaeze, Ivo LGA",Others,5.9187,7.69153,Approximate - village/area
-South East,EBONYI,Ivo,Divine Mercy Care Clinic,"New Site, Ishiagu / Amagu, Ivo LGA",Roman Catholic Church,5.93553,7.55904,Approximate - town/neighbourhood centre
-South East,EBONYI,Ivo,"Methodist Mission Health Post, Ngwogwo","Ngwogwo, Ivo LGA",Methodist,5.95955,7.58,Approximate - village/area
-South East,EBONYI,Ivo,"St. Patrick's Catholic Dispensary / Maternity, Ishiagu","Ishiagu Central, Ivo LGA",Roman Catholic Church,5.95542,7.56335,Approximate - village/area
-South East,EBONYI,Izzi,St. Vincent Hospital Ndubia,"Ndubia, Ezza South / Ishielu boundary (Ezza North axis)",Roman Catholic Church,6.36304,8.32608,Exact - facility matched by name
-South East,EBONYI,Izzi,Sudan United Mission,Onuenyim Izzi LGA,NKST,6.75595,8.23722,Approximate - town/neighbourhood centre
-South East,EBONYI,Ohaozara,"Presbyterian Joint Hosptital  Uburu  Obiozara-Ndeaboh Junction Road, Uburu, Ohaozara Local Government Area, Ebonyi State",,Presbyterian,6.0321,7.7503,Exact - facility matched by name
-North Central,BENUE,Ado,St David's Ado,Ado,Roman Catholic Church,6.789293,7.998016,LGA estimate
-North Central,BENUE,Buruku,Nongu u Kristu ke Sudan hen Tiv (NKST) Comprehensive Health Center - Garagbohol,Garagbohol,NKST,7.32788,9.19025,LGA estimate
-North Central,BENUE,Buruku,St Christopher's Hospital Mba-av,Mba-av,Roman Catholic Church,7.32788,9.19025,LGA estimate
-North Central,BENUE,Buruku,St. Martins De Pores Abwa,,Roman Catholic Church,7.32788,9.19025,LGA estimate
-North Central,BENUE,Gboko,Nongu u Kristu ke Sudan hen Tiv (NKST)  BL & Rehab Hospital Mbaamandev,,NKST,7.3638,8.890148,LGA estimate
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST)  Health Centre, Gwar",Gwar Mbatiav,NKST,7.3638,8.890148,LGA estimate
-North Central,BENUE,Gboko,"Nongu u Kristu ke Sudan hen Tiv (NKST) , Genyi",Genyi Yandev,NKST,7.3638,8.890148,LGA estimate
-North Central,BENUE,Guma,Guma Christian Reform Church  Of Nigeria  Health Clinic,,Christian Pentecostal Fellowship,7.901258,8.754582,LGA estimate
-North Central,BENUE,Gwer West,St Peter's Clinic,,Roman Catholic Church,7.632059,8.212172,LGA estimate
-North Central,BENUE,Gwer West,St. Martins clinic UooLele,Mbalav,Roman Catholic Church,7.632059,8.212172,LGA estimate
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Apelagh",Apelagh,NKST,7.257637,9.567751,LGA estimate
-North Central,BENUE,Katsina-Ala,"Nongu u Kristu ke Sudan hen Tiv (NKST) Hospital, Sai",Sai,NKST,7.257637,9.567751,LGA estimate
-North Central,BENUE,Konshisha,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center HC, Muta",Mbagusa,NKST,7.048656,8.708994,LGA estimate
-North Central,BENUE,Kwande,St. Theresa’s PHC Jorbua,,Roman Catholic Church,6.807132,9.445338,LGA estimate
-North Central,BENUE,Ukum,"Nongu u Kristu ke Sudan hen Tiv (NKST) Primary Health Center, Pevikyaa",Pevikyaa,NKST,7.606334,9.622969,LGA estimate
-North Central,BENUE,Ukum,Nongu u Kristu ke Sudan hen Tiv (NKST)Primary Health Center Gyenku,Gyenku,NKST,7.606334,9.622969,LGA estimate
-North Central,BENUE,Ushongo,"Nongu u Kristu ke Sudan hen Tiv (NKST) Health Center, Iorliam",Iorliam,NKST,7.10147,9.016918,LGA estimate
-North Central,BENUE,Ushongo,Nongu u Kristu ke Sudan hen Tiv (NKST) Lobi,Lobi,NKST,7.10147,9.016918,LGA estimate
-North Central,BENUE,Vandeikya,St. Paul's Clinic - Sambe,Sambe,Roman Catholic Church,6.811925,9.084314,LGA estimate
-North Central,FCT,Abuja Municipal (AMAC),Adventist Polyclinic Abuja,Abuja,Others,9.036767,7.785518,LGA estimate
-North Central,FCT,Abuja Municipal (AMAC),Adventist Polyclinic Abuja,Abuja,Others,9.036767,7.785518,LGA estimate
-North Central,FCT,Abuja Municipal (AMAC),Church of Nigeria Medical Center,"St. Matthias House, Ibrahim Waziri Crescent, Gudu District, Abuja",Anglican,8.942947,7.405707,LGA estimate
-North Central,FCT,Abuja Municipal (AMAC),ECWA Medical Centre / Clinic,"Near ECWA Church Bus Stop, Abuja (Plot 944, Asba and Dantata Street, off Olu Awotesu St)",ECWA,8.942947,7.405707,LGA estimate
-North Central,FCT,Karu / Municipal Border,Al-Ma'Arif Islamic Health Center,"Off Unity Road, Karu, Masaka, Federal Capital Territory",Islamic,9.036767,7.785518,LGA estimate
-North Central,KOGI,Adavi,Ohiani Maternity & Orphanage,Zango Daji,Others,7.685469,6.466524,LGA estimate
-North Central,KOGI,Ankpa,Immaculate Heart Maternity and Dispensary,Awo-Akpali,Roman Catholic Church,7.462079,7.611565,LGA estimate
-North Central,KOGI,Igalamela-Odolu,St. John's Cottage Hospital,Akanya,Roman Catholic Church,7.064738,7.04222,LGA estimate
-North Central,KOGI,Okehi,Al Amin Orthopedic Hospital,Okehi,Islamic,7.727497,6.336383,LGA estimate
-North Central,NASARAWA,Lafia,ERCC Clinic Jibiyel,Jibiyel,Others,8.635477,8.715872,LGA estimate
-North Central,NASARAWA,Lafia,ERCC Clinic Kurmi Maisamari,Kurmi Maisamari,Others,8.635477,8.715872,LGA estimate
-North Central,NASARAWA,Obi,ERCC Hospital Muriya,Muriya near Lafia,Others,8.351567,8.73793,LGA estimate
-North Central,NIGER,Mariga,PRIMARY HEALTH CARE CENTRE,,Roman Catholic Church,10.685643,5.811534,LGA estimate
-North Central,NIGER,Shiroro,ECWA Community Health Clinic,,ECWA,10.136101,6.716976,LGA estimate
-North Central,NIGER,ZURU,HASKE DOMINICAN HOSPITAL,,Roman Catholic Church,11.428742,5.270698,LGA estimate
-North Central,PLATEAU,Barkin Ladi,"COCIN Dispensary, Gindin Akwati","Gindin Akwati, Barkin Ladi (street address not verified)",COCIN,9.530412,8.908117,LGA estimate
-North Central,PLATEAU,Bassa,"ECWA Health Clinic, Zagun (Kakkek)","Besides Ecwa DCC,Zagun (ward: Kakkek, Bassa LGA)",ECWA,10.083495,8.795768,LGA estimate
-North Central,PLATEAU,Bokkos,COCIN Clinic Kunet Barah,"After Cocin Primary School Kunet (ward: Butura, Bokkos LGA)",COCIN,9.213252,8.931437,LGA estimate
-North Central,PLATEAU,Jos North,"Saint Bernard Medical Centre, Jos","Angwan Rukuba Junction Nassarawa Gwong (ward: Naraguta A, Jos North LGA)",Not verified,9.938414,8.905897,LGA estimate
-North Central,PLATEAU,Mikang,"COCIN Health Post (Dispensary), Shang","COCIN Dispensory (Health Post), Opposite COCIN Church, Shang, Mikang, Plateau (ward: Piapung A, Mikang LGA)",COCIN,9.021819,9.613527,LGA estimate
-North Central,PLATEAU,Not verified,"Catholic Primary Health Centre, Nassarawa",Not verified,Roman Catholic Church,9.218794,9.5162,State estimate (LGA not given)
-North Central,PLATEAU,Not verified,"Catholic Primary Health Centre, Sabon Layi–Nder",Not verified,Roman Catholic Church,9.218794,9.5162,State estimate (LGA not given)
-North Central,PLATEAU,Not verified,"Catholic Primary Health Centre, Wadata",Not verified,Roman Catholic Church,9.218794,9.5162,State estimate (LGA not given)
-North Central,PLATEAU,Shendam,"Baptist Clinic, Pang Wasa","Pang Wasa, Shendam",Baptist,8.714463,9.534688,LGA estimate
-North Central,PLATEAU,Wase,"Ansar Clinic, Kuyanbana","Kuyanbana, Wase",Not verified,9.065044,10.216837,LGA estimate
-South West,EKITI,Ado Ekiti,Sisters Of Saint Michael Arch Angels Pax Clinic Okeyinmi Ado Ekiti,INSIDE SAINT MICHAEL CATHOLIC CATHEDRAL CHURCH OKEYINMI ADO EKITI,Roman Catholic Church,7.616463,5.249011,LGA estimate
-South West,EKITI,Emure,UACC Ajaye Mission Clinic,"Ajaye, Emure LGA, Ekiti State; exact address to confirm",Others,7.414094,5.511757,LGA estimate
-South West,LAGOS,Alimosho,Christ The King Catholic Hospital,3/5 Igbehinadun Street Shasha Road Off Santos Egbeda Alimosho-Akowonjo Lagos,Roman Catholic Church,6.574459,3.255685,LGA estimate
-South West,LAGOS,Alimosho,"St. Joseph Clinic, Gowon Estate","Road 412, St. Joseph Catholic Church, Gowon Estate",Roman Catholic Church,6.574459,3.255685,LGA estimate
-South West,LAGOS,Badagry,Anthony Cardinal Okogie Maternity,"Ikoga-Zebbe, Badagry area",Roman Catholic Church,6.440818,2.914062,LGA estimate
-South West,LAGOS,Badagry,Eucharistic Heart of Jesus Hospital,"Magbon, Badagry",Roman Catholic Church,6.440818,2.914062,LGA estimate
-South West,LAGOS,Ikeja - 4,Baptist Medical Centre,"15, Oluwatoyin Street, Off Folorunsho ibikunle Street, Akute",Baptist,6.777458,3.257161,LGA estimate
-South West,LAGOS,Ikorodu,"ECWA Community Health Centre, Ikorodu","Aga / Odogunyan axis, Ikorodu.",ECWA,6.612323,3.56763,LGA estimate
-South West,LAGOS,Ikorodu,Good Shepherd Catholic Hospital,"Salvation Street, Owode, Ikorodu",Roman Catholic Church,6.612323,3.56763,LGA estimate
-South West,LAGOS,Lagos Mainland,Hoare’s Memorial Methodist Cathedral Clinic,"321 Herbert Macaulay Way, Sabo, Yaba, Lagos",Faith-Based (Methodist Church Nigeria),6.500424,3.382701,LGA estimate
-South West,LAGOS,Lagos Mainland,Hoare’s Memorial Methodist Clinic,"321 Herbert Macaulay Way, Sabo, Yaba",Methodist,6.500424,3.382701,LGA estimate
-South West,ONDO,Akure South,"Prayer Center Church of God (PCCG) Grounds, Adofure Clinic","Kilometer 7, Idanre Road, Adofure, Akure, Ondo State.",Christian Pentecostal Fellowship,7.187102,5.214187,LGA estimate
-South West,OYO,Egbeda (provisional),Padre Pio Clinic for the Relief of the Suffering,"Padre Pio Capuchin Franciscan Friary, Olunde, Ibadan, Oyo State",Roman Catholic Church,7.393455,4.057323,LGA estimate
-South West,OYO,Kajola,"Baptist Medical Centre, Ilero","Ilero, Kajola LGA, Oyo State",Baptist,8.021781,3.355623,LGA estimate
-South West,OYO,Kajola,"Baptist Medical Centre, Ilero (duplicate listing)","Jagun Street, Idofin Area, Ilero, Kajola LGA, Oyo State",Baptist,8.021781,3.355623,LGA estimate
-South South,AKWA IBOM,Ibesikpo-Asutan,Lutheran Church Health Centre (LCCN),"Church National Headquarters, Obot Idim",Others,4.908697,7.954582,LGA estimate
-South South,AKWA IBOM,Ika,Faith Specialist Health Clinic,"No. 2 Afaha Etok Road, before RCCG Akwa-Ibom Province 1, Dominion Mega Parish, off Ring Road 3, Afaha Etok Ibesikpo, Ibesikpo Asutan LGA",Others,4.908697,7.954582,LGA estimate
-South South,CROSS RIVER,Ogoja,Anglican Communion Clinic,Igoli Ogoja,Anglican,6.507515,8.70718,LGA estimate
-South South,EDO,,St Peter Catholic Hospital,,Roman Catholic Church,6.634638,5.932135,State estimate (LGA not given)
-South South,EDO,Ikpoba-Okha,Trinity Maternity,"Kk 46, Sapele Road, Redeemed Junction",Christian Pentecostal Fellowship,6.160146,5.64814,LGA estimate
-South South,EDO,Oredo,Edo Province One Maternity Complex,3 Redemption Way Off Adesuwa Road,Christian Pentecostal Fellowship,6.2254,5.552391,LGA estimate
-South South,EDO,Oredo,Faith Mediplex Teaching Hospital,"1 Giwa-Amu Road / Airport Road, Benin City",Christian Pentecostal Fellowship,6.2254,5.552391,LGA estimate
-South South,EDO,Oredo,Rifil Hospital,2 Faithway Off Upper Adesuwa Road Benin City,Christian Pentecostal Fellowship,6.2254,5.552391,LGA estimate
-South East,EBONYI,Abakiliki,Mother Theresa Hospital,"Nkaliki, Izzi Unuhu, Abakaliki",Roman Catholic Church,6.256205,8.214026,LGA estimate
-South East,EBONYI,Izzi,St. Zita United Mission Hospital,"Izii Community, Ebonyi State",Others,6.493557,8.269407,LGA estimate
+﻿Region,State,LGA,Hospital Name,Address/locality,Denomination,Latitude,Longitude,Location precision
+Abia South,ABIA,Osisioma Ngwa,"Living Word Mission Hospital, Aba","Aba-Owerri road, Abayi, Aba",Christian Pentecostal Fellowship,5.145969,7.331129,Approximate / probable
+Abia South,ABIA,Aba North,"Seventh-day Adventist Hospital and Motherless Babies' Home, Aba","No 1 New Umuahia, Ogbor hill, Aba",Seventh Day Adventist,5.123613,7.385745,Exact
+Abia South,ABIA,Abia South,"St. Joseph Catholic Hospital, Ohabiam","343 Portharcourt road, Ohabiam Aba",Roman Catholic Church,5.0712,7.3323,Approximate / probable
+Abia North,ABIA,Bende,"Amaudo Integrated Community Mental Health Foundation, Itumbauzo",Ntalakwu Itumbauzo,Methodist,5.448371,7.68146,Approximate / probable
+Abia North,ABIA,Bende,"Royal Cross Methodist Hospital, Ugwueke","Ndielu ugwueke ozara, Ugwueke, Bende",Methodist,5.815897,7.623819,Exact
+Abia Central,ABIA,Isiala Ngwa South,"Mercy Maternity Home, Mbutu Ngwa",Mbutu,Roman Catholic Church,5.310003,7.354743,Approximate / probable
+Abia Central,ABIA,Isiala Ngwa South,"St. Simon's Hospital/Maternity, Umuacha, Isiala Ngwa south",Umuacha,Roman Catholic Church,5.289481,7.405823,Approximate / probable
+Abia South,ABIA,Obingwa,"Nigerian Christian Hospital, Nlagu","Nagu Village, Km 18 Aba-Ikot Ekpene, Road, Aba",Christian Community,5.140262,7.525381,Exact
+Abia North,ABIA,Ohafia,"King of Kings Specialist Hospital, Asaga",Professor Ezera Kalu Road Asaga Ohafia,Christian Pentecostal Fellowship,5.617736,7.84942,Exact
+Abia North,ABIA,Ohafia,"Uma Ukpai Eye Specialists Hospital, Asaga",Asaga,Christian Pentecostal Fellowship,5.617736,7.84942,Approximate / probable
+Abia South,ABIA,Osisioma Ngwa,"Freedom Word Mission Hospital and Diagnostic Centre, Aba","Ezeogu Avenue,Abayi Aba,Osisioma",Christian Pentecostal Fellowship,5.145969,7.331129,Exact
+Abia South,ABIA,Osisioma Ngwa,"St. Paul's Hospital, Umuka village, Amasator, Osisoma Ngwa, Aba","Umuka village, Amasator, Osisoma Ngwa, Aba",Roman Catholic Church,5.137658,7.34991,Exact
+Abia South,ABIA,Aba South,"OPM Free Specialist Hospital, Ohanku","Plot 3 Akpuro road, Omuahunwo Alu PH raod, Aba",Christian Pentecostal Fellowship,4.9532,7.4094,Approximate / probable
+Abia South,ABIA,Aba South,"Blessed Tansi Hospital, Aba","110 Mcc Rd, Abayi, Aba, Abia, Nigeria",Roman Catholic Church,5.126906,7.336647,Approximate / probable
+Abia North,ABIA,Arochukwu,Mercy Hospital Ihechiowa,Umuye Road Ihechiowa Arochukwu,Roman Catholic Church,5.481334,7.886034,Exact
+Abia North,ABIA,Bende,"St. Nicholas Health Center , Itumbuzo","Ndi-Iwo, Itumbuzo",Roman Catholic Church,5.448371,7.68146,Exact
+Abia North,ABIA,Ohafia,"Catholic Health Center, Abiriba",Abriba,Roman Catholic Church,5.704976,7.73538,Approximate / probable
+Abia Central,ABIA,Ikwuano,"St. Michael's Hospital , Ariam.",Ariam Ikwuano,Roman Catholic Church,5.338691,7.619984,Approximate / probable
+Abia North,ABIA,Bende,Chijioke Osogho memorial Hospital Item,"Omarauzo Apuanu Item, Besides All Saints Methodist Church, Bende ",Methodist,5.785532,7.714845,Exact
+Abia South,ABIA,Obingwa,"Bishop Afonya hospital, Obingwa","Agburike Isiugwu, Besides Amaanor Community Primary School",Anglican,5.131444,7.396674,Exact
+Abia Central,ABIA,Isiala Ngwa South,Teresa Orsini Hospital Umumkpenyi Nvosi,Umunkpeyi Nvosi Sacred Hearth Catholic Church,Roman Catholic Church,5.334848,7.48014,Exact
+Abia Central,ABIA,Umuahia North,"DMMM Specialist Hospital Ahiaeke, Umuahia","Ahiaeke, opposite DMMM generalate",Roman Catholic Church,5.511868,7.529989,Approximate / probable
+Abia North,ABIA,Umunneochi,St Anthony's Caholic Hospital Isuochi,"Nkwoagu Amuda Isuochi Ngodo Road, Umunneochi LGA",Roman Catholic Church,5.980568,7.397754,Exact
+Abia North,ABIA,Bende,"Nkech Conwil Methodist Hospital Lohum, Imenyi",Lohum Imenyi,Methodist,5.653829,7.541865,Exact
+Abia North,ABIA,Isuikwuato,"Marist cottage Hospital, Hopeville Uturu","Hopeville Avenue Obiagu, Uturu, Isuikwuato",Roman Catholic Church,5.829348,7.421299,Exact
+Abia South,ABIA,Aba South ,Our Lady of the Sick Hospital,"105 Agulanna by Ngwa Road Aba,",Roman Catholic Church,5.086708,7.386926,Exact
+Abia South,ABIA,Ugwunagbo,Presbytherian Comprehensive Health Center,"20 Presby Road, Off Abara Rd Owerri-Aba",Presbyterian,5.082291,7.373885,Exact
+Abia South,ABIA,Ukwa West,RCCG Hospital,"144 Bathalion Asa, Ukwa West",Christian Pentecostal Fellowship,4.934147,7.275053,Approximate / probable
+Abia Central,ABIA,Umuahia South,Anglican Hospital & Maternity ,By Ahiaukwu Market Square inside the Balm of Gilead Chapel Olokoro,Anglican,5.478629,7.499984,Exact
+Abia Central,ABIA,Umuahia South,SDA Hospital Ubakala,"Umuogo, Ubakala Umuahia South LGA",Seventh Day Adventist,5.474887,7.440288,Exact
+Abia South,ABIA,Osisioma,Canaan Missionary Hospital,"No 1 Asamoka Street, by Ariara Junction, Osisioma",Christian Pentecostal Fellowship,5.103674,7.319236,Exact
+Abia south,ABIA,Obingwa,"SEMCOM Friends mission Hospital, Mgboko","Ofokobe, Mgboko",Christian Pentecostal Fellowship,5.134042,7.403481,Approximate / probable
+Abia Central,ABIA,Isiala Ngwa North,"Our Lady of Mercy Health Centre,",Umunkolo Mbawsi Isialangwa North LGA ,Roman Catholic Church,5.384801,7.437944,Exact
+Anambra Central,Anambra,Idemili North,"Iyienu Mission Hospital, Ogidi","Km 8, Old Onitsha-Enugu Road, Ogidi Old Road, Ogidi",Anglican,6.154479,6.849768,Exact
+Anambra Central,Anambra,Idemili North,Bethel Mission Hospital Iyienu Annex,"90 Oraifite Street, Awada, Obosi",Anglican,6.130585,6.801807,Exact
+Anambra Central,Anambra,Idemili North,Immaculate Heart of Mary Hospital Nkpor,"18 immaculate avenue, Old Asaba-Onitsha Road, Nkpor, Anambra State",Roman Catholic Church,6.148523,6.839135,Exact
+Anambra Central,Anambra,Idemili North,St Martin's Catholic Hospital and Child Welfare,"Ugwuagba Village Obosi,Opposite Security Office",Roman Catholic Church,6.111929,6.80155,Exact
+Anambra Central,Anambra,Idemili North,Daughters of Mary Hospital,Nkpor,Roman Catholic Church,6.14485,6.820937,Approximate / probable
+Anambra Central,Anambra,Idemili South,Our Lady of Fatima Hospital,Ejighinandu Village Along Akwa Etiti Market.,Roman Catholic Church,6.03467,6.965749,Exact
+Anambra Central,Anambra,Anaocha,Jeo Nwilo Heart Center,Adazi,Roman Catholic Church,6.091286,6.997245,Approximate / probable
+Anambra Central,Anambra,Anaocha,"St. Joseph's Hospital, Adazi-Nnukwu","Nnewi Road, Obeagu, Adazi-Nnukwu",Roman Catholic Church,6.09051,6.991159,Approximate / probable
+Anambra Central,Anambra,Awka South,St Faith Hospital,"Along St Joseph The Worker Road, Unizik Temporary Site Awka",Anglican,6.223526,7.064425,Exact
+Anambra Central,Anambra,Awka South,Regina Ceali Hospital Awka,"36 Regina Ceali Road, Opp St. Patrick's Cathedral, Near King David Hotel Awka",Roman Catholic Church,6.218323,7.077632,Exact
+Anambra Central,Anambra,Awka North,Ave Maria Hospital and Maternity,Urum,Roman Catholic Church,6.28667,7.031391,Exact
+Anambra Central,Anambra,Awka North,Mission Hospital,Awba Ofemmili,Anglican,6.418769,7.052345,Approximate / probable
+Anambra Central,Anambra,Njikoka,St Anna's Maternity Hospital,Amabor Village Abba,Roman Catholic Church,6.215741,6.96019,Exact
+Anambra Central,Anambra,Dunukofia,St Joseph Hospital Amilo,Ukpo,Roman Catholic Church,6.213014,6.946655,Approximate / probable
+Anambra Central,Anambra,Dunukofia,Immaculate Heart Hospital And Maternity Umudioka,Before Abbor primary school Umudioka,Roman Catholic Church,6.17214,6.92135,Exact
+Anambra North,Anambra,Onitsha North,St Marks Health Post,"Omagba, Onitsha",Anglican,6.150692,6.81488,Exact
+Anambra North,Anambra,Onitsha North,St Andrews Anglican Church Health Centre,Onitsha,Anglican,6.153231,6.80081,Approximate / probable
+Anambra North,Anambra,Onitsha North,St Christophers Health Post,Onitsha,Anglican,6.150766,6.787736,Exact
+Anambra North,Anambra,Onitsha North,St Monica Health Centre,Onitsha,Anglican,6.134617,6.786522,Exact
+Anambra North,Anambra,Onitsha North,Christ Church Health Post,Inside Christ Church Anglican Church Main Market Onitsha,Anglican,6.154613,6.775767,Exact
+Anambra North,Anambra,Onitsha North,St Charles Borromeo Hospital,"No.1 Limca Road, Old Nkpor Road",Roman Catholic Church,6.143103,6.818585,Exact
+Anambra North,Anambra,Onitsha North,Holy Rosary Specialist Hospital and Maternity (Waterside),No.  Mission Road Onitsha Opposite Holy Trinity Basilica Behind Oluchukwu Microfinance Bank.,Roman Catholic Church,6.160005,6.775391,Exact
+Anambra North,Anambra,Onitsha South,Mary Elms Mission Hospital,"Modebe Avenue, Odoakpu, Onitsha",Anglican,6.14682,6.783592,Exact
+Anambra North,Anambra,Onitsha South,Christ the King Hospital,"Odoakpu, Onitsha",Roman Catholic Church,6.143673,6.790231,Exact
+Anambra North,Anambra,Onitsha South,St Mary the Virgin East Niger Health Center,Onitsha,Roman Catholic Church,6.1399,6.781516,Approximate / probable
+Anambra North,Anambra,Onitsha South,St. John Anglican Primary Healthcare Centre,St John Anglican Church Nnobi Street Fegge Onitsha,Anglican,6.135689,6.770299,Exact
+Anambra North,Anambra,Onitsha South,Methodist Primary Healthcare Centre,18/23 Oraukwu/Ukpor Street Fegge,Methodist,6.135622,6.78063,Exact
+Anambra North,Anambra,Anambra East,Niger West Diocesan Hospital (Rephael Diocesan Hospital),Behind St Gabriel's Cathedral Umueri,Anglican,6.336221,6.846093,Exact
+Anambra North,Anambra,Anambra East,Diocesan Hospital,Aguleri-Otu,Anglican,6.352839,6.854595,Approximate / probable
+Anambra North,Anambra,Anambra East,Daughters of Mary Mother of Mercy Hospital,Aguleri,Roman Catholic Church,6.328426,6.881206,Approximate / probable
+Anambra North,Anambra,Anambra East,"Immaculate Heart Multi-Specialty Hospital, Aguleri","Opposite Governor Obiano's Lodge, Aguleri Anambra East",Roman Catholic Church,6.342469,6.852989,Exact
+Anambra North,Anambra,Anambra West,St Bernadette Maternity Home,Mmiata Anam,Roman Catholic Church,6.417602,6.786152,Approximate / probable
+Anambra North,Anambra,Anambra West,Rex Universorium Hospital and Maternity,Mmiata Anam,Roman Catholic Church,6.417602,6.786152,Exact
+Anambra North,Anambra,Anambra West,"IHM Hospital, Mmiata-Anam",Mmiata-Anam,Roman Catholic Church,6.417602,6.786152,Approximate / probable
+Anambra North,Anambra,Anambra West,Mission Hospital,Umueze Anam,Anglican,6.415918,6.748798,Approximate / probable
+Anambra North,Anambra,Anambra West,Star of the Sea Health Center,Umueze Anam,Roman Catholic Church,6.415918,6.748798,Approximate / probable
+Anambra North,Anambra,Ogbaru,St Lukes Health Post,Okpoko,Anglican,6.10276,6.792669,Approximate / probable
+Anambra North,Anambra,Ogbaru,St Luke'S Diocesan Hospital Okpoko,Inside St Luke's Anglican Church Okpoko,Anglican,6.10276,6.792669,Exact
+Anambra North,Anambra,Ogbaru,Primary Health Centre,Ogwuaniocha,Roman Catholic Church,5.871502,6.693404,Approximate / probable
+Anambra North,Anambra,Ogbaru,Presentation Maternity Home,Okpoko,Roman Catholic Church,6.118404,6.791492,Approximate / probable
+Anambra North,Anambra,Ayamelum,Diocesan Hospital,Omor,Anglican,6.511621,6.964028,Approximate / probable
+Anambra North,Anambra,Ayamelum,Diocesan Hospital,Umumbo,Anglican,6.527089,7.009222,Approximate / probable
+Anambra North,Anambra,Ayamelum,Maranatha Caring Mission Hospital,Umueje & Igbariam,Roman Catholic Church,6.69838,6.959233,Exact
+Anambra North,Anambra,Ayamelum,St Joseph Hospital ifite Ogwari,From Amanyiocha Junction to St Joseph Catholic Hospital,Roman Catholic Church,6.604912,6.94462,Exact
+Anambra North,Anambra,Oyi,St. Rapheal Missionary Hospital Nkwelle Ezunaka,Nkwelle Ezunaka,Others,6.216109,6.853936,Exact
+Anambra South,Anambra,Nnewi South,Amichi Diocesan Hospital,Umunwaehi village Amichi,Anglican,5.99522,6.965408,Exact
+Anambra South,Anambra,Nnewi South,Nnewi Diocesan Health Center,"Ebe, Ukpor",Anglican,5.950768,6.941911,Approximate / probable
+Anambra South,Anambra,Nnewi South,Visitation Hospital,Amakom osumenyi,Roman Catholic Church,5.956259,6.973584,Exact
+Anambra South,Anambra,Nnewi South,Mother of Mercy Hospital,After st David's Catholic Church before mother of mercy secondary school,Roman Catholic Church,5.932138,6.971647,Exact
+Anambra South,Anambra,Nnewi South,Unubi Medical Foundation Complex,Unubi,Roman Catholic Church,5.959926,7.046974,Exact
+Anambra South,Anambra,Nnewi North,Diosesian Hospital And Maternity Nnewi,"AKWAUDO AHIA EKE AMA OBI , OTOLO NNEWI.",Anglican,6.004525,6.931208,Exact
+Anambra South,Anambra,Nnewi North,Nnewi Diocesan Hospital,"Umudim, Nnewi",Anglican,5.997466,6.921639,Approximate / probable
+Anambra South,Anambra,Nnewi North,Nnewi Diocesan Health Center,"Akaboukwu, Nnewi",Anglican,6.024999,6.932072,Approximate / probable
+Anambra South,Anambra,Nnewi North,Immaculate Heart Hospital and Maternity,Nnewi,Roman Catholic Church,6.018923,6.915632,Approximate / probable
+Anambra South,Anambra,Nnewi North,Divine Mercy Hospital,"Okofia, Nnewi",Roman Catholic Church,5.977787,6.941489,Approximate / probable
+Anambra South,Anambra,Nnewi North,Fr Damian Hospital and Leprosorium,Nnewi,Roman Catholic Church,6.018923,6.915632,Approximate / probable
+Anambra South,Anambra,Nnewi North,St Felix Catholic Specialist Hospital,Nnewi,Roman Catholic Church,6.000544,6.914451,Exact
+Anambra South,Anambra,Nnewi North,Redeemed Christian Church Of God Hospital And Maternity,NO 46 IGWE ORIZU ROAD OTOLO NNEWI,Christian Pentecostal Fellowship,6.012753,6.94139,Approximate / probable
+Anambra South,Anambra,Orumba South,Immaculate Heart Hospital,Nsogwu umunze in Orumba South Local Government Area,Roman Catholic Church,5.957914,7.241003,Exact
+Anambra South,Anambra,Orumba South,Trinitas International Hospital,Umuchukwu,Roman Catholic Church,6.01011,7.309917,Exact
+Anambra South,Anambra,Orumba South,Aguata Diocesan Hospital And Maternity Umunze,Ndiabor Village before Immaculate Hospital and Maternity Umunze,Anglican,5.960732,7.240604,Exact
+Anambra South,Anambra,Orumba South,St Jude Hospital and Maternity,Umuchukwu,Roman Catholic Church,5.99938,7.310743,Approximate / probable
+Anambra South,Anambra,Aguata,Aguata Anglican Diocesan Hospital And Maternity Igboukwu,Ngo Village Igboukwu,Anglican,6.019738,7.019184,Exact
+Anambra South,Anambra,Aguata,St Raphael Hospital,Close to Akpo Junction,Roman Catholic Church,5.96219,7.102957,Exact
+Anambra South,Anambra,Aguata,Catholic Visitation Hospital And Maternity Umuchu,"Inside Saint Mathew Catholic Church, Osete Umuchu",Roman Catholic Church,5.935561,7.123497,Exact
+Anambra South,Anambra,Aguata,St Raphael Catholic Hospital and Maternity,Opposite Our Lady of Fatima Nkwo Igboukwu,Roman Catholic Church,6.01626,7.022759,Exact
+Anambra South,Anambra,Aguata,St Patrick's Mission Hospital,"Ula Village, Ekwulobia",Roman Catholic Church,5.935595,7.080819,Exact
+Anambra South,Anambra,Ihiala,Our Lady Of Lourdes Hospital Ihiala,Opposite St Martin's Catholic Church Ihiala,Roman Catholic Church,5.863846,6.860647,Exact
+Anambra South,Anambra,Ihiala,St Lukes Hospital,Isseke,Anglican,5.827482,6.91628,Approximate / probable
+Anambra South,Anambra,Ihiala,Diocesan Hospital,Ihiala,Anglican,5.863555,6.857582,Approximate / probable
+Anambra South,Anambra,Ihiala,Daughters Of Mary Mother Of Mercy Hospital And Maternity Adazi-Ani,Near Ekeigwe market Ukwakwa Azia,Roman Catholic Church,5.880719,6.885642,Exact
+Anambra South,Anambra,Ihiala,St Mary Hospital,Orsumoghu,Roman Catholic Church,5.86048,6.92835,Approximate / probable
+Anambra South,Anambra,Ihiala,St Christina Hospital and Maternity,Azia,Roman Catholic Church,5.877227,6.899808,Approximate / probable
+Anambra South,Anambra,Ihiala,School of Laboratory,Ihiala,Roman Catholic Church,5.863846,6.860647,Approximate / probable
+Anambra South,Anambra,Orumba North,Anglican Hospital,Omogho,Anglican,6.089402,7.136221,Approximate / probable
+Anambra South,Anambra,Orumba North,St. Fatima Catholic Hospital,Ajalli / Orumba,Roman Catholic Church,6.039519,7.214505,Approximate / probable
+Anambra South,Anambra,Ekwusigo,Recdot Hospital and Maternity,Ozubulu,Roman Catholic Church,5.967914,6.881591,Approximate / probable
+Anambra South,Anambra,Ekwusigo,Joint Hospital,Ozubulu,Roman Catholic Church,5.964026,6.87284,Exact
+Enugu East,Enugu,Enugu East,"Annunciation Specialist Hospital, Emene",Emene,Roman Catholic Church,6.468039,7.58977,Exact
+Enugu East,Enugu,Enugu East,Eze Nwanyi Nke Udo Primary Healthcare/Maternity & Medical Centre,Ugwu-Omu Nike,Roman Catholic Church,6.53188,7.59898,Approximate / probable
+Enugu East,Enugu,Enugu East,"Justice Dame Ijeoma Onwuamaegbu Hospital and Maternity, Neke-Uno",Neke-Uno,Anglican,6.635196,7.544118,Approximate / probable
+Enugu East,Enugu,Enugu East,Godfrey Okoye University Teaching Hospital (formerly Ntasi Obi Ndi No N'Afufu Hospital),"Trans-Ekulu, Enugu",Roman Catholic Church,6.476746,7.501242,Exact
+Enugu East,Enugu,Enugu East,St. Theresa Hospital and Maternity,NO 3 COLLAGE ROAD ABAKPA NIKE ENUGN,Roman Catholic Church,6.482678,7.518576,Exact
+Enugu East,Enugu,Enugu East,St. Luke the Physician Specialist Hospital,"Trans-Ekulu, Enugu",Roman Catholic Church,6.476668,7.473712,Approximate / probable
+Enugu East,Enugu,Enugu North,Ave Maria Eye Clinic,"Ogui, Enugu",Roman Catholic Church,6.440058,7.496273,Approximate / probable
+Enugu East,Enugu,Enugu North,Mother Of Christ Specialist Hospital,"Beside ogbette market,ogui,enugu state",Roman Catholic Church,6.434426,7.489227,Exact
+Enugu East,Enugu,Enugu North,Inye Aka Ndi I Kristi Catholic Maternity,"Iva Valley, Enugu",Roman Catholic Church,6.445505,7.475738,Approximate / probable
+Enugu East,Enugu,Enugu North,"Nne Nke Ebere (Mater Misericordia/Mother of Mercy) Hospital, Ngenevu","Ngenevu, Coal Camp, Enugu",Roman Catholic Church,6.426133,7.476476,Approximate / probable
+Enugu East,Enugu,Enugu South,The Good Shepherd Hospital - Uwani,145 Ziks Avenue Uwani,Anglican,6.425212,7.486081,Exact
+Enugu East,Enugu,Nkanu East,"St. Anthony Maternity, Agba Umana",Agba Umana,Roman Catholic Church,6.339263,7.200213,Approximate / probable
+Enugu East,Enugu,Nkanu West,"Arun Ike Ndi Oria Maternity & Medical Centre, Akegbe Ugwu.",Akegbe Ugwu,Roman Catholic Church,6.343032,7.480738,Approximate / probable
+Enugu East,Enugu,Nkanu West,"Our Lady of Lourdes Maternity, Akpugo",Akpugo,Roman Catholic Church,6.3316,7.5984,Approximate / probable
+1,Enugu,Igbo Eze North,St. Mary Hospital,Enugu Ezike,Roman Catholic Church,6.975337,7.462031,Exact
+1,Enugu,Igbo Eze South,Our Ladys Clinic,Along MCC road down to itchi junction Igbo Eze South,Roman Catholic Church,6.924504,7.393303,Exact
+1,Enugu,Nsukka,Bishop Shanahan Hospital,Enugu Rd Nsukka.,Roman Catholic Church,6.850299,7.395152,Exact
+1,Enugu,Nsukka,"Faith Foundation Mission Hospital, Nsukka",Close To Ofulonu Junction Ogurugu Road,Anglican,6.851083,7.37965,Exact
+1,Enugu,Udenu,Daughters of Divine Love - Ehalumona,Udenu,Roman Catholic Church,6.802551,7.463,Exact
+1,Enugu,Uzo-uwani,Our Lady Health of the Sick Hospital -  Adani,Adani,Roman Catholic Church,6.73971,7.01117,Approximate / probable
+2,Enugu,Awgu,Mother of Mercy Hospital - Ihe,Ihe,Roman Catholic Church,6.230238,7.456458,Approximate / probable
+2,Enugu,Ezeagu,St Clara Catholic Community Hospital Umana Ndiagu,Umana Ndiagu,Roman Catholic Church,6.349757,7.257263,Exact
+2,Enugu,Oji River,Achi Joint Hospital,Oji River,Roman Catholic Church,6.155744,7.358438,Exact
+2,Enugu,Udi,"St. Anne Maternity, Ngwo",Ngwo,Roman Catholic Church,6.435389,7.434405,Approximate / probable
+2,Enugu,Udi,Ukamaka Cottage Hospital & Maternity,Nze/Akpakwume,Roman Catholic Church,6.429376,7.406196,Approximate / probable
+Imo East,Imo,Aboh Mbaise,"Holy Rosary Hospital, Nkwogwe",NILL,Roman Catholic Church,5.469443,7.24795,Approximate / probable
+Imo East,Imo,Aboh Mbaise,"Holy Rosary Hospital, Ogbor Nguru","Ogbor Nguru, Abor Mbaise",Roman Catholic Church,5.504985,7.242422,Exact
+Imo East,Imo,Ezinihitte Mbaise,Harper Christian Clinic,Owutu Community,Christian Pentecostal Fellowship,5.438825,7.30065,Approximate / probable
+Imo East,Imo,Ezinihitte Mbaise,Mbaise Diocesan Mission Hospital,Ife Community,Roman Catholic Church,5.438825,7.30065,Exact
+Imo East,Imo,Mbaitoli,General Hospital Ogwa (Anglican-managed),Alone ndi Ikpa Rd besides St. Peter's Anglican Church Ndi Ikpa Ogwa,Anglican,5.636094,7.088623,Exact
+Imo East,Imo,Mbaitoli,Gilead Missionary Clinic,Umunjam Mbieri Community,Christian Pentecostal Fellowship,5.542497,7.05559,Exact
+Imo East,Imo,Mbaitoli,Rehoboth Medical Center,Nwaoriebi Community,Christian Pentecostal Fellowship,5.589455,7.015856,Approximate / probable
+Imo East,Imo,Owerri Municipal,International Christian Community Hospital,"Ikennegbu, Owerri Municipal",Christian Pentecostal Fellowship,5.49501,7.03547,Exact
+Imo East,Imo,Owerri North,"Holy Rosary Hospital, Emekuku",Mission Emekuku opposite Father Cloonan memorial Secondary School,Roman Catholic Church,5.469779,7.110417,Exact
+Imo North,Imo,Ehime-Mbano,General Hospital Ehime Mbano (Anglican-managed),Umualumaku/Umuihim Along Aba Branch Road Before Ehime-Mbano Stadium Ehime-Mbano Imo State,Anglican,5.629393,7.288058,Exact
+Imo North,Imo,Isiala Mbano,General Hospital Isiala Mbano (Anglican-managed),Isu community,Anglican,5.667884,7.183638,Approximate / probable
+Imo North,Imo,Nwangele,"Medical Missionaries of Mary Community Health Project, Abajah",Abajah community,Roman Catholic Church,5.684299,7.13415,Approximate / probable
+Imo North,Imo,Nwangele,St Mary'S Joint Hospital Amaigbo,UBAHU AMAIGBO NWANGELE LGA,Roman Catholic Church,5.733151,7.122267,Exact
+Imo North,Imo,Obowo,"Our Lady of Mercy hospital, Obowo","Umuologho Community, Obowo",Roman Catholic Church,5.571394,7.366333,Exact
+Imo North,Imo,Okigwe,"Bavaria Catholic Specialist Hospital, Okigwe",,Roman Catholic Church,5.835937,7.356171,Approximate / probable
+Imo West,Imo,Ideato North,Immaculate Heart Hospital,Urualla Communty,Roman Catholic Church,5.855687,7.103768,Exact
+Imo West,Imo,Ideato South,"Mater Amabilis Hospital, Akokwa",Umuijemba Umukekwu neer Orie Akokwa Market,Roman Catholic Church,5.907683,7.110377,Exact
+Imo West,Imo,Ideato South,Salvation Christian Hospital,Akokwa Community,Christian Pentecostal Fellowship,5.816911,7.13146,Approximate / probable
+Imo West,Imo,Ideato South,St. Anthony Hospital,Akokwa Community,Roman Catholic Church,5.91916,7.092098,Exact
+Imo West,Imo,Isu,St. Vincent de Paul's Hospital,Amurie Omanze Community,Roman Catholic Church,5.668784,7.033744,Exact
+Imo West,Imo,Oguta,"Senator Francis A. Nzeribe Hospital, Oguta (Catholic-managed state hospital)",Oguta General Hospital,Roman Catholic Church,5.712259,6.803907,Exact
+Imo West,Imo,Ohaji/Egbema,General Hospital Ohaji/Egbema (Lord's Chosen-managed),"By NDDC Singboard Umuagwo, Egbema.",Christian Pentecostal Fellowship,5.516282,6.75602,Exact
+Imo West,Imo,Ohaji/Egbema,State Hospital Umuokanne (Anglican Diocese of Ohaji/Egbema-managed),Umuokanne Community,Anglican,5.349936,6.902297,Exact
+Imo West,Imo,Orlu,"Mater Christi Hospital, Orlu",BSC Rd Umuokwara Orlu,Roman Catholic Church,5.79731,7.04538,Exact
+Imo West,Imo,Orlu,St. Damian Catholic Hospital,Ohaeke Okporo Community,Roman Catholic Church,5.791925,6.993411,Exact
+Imo West,Imo,Orlu,"St. Mary Hospital & Dialysis center, Umuowa",Umuowa Community,Roman Catholic Church,5.76195,7.030722,Approximate / probable
+Imo West,Imo,Oru East,"Michael Uzodimma Memorial Hospital, Omuma",Omuma Community,Roman Catholic Church,5.763173,6.957821,Approximate / probable
